@@ -15,9 +15,10 @@ Pour cela , on va considérer des programmes qui prennent comme données d'autre
          print (f" valeur de i  = {i}")
 
     ```
-     ![sortie test(5)](images/res_test.png)   
+    ![sortie test(5)](images/res_test.png)   
 
-## 2. La décidabilité
+
+##  2. La décidabilité
 
 !!! abstract "Définition"
     On dit d'un problème qu'il est décidable si l'on peut répondre par oui ou par non à la question qu'il pose .
@@ -97,7 +98,7 @@ On construit un aute programme qui, boucle à l'infini si arret renvoie True et 
 !!! tip "Conclusion"
     <b> On a démontré par l'absurde qu'un fonction arrêt ne peut exister puisque l'on est arrivé à une contradiction .</b>
 
-## 4.Un exercice au bac  !
+##  4. Un exercice au bac  !
 
 === "Sujet"
 
