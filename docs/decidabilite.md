@@ -1,6 +1,6 @@
 # La décidabilité
 
-## Introduction au porblème
+## Introduction au problème
 
 On va étudier les possibilités et les limites des algorithmes. 
 Pour cela , on va considérer des programmes qui prennent comme données d'autres programmes . 
