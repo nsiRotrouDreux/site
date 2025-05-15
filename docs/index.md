@@ -1,10 +1,11 @@
-# Recherche Textuelle 
+# Recherche textuelle
 
 
 ## 1. La problématique 
 
 Ici, on va chercher une sous chaine de caractères dans une chaine plus grande . 
 Les applications de cette recherche sont multiples mais une des plus importante est appliquée à la bioinformatique .
+
 ![adn](nsi_term_algo_boyer_adn.gif)
 
 On va chercher une sous chaine dans un brin d'ADN
