@@ -191,9 +191,3 @@ Le coût de l'algorithme précédent peut vite croitre. il est de l'ordre au max
 
 ![sortie avec le motif gta dans la chaine gtagatgtaggtaggtattagta ](sortie_BM.PNG)
 
-=== "python"
-     print('hello')
-
-=== "js"
-     console.log('test')
-
