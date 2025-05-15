@@ -1,11 +1,11 @@
-# La décidabilité
+# <b> La décidabilité </b>
 
-## Introduction au problème
+##  1. Introduction au problème
 
 On va étudier les possibilités et les limites des algorithmes. 
 Pour cela , on va considérer des programmes qui prennent comme données d'autres programmes . 
 
-!!! tip  " Exemple "
+!!! example  " Exemple "
     On crée un petit programme python, que l'on va executer. On le donne au programme python qui va l'interpréter , 
     par exemple en ligne de commande . Le nom du programme est test.py
      
@@ -17,8 +17,7 @@ Pour cela , on va considérer des programmes qui prennent comme données d'autre
     ```
      ![sortie test(5)](images/res_test.png)   
 
-
-## La décidabilité
+## 2. La décidabilité
 
 !!! abstract "Définition"
     On dit d'un problème qu'il est décidable si l'on peut répondre par oui ou par non à la question qu'il pose .
@@ -40,3 +39,73 @@ Pour cela , on va considérer des programmes qui prennent comme données d'autre
              return S
 
     ```
+
+!!! note  " L'HISTORIQUE"
+    Au début du XXème siècle , David Hilbert, mathématicien allemand , s'intéresse aux problèmes mathématiques non résolus , ce qui aboutira en 1928 au problème de la décision , ou encore **Entscheidungsproblem**
+
+    !!! info "Le Problème "
+         <b> Existe-t-il un algorithme capable de déterminer, pour tout énoncé mathématique bien formulé donné en entrée, 
+        si ce dernier est vrai ou faux ?</b>
+
+    En 1931, Kurt Gödel a réglé la question : **Il existe des propriétés mathématiques non décidables dans n’importe quel système définissant l’arithmétique.**
+`
+
+## 3. Le problème de l'arrêt
+ 
+
+Ce problème , étudié par Alan Turing en 1936, est le suivant : 
+ 
+  > On considère une fonction mathématique qui prend en paramètre une fonction Python f et un paramètre *e* et qui renvoie True si le programme s'arrête et False sinon.
+Nous appellons <b>arrêt</b> une telle fonction, en supposant qu'une telle fonction existe bien.
+   
+   
+```python 
+    def arret(prog, x):
+        if "prog (x) s'arrête":   
+            return True
+        else :
+             return False
+
+```
+On construit un aute programme qui, boucle à l'infini si arret renvoie True et renvoie 'Stop' si arret renvoie False 
+
+
+
+```python  title="paradoxe"
+
+    def paradoxe(prog):
+        if arret(paradoxe, prog):   
+            while True:
+                pass
+        else:
+            return 'Stop'
+
+```
+
+!!! done  "Explication et contradiction"
+      
+      Considérons que le programme pris en paramètre par la fonction paradoxe est cette même fonction paramètre.
+
+    * l'appel paradoxe(paradoxe) rentre dans une boucle infinie si arret(paradoxe, paradoxe) est vrai 
+    donc si paradoxe(paradoxe) termine. Donc paradoxe(paradoxe) ne termine pas si paradoxe(paradoxe) termine...
+
+    
+    * l'appel paradoxe(paradoxe) termine si arret(paradoxe, paradoxe) est faux donc si paradoxe(paradoxe) ne termine pas.
+    Donc paradoxe(paradoxe) termine si paradoxe(paradoxe) ne termine pas...
+   
+
+!!! tip "Conclusion"
+    <b> On a démontré par l'absurde qu'un fonction arrêt ne peut exister puisque l'on est arrivé à une contradiction .</b>
+
+## 4.Un exercice au bac  !
+
+=== "Sujet"
+
+    ![me3_2024](images/NsiDec1.png)
+    ![me3_2024](images/NsiDec2.png)
+=== "Correction"
+
+     Cette correction est issue du site  [Pixees](https://pixees.fr/informatiquelycee/term/suj_bac/2024/correction_sujet_14.pdf)
+
+     ![alt text](images/NsiDecCor.png)
+
