@@ -3,6 +3,8 @@ theme:
   name: material
   features: 
      - navigation.footer
+     - navigation.tabs
+     - navigation.tabs.sticky
   palette:
   # Dark mode
     - scheme: slate  
