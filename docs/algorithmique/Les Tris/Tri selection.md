@@ -2,7 +2,7 @@
 
 ## 1. Le principe 
 
-!!! warning INFO IMPORTANTE
+!!! warning "Comment ça marche ?"
 
     On va s'intéresser aux caractéristiques du tri par sélection :
     
