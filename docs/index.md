@@ -1,14 +1,14 @@
 # Accueil
-![alt text](images/nsiBandeau.png)
- [![alt text](images/logo.png)](www.lyceerotroudreux.com)
+[![alt text](images/nsiBandeau.png)](https://www.lyceerotroudreux.com)
+ 
 
-# Chapitres
+## Chapitres
 * Structures de données
 * Récursivité
 * POO
 * Les tris 
 * La dichotomie
-* [Décidabilité](docs/decidabilite.md)
+* [Décidabilité](decidabilite.md)
 * Routage
 * Sécurisation des communications
 * Processus
