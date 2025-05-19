@@ -1,5 +1,5 @@
 # Accueil
-[![alt text](docs/images/nsiBandeau.png)](https://www.lyceerotroudreux.com)
+[![alt text](images/nsiBandeau.png)](https://www.lyceerotroudreux.com)
  
 
 ## Chapitres
@@ -8,7 +8,7 @@
 * POO
 * Les tris 
 * La dichotomie
-* [Décidabilité](docs/decidabilite.md)
+* [Décidabilité](decidabilite.md)
 * Routage
 * Sécurisation des communications
 * Processus
@@ -20,4 +20,4 @@
 * Recherche textuelle
 * Base de données
 
-[![alt text](docs/images/cc.png)]( https://creativecommons.org/publicdomain/zero/1.0/deed.fr)                  
+[![alt text](images/cc.png)]( https://creativecommons.org/publicdomain/zero/1.0/deed.fr)                  
