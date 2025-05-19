@@ -5,6 +5,8 @@ theme:
      - navigation.footer
      - navigation.tabs
      - navigation.tabs.sticky
+  icon: 
+     logo: fontawesome/solid/computer
   palette:
   # Dark mode
     - scheme: slate  
