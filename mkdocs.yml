@@ -42,3 +42,9 @@ markdown_extensions:
    - pymdownx.highlight:
         line_spans: __span
         pygments_lang_class: true
+copyright: B. Saint Pée , Lycée Rotrou , Dreux 
+extra: 
+    social :
+    - icon : images/cc.png
+    - links : https://creativecommons.org/publicdomain/zero/1.0/deed.fr
+        
