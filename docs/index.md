@@ -6,8 +6,9 @@
 * Structures de données
 * Récursivité
 * POO
-* Les tris 
-* La dichotomie
+*  [Algorithmique :Tri selection ](<algorithmique/Les Tris/Tri selection.md>)
+* [Algorithmique :Tri insertion ](<algorithmique/Les Tris/Tri insertion.md>)
+*  Algorithmique :La dichotomie
 * [Décidabilité](decidabilite.md)
 * Routage
 * Sécurisation des communications
