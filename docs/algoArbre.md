@@ -77,14 +77,15 @@ class Noeud :
 
 ## 2. Parcours d'un arbre 
    ![arbre ](arbre.png)   *source : wikipedia*
+
 ### a. Parcours en largeur 
- !!! note ""
+!!! note ""
     Il s'agit ici de parcourir l'arbre ligne par ligne de la gauche     vers la droite.
 
     Parcours largeur : 1 2 3 4 5 6 7 8 9
 
 
-    ```py
+```py
     def ParcoursLargeur(arbre):
     if arbre is None:
         return 
@@ -103,7 +104,7 @@ class Noeud :
         # ajouter l'enfant droit de l'élément retiré
         if noeud.d is not None:
             file.append(noeud.d)
-    ```
+```
 
 ### b. Parcours en profondeur 
 
@@ -120,9 +121,8 @@ class Noeud :
             ParcoursPP(arbre.g)
             ParcoursPP(arbre.d)
     ```
-#### 2. Suffixe
-  
- !!! note ""
+#### 2. Suffixe  
+!!! note ""
 
     On va à gauche , on va à droite , on visite le noeud
 
@@ -137,8 +137,7 @@ class Noeud :
             ParcoursPS(arbre.d)
             print(arbre.v)
     ```
- #### 3. Infixe
-  
+ #### 3. Infixe  
  !!! note ""
 
     On va à gauche ,on visite le noeud  , on va à droite 
