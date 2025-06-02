@@ -5,7 +5,7 @@
 On va très simplement créer une classe Noeud qui aura trois attributs : v, g et d, représentant respectivement la valeur du noeud(None par défaut) , son sous arbre droit ( None par défaut ) et son sous arbre gauche (None par défaut)
 On va définir trois méthodes, en plus de la méthode constructeur:
 
-!!! note "
+!!! note ""
     * est_vide : Renvoie un booléen 
     * est_feuille : Renvoie un booléen 
     * taille : Renvoie la taille de l'arbre 
