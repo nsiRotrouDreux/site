@@ -94,7 +94,7 @@
 !!! warning "Un peu de maths"
     Combien faut il d'étapes pour avoir la réponse à notre problème avec l'algorithme de dichotomie ?
 
-    On cherche p tel que  n < 2^p^ .
+    On cherche p tel que  n < $2^{p}$ .
 
     En effet , on divise à chaque étape la taille de la liste par 2, on compte donc le nombre de fois nécessaires pour que la taille de la liste soit nulle .
 
