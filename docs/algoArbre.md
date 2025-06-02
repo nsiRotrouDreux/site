@@ -72,7 +72,7 @@ class Noeud :
   
         h <= n <= $2^{h}-1$
 
-    Dans le cas où la taille d'un arbre est égale à $2^{h}-1$, on dit que l'arbre est complet 
+    Dans le cas où la taille d'un arbre est égale à $2^{h}-1$, on dit que l'arbre est complet.
 
 
 ## 2. Parcours d'un arbre 
@@ -110,7 +110,7 @@ class Noeud :
 #### 1.Prefixe 
 !!! note ""
 
-    On visite le noeud, on va à gauche , on va à droite.
+    On visite le noeud, on va à gauche, on va à droite.
    
     Parcours profondeur préfixe :1 2 4 5 7 8 3 6 9
 
@@ -123,9 +123,9 @@ class Noeud :
 #### 2. Suffixe  
 !!! note ""
 
-    On va à gauche , on va à droite , on visite le noeud
+    On va à gauche, on va à droite, on visite le noeud.
 
-     Un parcopurs suffixe (postfixe) se termine par la racine de l'arbre 
+     Un parcours suffixe (postfixe) se termine par la racine de l'arbre.
    
      Parcours profondeur suffixe:4 7 8 5 2 9 6 3 1
 
@@ -141,7 +141,7 @@ class Noeud :
 
      On va à gauche ,on visite le noeud  , on va à droite 
 
-     Un parcopurs infixe classe les él"éments par ordr croisdsant dans le cas d'un arbre binaire de recherche
+     Un parcours infixe classe les éléments par ordre croissant dans le cas d'un arbre binaire de recherche.
    
      Parcours profondeur suffixe:4 7 8 5 2 9 6 3 1
 
