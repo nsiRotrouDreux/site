@@ -83,8 +83,7 @@ class Noeud :
     Il s'agit ici de parcourir l'arbre ligne par ligne de la gauche     vers la droite.
 
     Parcours largeur : 1 2 3 4 5 6 7 8 9
-
-
+    
    ```py
     def ParcoursLargeur(arbre):
     if arbre is None:
@@ -137,16 +136,14 @@ class Noeud :
             ParcoursPS(arbre.d)
             print(arbre.v)
     ```
-    
- #### 3. Infixe  
- !!! note ""
+#### 3. Infixe  
+!!! note ""
 
      On va à gauche ,on visite le noeud  , on va à droite 
 
      Un parcopurs infixe classe les él"éments par ordr croisdsant dans le cas d'un arbre binaire de recherche
    
      Parcours profondeur suffixe:4 7 8 5 2 9 6 3 1
-
 
     ```py
         def ParcoursPI (arbre):        
