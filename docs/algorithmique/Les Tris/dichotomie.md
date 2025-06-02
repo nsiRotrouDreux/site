@@ -3,7 +3,7 @@
 
 ### La méthode
 
-!!! note Quel est le but de l'algorithme et quels sont les prérequis ?
+!!! note "Quel est le but de l'algorithme et quels sont les prérequis ?"
 
     * Le principe de l'algorithme est de détecter la 
     présence ou non d'un élément dans une liste
@@ -11,7 +11,7 @@
 
 !!!
 
-!!! note La méthode 
+!!! note "La méthode "
 
     Un peu comme au juste prix , on regarde la valeur qui est au milieu de la liste. Si on tombe sur la valeur cherchée , c'est gagné
  
