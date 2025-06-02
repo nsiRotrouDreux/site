@@ -85,7 +85,7 @@ class Noeud :
     Parcours largeur : 1 2 3 4 5 6 7 8 9
 
 
-```py
+   ```py
     def ParcoursLargeur(arbre):
     if arbre is None:
         return 
@@ -104,7 +104,7 @@ class Noeud :
         # ajouter l'enfant droit de l'élément retiré
         if noeud.d is not None:
             file.append(noeud.d)
-```
+   ```
 
 ### b. Parcours en profondeur 
 
@@ -137,10 +137,11 @@ class Noeud :
             ParcoursPS(arbre.d)
             print(arbre.v)
     ```
+    
  #### 3. Infixe  
  !!! note ""
 
-    On va à gauche ,on visite le noeud  , on va à droite 
+     On va à gauche ,on visite le noeud  , on va à droite 
 
      Un parcopurs infixe classe les él"éments par ordr croisdsant dans le cas d'un arbre binaire de recherche
    
@@ -151,7 +152,6 @@ class Noeud :
         def ParcoursPI (arbre):        
             ParcoursPI(arbre.g)
             print(arbre.v)
-            ParcoursPI(arbre.d)
-            
+            ParcoursPI(arbre.d)            
     ```
  
