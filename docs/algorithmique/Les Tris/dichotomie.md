@@ -9,7 +9,7 @@
     présence ou non d'un élément dans une liste
     * La liste **est triée par ordre croissant**
 
-!!!
+
 
 !!! note "La méthode "
 
@@ -22,11 +22,11 @@
     <b> Mais quand s'arrête-t-on ?</b>
 
     On s'arrête bien sur dès que l'on tombe sur la valeur cherchée, en renvoyant <b>True</b> ou alors dès que la liste sur laquelle on travaille ne contient plus d'élément et dans ce cas on renverra <b> False</b>
-!!!
+
 
 ### L'algorithme
 
-!!! success  Les variables
+!!! success  "Les variables"
 
     * <b>debut</b> : indice du début de liste
     * <b>fin</b> : indice de la fin de la liste
@@ -34,8 +34,8 @@
 
        On appelera les paramètres <i><b>liste et valeur </b></i>
 
-!!!
-!!! tip A chaque étape
+
+!!! tip "A chaque étape"
 
 
     * On calcule la valeur de l'indice du milieu
@@ -48,12 +48,12 @@
      
     
         Si la valeur est égale , on renvoie True
-!!!
 
-!!! warning Stop ?
+
+!!! warning "Stop ?"
 
     On travaille tant que la valeur n'est pas trouvée ou que debut > fin (cas où il n'y a plus d'élement dans la liste) 
-!!!
+
 
 ### Les programmes  
 !!! done   "Le programme itératif"
@@ -91,7 +91,7 @@
             return True
     ```
 
-!!! warning "Un peu de maths
+!!! warning "Un peu de maths"
     Combien faut il d'étapes pour avoir la réponse à notre problème avec l'algorithme de dichotomie ?
 
     On cherche p tel que  n < 2^p^ .
