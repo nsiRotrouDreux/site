@@ -47,5 +47,11 @@ markdown_extensions:
    - pymdownx.highlight:
         line_spans: __span
         pygments_lang_class: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+
 copyright: B. Saint Pée , Lycée Rotrou , Dreux 
 
