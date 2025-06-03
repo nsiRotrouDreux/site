@@ -30,6 +30,11 @@ markdown_extensions:
    - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+     
+   - pymdownx.arithmatex:
+      generic: true
+
+  
    
    - admonition
    - pymdownx.details
@@ -42,5 +47,11 @@ markdown_extensions:
    - pymdownx.highlight:
         line_spans: __span
         pygments_lang_class: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+
 copyright: B. Saint Pée , Lycée Rotrou , Dreux 
 
