@@ -141,9 +141,9 @@ class Noeud :
 
      On va à gauche ,on visite le noeud  , on va à droite 
 
-     Un parcours infixe classe les éléments par ordre croissant dans le cas d'un arbre binaire de recherche.
+      :warning: Un parcours infixe classe les éléments par ordre croissant dans le cas d'un arbre binaire de recherche.
    
-     Parcours profondeur suffixe:4 7 8 5 2 9 6 3 1
+     Parcours profondeur infixe : 4 2 7 5 8 1 3 9 6
 
     ```py
         def ParcoursPI (arbre):        

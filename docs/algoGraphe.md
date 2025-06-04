@@ -16,6 +16,9 @@ On va s'intéresser aux parcours de graphe. il existe dexu types de parcours pri
 
 ??? Example  "Exemple"
     ![alt text](images/graphe.png)
+
+
+    Le sommet de départ est a
   
 
     |visités| file | étape|
@@ -72,17 +75,19 @@ On va s'intéresser aux parcours de graphe. il existe dexu types de parcours pri
     2. On dépile . Si le sommet dépilé n'est pas visité, on l'ajoute à visite et on parcourt ses voisins. S'ils n'ont pas été visités, on les insère dans la pile et on répète le point 2 tant que la pile n'est pas vide 
 
 ??? Example "exemple"
-  ![alt text](images/graProf.png)
+    ![alt text](images/graProf.png)
 
-|visités| pile | étape|
-|--------- | ------------------ | ------ |
-|[A]|B,C| Le sommet de départ a est marqué visité. On empile ses voisins, ordre aléatoire|
-|[A,C]|B,E,D| C est marqué visité. On empile ses voisins, sauf B qui est déjà dans la pile |
-|[A,C,D]|B,E,F,G| D est marqué visité. On empile ses voisins, sauf C déjà visité|
-|[A,C,D, G]|B,E,F| G est marqué visité.  Ses voisins sont dans la pile ou visités.|
+    Le sommet de départ est A
+
+    |visités| pile | étape|
+    |--------- | ------------------ | ------ |
+    |[A]|B,C| Le sommet de départ a est marqué visité. On empile ses voisins, ordre aléatoire|
+    |[A,C]|B,E,D| C est marqué visité. On empile ses voisins, sauf B qui est déjà dans la pile |
+    |[A,C,D]|B,E,F,G| D est marqué visité. On empile ses voisins, sauf C déjà visité|
+    |[A,C,D, G]|B,E,F| G est marqué visité.  Ses voisins sont dans la pile ou visités.|
 
 
-Il ne reste plus qu'à dépiler  pour obtenir [A,C,D,G,F,E,B]
+    Il ne reste plus qu'à dépiler  pour obtenir [A,C,D,G,F,E,B]
 
 !!! success "A retenir"
     Lors d'un parcours en profondeur , on visite les sommets branche pas branche . On va le plus loin possible en visitant le maximum de sommets.
