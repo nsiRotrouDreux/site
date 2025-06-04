@@ -61,7 +61,7 @@ class Noeud :
         def hauteur (arbre):
             if arbre is None :
                 return 0 # On peut rencontrer -1
-            return 1+ max(self.gauche.hauteur()+self.droite.hauteur())
+            return 1+ max(hauteur(arbre.gauche)+hauteur(arbre.droite))
      ``` 
 !!! success "Remarque"
 
