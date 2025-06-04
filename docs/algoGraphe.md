@@ -81,16 +81,16 @@ On va s'intéresser aux parcours de graphe. il existe dexu types de parcours pri
 
     |visités| pile | étape|
     |--------- | ------------------ | ------ |
-    |[A]|B,C| Le sommet de départ a est marqué visité. On empile ses voisins, ordre aléatoire|
-    |[A,C]|B,E,D| C est marqué visité. On empile ses voisins, sauf B qui est déjà dans la pile |
-    |[A,C,D]|B,E,F,G| D est marqué visité. On empile ses voisins, sauf C déjà visité|
-    |[A,C,D, G]|B,E,F| G est marqué visité.  Ses voisins sont dans la pile ou visités.|
+    |[A]|B,C| Le sommet de départ A est marqué visité. On empile ses voisins, ordre aléatoire|
+    |[A,C]|B,B,E,D| C est marqué visité. On empile ses voisins|
+    |[A,C,D]|B,B,E,F,G| D est marqué visité. On empile ses voisins, sauf C déjà visité|
+    |[A,C,D, G]|B,B,E,F,F| G est marqué visité.  On ajoute F à la pile |
 
 
-    Il ne reste plus qu'à dépiler  pour obtenir [A,C,D,G,F,E,B]
+    Il ne reste plus qu'à dépiler  pour obtenir [A,C,D,G,F,E,B]. Lors de la rencontre du second F, on le dépile et comme il est visité, on ne fera rien. Idem pour le second B. On aurait pu empiler uniquement les éléments non visités et non déjà empilés .
 
 !!! success "A retenir"
-    Lors d'un parcours en profondeur , on visite les sommets branche pas branche . On va le plus loin possible en visitant le maximum de sommets.
+    Lors d'un parcours en profondeur , on visite les sommets branche par branche . On va le plus loin possible en visitant le maximum de sommets.
 
 
 !!! note "Algorithme"
