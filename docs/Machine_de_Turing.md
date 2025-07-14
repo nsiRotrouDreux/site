@@ -9,12 +9,12 @@
 
     Elle a été créée en 1936, en réponse au **Entscheidungsproblem** de David Hilbert.
 !!! info "Présentation"
-La machine de Turing peut être comparée à une machine à écrire avec :
+     La machine de Turing peut être comparée à une machine à écrire avec :
 
-* Un ruban de longueur infini et sur lequel sont déposés des symboles, un par case, qui représentent les données.
+    * Un ruban de longueur infini et sur lequel sont déposés des symboles, un par case, qui représentent les données.
 
-* Une tête de lecture lisant les symboles, les effaçant, ou les remplaçant. Elle se déplace à droite ou à gauche 
+    * Une tête de lecture lisant les symboles, les effaçant, ou les remplaçant. Elle se déplace à droite ou à gauche 
 
-* Des instructions consistuant le programme à exécuter.
+    * Des instructions consistuant le programme à exécuter.
 
-Un listing d'instructions sommaires constitue le programme.
+    Un listing d'instructions sommaires constitue le programme.
