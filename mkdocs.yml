@@ -34,7 +34,8 @@ nav:
              -Dichotomie : Terminale NSI/algorithmique/dichotomie.md
              -Tri Selection : Terminale NSI/algorithmique/Les Tris/tri_selection.md
              -Tri Insertion: Terminale NSI/algorithmique/Les Tris/tri_insertion.md
-
+             -Algorithmes sur les arbres: terminale NSI/algorithmique/algoArbre.md
+             -Algorithmes sur les graphes: terminale NSI/algorithmique/algoGraphe.md
     - Première NSI: Premiere NSI/index.md
     - SNT: SNT/index.md
     - I.A.: intelligence artificielle/index.md
