@@ -6,7 +6,8 @@
 Ici, on va chercher une sous chaine de caractères dans une chaine plus grande . 
 Les applications de cette recherche sont multiples mais une des plus importante est appliquée à la bioinformatique .
 
-![adn](nsi_term_algo_boyer_adn.gif)
+![adren](../nsi_term_algo_boyer_adn.gif)
+
 
 On va chercher une sous chaine dans un brin d'ADN
 
@@ -57,7 +58,7 @@ Le coût de l'algorithme précédent peut vite croitre. il est de l'ordre au max
  
 !!! example  "Exemple d'amélioration"
     Voici  un façon d'améliorer cet algorithme 
-    ![alt text](Boyer_Moore.png)
+    ![alt text](../Boyer_Moore.png)
                        
 !!! hint   "Les deux idées qui font progresser la recherche :"
       
@@ -70,20 +71,25 @@ Le coût de l'algorithme précédent peut vite croitre. il est de l'ordre au max
     Il nous suffit alors de considérer les deux cas suivants :
          
     <b>Cas 1 </b>
-    ![](cas1.png)     
-         
+      
+    ![cas 1](../cas1.png)
+          
+
          La dernière lettre ne correspond pas  : 
          On cherche un éventuel B en partant de la droite 
          dans le motif pour aligner .
           Il n'y en a pas , on décale le motif pour 
           le placer sous la première lettre après B
     <b>Cas 2</b>
+    
+    ![cas 2](../cas2.png)
+
         
           La derniere lettre ne correspond pas . 
           On va chercher un A dans le motif  et on le trouve . 
           On vient aligner ce A sous celui du mot. Le décalage est de 3.
-     ![](cas2.png)
-
+     
+      
      <b>   idee N2. </b>
         
      La deuxième idée est de prétraiter ces sauts . Le mieux est de partir d'un exemple  
@@ -190,5 +196,4 @@ Le coût de l'algorithme précédent peut vite croitre. il est de l'ordre au max
 
 
 
-![sortie avec le motif gta dans la chaine gtagatgtaggtaggtattagta ](sortie_BM.PNG)
-
+![sortie avec le motif gta dans la chaine gtagatgtaggtaggtattagta ](../sortie_BM.PNG)

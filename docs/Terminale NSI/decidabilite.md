@@ -15,7 +15,7 @@ Pour cela , on va considérer des programmes qui prennent comme données d'autre
          print (f" valeur de i  = {i}")
 
     ```
-    ![sortie test(5)](images/res_test.png)   
+    ![alt text](../images/res_test.png)
 
 
 ##  2. La décidabilité
@@ -102,11 +102,12 @@ On construit un aute programme qui, boucle à l'infini si arret renvoie True et 
 
 === "Sujet"
 
-    ![me3_2024](images/NsiDec1.png)
-    ![me3_2024](images/NsiDec2.png)
+    ![alt text](../images/NsiDec1.png)
+    ![alt text](../images/NsiDec2.png)
+
 === "Correction"
 
      Cette correction est issue du site  [Pixees](https://pixees.fr/informatiquelycee/term/suj_bac/2024/correction_sujet_14.pdf)
 
-     ![alt text](images/NsiDecCor.png)
+      ![alt text](../images/NsiDecCor.png)
 

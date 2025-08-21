@@ -76,7 +76,7 @@ class Noeud :
 
 
 ## 2. Parcours d'un arbre 
-   ![arbre ](arbre.png)   *source : wikipedia*
+   ![arbre ](../arbre.png)  *source : wikipedia*
 
 ### a. Parcours en largeur 
 !!! note ""

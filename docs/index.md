@@ -1,24 +1,18 @@
 # Accueil
-[![alt text](images/nsiBandeau.png)](https://www.lyceerotroudreux.com)
- 
 
-## Chapitres
-* Structures de données
-* Récursivité
-* POO
-*  [Algorithmique :Tri selection ](<algorithmique/Les Tris/tri_selection.md>)
-* [Algorithmique :Tri insertion ](<algorithmique/Les Tris/tri_insertion.md>)
-*  Algorithmique :La dichotomie
-* [Décidabilité](decidabilite.md)
-* Routage
-* Sécurisation des communications
-* Processus
-* SOC
-* Piles et files
-* Arbres
-* Graphes
-* Diviser pour regner
-* Recherche textuelle
-* Base de données
+ Bienvenue sur ce site où vous pouvez retrouver les cours de première et terminale NSI , mais aussi quelques activités de SNT, des exlications sur l'IA , des liens généraux sur l'informatique ou encore pourquoi étudier l'informatique .
 
-[![alt text](images/cc.png)]( https://creativecommons.org/publicdomain/zero/1.0/deed.fr)                  
+!!! abstract  " Menu"
+
+    [Terminale NSI](<Terminale NSI>)
+
+    [Première NSI](<Premiere NSI>)
+
+    [SNT](SNT)
+
+    [I.A.](<Intelligence artificielle>)
+
+    [Pourquoi faire de l'informatique ? ](<Pourquoi faire de l'informatique>)
+
+    [Liens](Liens)
+

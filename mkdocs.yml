@@ -1,4 +1,4 @@
-site_name: TERMINALE NSI LYCEE ROTROU DREUX
+site_name: INFORMATIQUE LYCEE ROTROU DREUX
 theme: 
   name: material
   features: 
@@ -25,11 +25,30 @@ theme:
       primary: blue  
       accent: orange
 
+  # Navigation
+nav:
+    - Accueil: index.md
+    - Terminale NSI: 
+        - Accueil: Terminale NSI/index.md
+        - Algorithmique: 
+             -Dichotomie : Terminale NSI/algorithmique/dichotomie.md
+             -Tri Selection : Terminale NSI/algorithmique/Les Tris/tri_selection.md
+             -Tri Insertion: Terminale NSI/algorithmique/Les Tris/tri_insertion.md
+
+    - Première NSI: Premiere NSI/index.md
+    - SNT: SNT/index.md
+    - I.A.: intelligence artificielle/index.md
+    - Liens : Liens/Liens.md
+        
+
+        
+   
+    
+
+
 markdown_extensions: 
    - attr_list
-   - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  
      
    - pymdownx.arithmatex:
       generic: true
