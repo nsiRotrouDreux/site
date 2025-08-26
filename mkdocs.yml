@@ -36,6 +36,9 @@ nav:
              -Tri Insertion: Terminale NSI/algorithmique/Les Tris/tri_insertion.md
              -Algorithmes sur les arbres: Terminale NSI/algorithmique/algoArbre.md
              -Algorithmes sur les graphes: Terminale NSI/algorithmique/algoGraphe.md
+             -Recherche Textuelle: Recherche_textuelle.md
+             -Décidabilité: decidabilite.md
+             -Machine de Turing: Machine_de_turing.md
     - Première NSI: Premiere NSI/index.md
     - SNT: SNT/index.md
     - I.A.: intelligence artificielle/index.md
