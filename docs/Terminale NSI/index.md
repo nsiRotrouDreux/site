@@ -8,17 +8,17 @@
 * POO
 *  [Algorithmique :Tri selection ](<algorithmique/Les Tris/tri_selection.md>)
 * [Algorithmique :Tri insertion ](<algorithmique/Les Tris/tri_insertion.md>)
-*  Algorithmique :La dichotomie
+*  [Algorithmique :La dichotomie](<algorithmique/dichotomie.md>)
 * [Décidabilité](decidabilite.md)
 * Routage
 * Sécurisation des communications
 * Processus
 * SOC
 * Piles et files
-* Arbres
-* Graphes
+* [Arbres](<algorithmique/algoArbre.md>)
+* [Graphes](<algorithmique/algoGraphe.md>)
 * Diviser pour regner
-* Recherche textuelle
+* [Recherche textuelle](<rechercheTextuelle.md>) 
 * Base de données
 
 [![alt text](../images/cc.png)](https://creativecommons.org/publicdomain/zero/1.0/deed.fr)                  
