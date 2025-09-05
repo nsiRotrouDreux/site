@@ -4,12 +4,13 @@
 
 ## Chapitres
 * Structures de données
-* Récursivité
 * POO
+* [Récursivité](<recursivite.md>)
 *  [Algorithmique :Tri selection ](<algorithmique/Les Tris/tri_selection.md>)
 * [Algorithmique :Tri insertion ](<algorithmique/Les Tris/tri_insertion.md>)
 *  [Algorithmique :La dichotomie](<algorithmique/dichotomie.md>)
-* [Décidabilité](decidabilite.md)
+* [Décidabilité](<decidabilite.md>)
+* Récursivité
 * Routage
 * Sécurisation des communications
 * Processus

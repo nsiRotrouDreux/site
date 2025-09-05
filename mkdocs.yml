@@ -5,6 +5,7 @@ theme:
      - navigation.footer
      - navigation.tabs
      - navigation.tabs.sticky
+     - content.code.copy
   icon: 
      logo: fontawesome/solid/computer
   palette:
@@ -36,11 +37,13 @@ nav:
              -Tri Insertion: Terminale NSI/algorithmique/Les Tris/tri_insertion.md
              -Algorithmes sur les arbres: Terminale NSI/algorithmique/algoArbre.md
              -Algorithmes sur les graphes: Terminale NSI/algorithmique/algoGraphe.md
+        - Récursivité: Terminale NSI/recursivite.md
         - Recherche Textuelle: Terminale NSI/rechercheTextuelle.md
         - Décidabilité: Terminale NSI/decidabilite.md
         - Machine de Turing: Terminale NSI/Machine_de_Turing.md
     - Première NSI: 
         - Accueil: Premiere NSI/index.md
+        - Binaire: Premiere NSI/binaire.md
     - SNT: 
         - Accueil: SNT/index.md
         - Internet: SNT/internet.md
@@ -60,7 +63,8 @@ markdown_extensions:
    - pymdownx.arithmatex:
       generic: true
 
-  
+   - pymdownx.emoji:
+       emoji_generator: !!python/name:pymdownx.emoji.to_svg
    
    - admonition
    - pymdownx.details
