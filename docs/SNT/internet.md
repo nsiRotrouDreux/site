@@ -38,11 +38,11 @@
 
     **Travail à Faire** :  
                       
-                   1. Réaliser une frise 
+               1. Réaliser une frise 
                        
-                   2. Trouver aujourd'hui le pourcentage de la population qui eest connecté à internet 
-                   et le pourcentage d'utilisation de la fibre. 
-                   n France , dans le monde et dans un pays de votre choix
+               2. Trouver aujourd'hui le pourcentage de la population qui est connecté à internet 
+                      et le pourcentage d'utilisation de la fibre. 
+                  En France , dans le monde et dans un pays de votre choix
 
 
 
