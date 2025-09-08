@@ -1,5 +1,7 @@
 # INTERNET
 <base target="_blank">
+
+### Introduction
 !!! note "INTRO"
       Internet, on entend ce mot quarante fois par jour. Mais, qu'est ce donc ? Et surtout comment ça marche ? 
 
@@ -31,7 +33,7 @@
      ![alt text](ficheN1.png)<br>
            [Téléchargez la fiche](FicheN1.odt)
         
-
+### L'historique
 !!! Example "Quelques dates importantes"
     ![alt text](chronoInternet.png)
     
@@ -47,4 +49,20 @@
 
 
         
+### Le routage
 
+!!! info "Définitions" 
+        
+       0. **Octet** :C'est l'unité de base utilisée en informatique pour quantifier les grandeurs . Chaque octets est composé de 8 symboles, appelés bits et prenant la valeur 0 ou 1.
+       1. **Paquet** : C'est un ensemble de données qui transite sur le réseau. Un paquet a une taille très limitée(1500 octets maximum)
+       2. **Routage** : C'est le mécanisme de transport d'un paquet de données d'une source à un destinataire .
+       3. **Routeur**  : C'est l'équipement informatique qui assure l'acheminement des données de l'émetteur au destinaitaire . 
+       
+![reseau](reseau.png)
+_un réseau informatique_
+
+!!! info "Le fonctionnement du routage"
+
+    Un ensemble de données doit être transmis depuis une machine A vers un machine B. La machine A est connectée à un réseau et la porte d'entrée de cette machine sur le réseau est souvent, au moins dans les habitations , une box. Cette box est un routeur et est en liaison avec ses routeurs voisins. Chacun possède une **table de routage** qui lui permet d'envoyer le paquet au bon endroit.
+
+    Remarque : Lorsqu'une route est coupée, les routeurs ont toujours une solution pour acheminer les paquets : Ils trouvent un autre chemin. On peut faire l'analogie avec les GPS 
