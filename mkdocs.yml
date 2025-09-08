@@ -47,7 +47,10 @@ nav:
     - SNT: 
         - Accueil: SNT/index.md
         - Internet: SNT/internet.md
-    - I.A.: intelligence artificielle/index.md
+    - IA: 
+        - Accueil: IA/index.md
+        - Historique et premiers problèmes : IA/introIa.md
+        
     - Liens : Liens/Liens.md
         
 

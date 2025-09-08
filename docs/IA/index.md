@@ -1,0 +1,19 @@
+# Bienvenue dans le monde fantastique de l'Intelligence Artificielle
+
+
+### Introduction
+
+L'intelligence artificielle : Omniprésente, affolante, dérioutante, fascinante. Mais surtout intrigante et obscure , tellement obscure. On entend tout et son contraire à son sujet. De la révolution finale à la fin de l'emploi, de l'espoir d'une vie plus longue à "l'idiotisation" de la société.
+
+
+On va essayer ici non pas de répondre à toutes ces interrogations mais d'esquisser un début de compréhension de cette fameuse IA.
+
+### Le programme 
+
+     *  Introduction : Petite histoire et premiers problèmes 
+     *  Apprentissage par renforcement : Le jeu de Nim
+     *  Q learning
+     *  Apprentissage supervisé : le KNN
+     *  I A générative : LLM et Token
+     *  Classification d'images 
+     *  Ethique, écologie...
