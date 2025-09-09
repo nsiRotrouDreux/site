@@ -69,10 +69,19 @@ _un réseau informatique_
 ### Les protocoles de routage 
  Les transferts de données , les communications se font sur internet à l'aide d'une série de protocole selon un modèle appelé **TCP/IP**
 
-!!! info "Définition" Un protocole est  un ensemble de règles/formes qui régissent une interaction ou une communication, que ce soit dans les domaines social, diplomatique, juridique ou informatique, afin d’assurer l’interopérabilité, la sécurité et le bon déroulement des échanges entre les parties ou systèmes. (définition IA de qwant )
+!!! info "Définition"
+
+Un protocole est  un ensemble de règles/formes qui régissent une interaction ou une communication, que ce soit dans les domaines social, diplomatique, juridique ou informatique, afin d’assurer l’interopérabilité, la sécurité et le bon déroulement des échanges entre les parties ou systèmes. (définition IA de qwant )
 
 !!! info "Le modèle TCP/IP"
  
- ![tcpip](https://github.com/user-attachments/assets/4b96fbff-4cf5-45ca-8ed5-9be8f3403c0b)
+   ![tcpip](https://github.com/user-attachments/assets/4b96fbff-4cf5-45ca-8ed5-9be8f3403c0b)
+
+    Le modèle TCP/IP est composé de quatre couches :
+
+       * La couche application utilise des logiciels qui s'appuient sur lkes protocoles comme HTTPS ( web), SMTP ( mail)
+       * La  couche transport utilise le protocole TCP qui est chargé d'acheminer les paquets sur le réseau . Ce protocole vérifie aussi que les données arrivent bien à leur destinaire.
+       * La couche interne utilise le protocole IP qui permet le cheminement des données à travers les différents routeurs à l'aide de l'adresse IP
+       * La couche réseau qui s'assure de la liaison physique et donc du mode d'acheminement sur les machines : Ethernet, fibre ... 
 
  
