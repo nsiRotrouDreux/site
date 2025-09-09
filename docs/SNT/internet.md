@@ -69,9 +69,9 @@ _un réseau informatique_
 ### Les protocoles de routage 
  Les transferts de données , les communications se font sur internet à l'aide d'une série de protocole selon un modèle appelé **TCP/IP**
 
- Un protocole est  un ensemble de règles/formes qui régissent une interaction ou une communication, que ce soit dans les domaines social, diplomatique, juridique ou informatique, afin d’assurer l’interopérabilité, la sécurité et le bon déroulement des échanges entre les parties ou systèmes. (définition IA de qwant )
+!!! info "Définition" Un protocole est  un ensemble de règles/formes qui régissent une interaction ou une communication, que ce soit dans les domaines social, diplomatique, juridique ou informatique, afin d’assurer l’interopérabilité, la sécurité et le bon déroulement des échanges entre les parties ou systèmes. (définition IA de qwant )
 
- !!! info "Le modèle TCP/IP"
+!!! info "Le modèle TCP/IP"
  
  ![tcpip](https://github.com/user-attachments/assets/4b96fbff-4cf5-45ca-8ed5-9be8f3403c0b)
 
