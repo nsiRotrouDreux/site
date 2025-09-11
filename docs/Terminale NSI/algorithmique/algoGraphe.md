@@ -74,9 +74,10 @@ On va s'intéresser aux parcours de graphe. il existe dexu types de parcours pri
     1. On part d'un sommet, on l'ajoute dans la pile  . 
     2. On dépile . Si le sommet dépilé n'est pas visité, on l'ajoute à visite et on parcourt ses voisins. S'ils n'ont pas été visités, on les insère dans la pile et on répète le point 2 tant que la pile n'est pas vide 
 
-??? Example "exemple"
-    ![alt text](../images/graProf.png)
+??? Example "exemp!e"
 
+    ![alt text](plot.png)
+   
     Le sommet de départ est A
 
     |visités| pile | étape|
