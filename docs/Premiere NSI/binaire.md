@@ -120,7 +120,7 @@ De même pour obtenir un nombre en hexadécimal à partir d’un nombre en déci
 
 ### Représentation d'un entier relatif en binaire 
 
- * Sur un octet, le bit de poids le plus fort va servirr à coder le signe de  l'entier : 0 pour les positifs et 1 pour les bégatifs. 
+ * Sur un octet, le bit de poids le plus fort va servir à coder le signe de  l'entier : 0 pour les positifs et 1 pour les négatifs. 
  * On ne peut plus donc coder que les entiers entre -128 et 127 sur un octet
 
  La technique utilisée est appelée **complément à 2**
@@ -129,14 +129,14 @@ De même pour obtenir un nombre en hexadécimal à partir d’un nombre en déci
     
      La technique pour coder un entier relatif:
 
-     * On code la valeur absolue du nombre (exemple 98 si on veut coder -68)
+     * On code la valeur absolue du nombre (exemple 68 si on veut coder -68)
      * On transforme les 0 en 1 et les 1 en 0
      * On ajoute 1
 
      La technique ultime : 
 
-      * On code la valeur absolue du nombre (exemple 98 si on veut coder -68)
-      * On part de la droite et on cahnge les les valeurs du bit **uniquement** après le premier 1
+      * On code la valeur absolue du nombre (exemple 68 si on veut coder -68)
+      * On part de la droite et on change les  valeurs du bit **uniquement** après le premier 1
 
     !!! exemple "Exemple"
 
@@ -154,7 +154,7 @@ De même pour obtenir un nombre en hexadécimal à partir d’un nombre en déci
 
 ### Exercice 
   
-  Ecrire les entiers relatifs suivants en bianaire avec la méthode du complément à 2 :    -121,  -8 , -128, -65.
+  Ecrire les entiers relatifs suivants en binaire avec la méthode du complément à 2 :    -121,  -8 , -128, -65.
 
   Quel est le plus petit nombre quel l'on peut écrire à votre avis sur 9 bits , 2 octets ?
 ??? success "correction"
