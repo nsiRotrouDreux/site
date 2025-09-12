@@ -87,7 +87,7 @@ De même pour obtenir un nombre en hexadécimal à partir d’un nombre en déci
 
 !!! danger "Le truc en plus"
 
-     En fait, il exxiste une méthode bien plu simple pour écrire un nombre en base 16.
+     En fait, il existe une méthode bien plus simple pour écrire un nombre en base 16.
      * On écrit notre nombre en base 2 
      * On groupe les bits 4 par 4 : Les 4 de gauche et les 4 de droite . On tra,scrit chaque groupe en hexadécimal...et c'est gagné 
      
@@ -135,7 +135,7 @@ De même pour obtenir un nombre en hexadécimal à partir d’un nombre en déci
 
      La technique ultime : 
 
-      * On code la valeur absolue du nombre (exemple 98 si on veut coder -68)
+      * On code la valeur absolue du nombre (exemple 68 si on veut coder -68)
       * On part de la droite et on cahnge les les valeurs du bit **uniquement** après le premier 1
 
     !!! exemple "Exemple"
@@ -170,7 +170,41 @@ De même pour obtenir un nombre en hexadécimal à partir d’un nombre en déci
 
 
 
-     Sur 9 bits on peut aller jusqu'à  - $2^{9}$ et donc sur  2 octets , soit 16 bits , jusqu'à $2^{16}$
+     Sur 9 bits on peut aller jusqu'à  - $2^{9}$ et donc sur  2 octets , soit 16 bits , jusqu'à -$2^{16}$
   
 
 
+### Représentation d'un réel en base 2
+
+C'est le moment de bien écouter, c'est un peu plus dur :confused:
+
+!!! info " Ecriture d'un nombre flottant en base 2"
+    En base 10 , le nombre 61,154 est sous forme décomposée 6*101+1*100+1*10-1+5*10-2+4*10-3
+    De même, en base deux   1101,101 signifie 1*23+1*22+0*21+1*20+1*2-1+0*2-2+1*2-3=11,625
+     Il est plus difficile de passer de la base 10 à la base 2.
+    Exemple : Ecrire 61,154 en base 2.
+    Nous n’avons aucun problème à écrire 61 en base deux : 111101 
+    Comment exprimer 0,154 en base 2 ?
+
+         0,154 *2 =0.308	0
+         0.308*2=0.616	0
+         0.616*2=1.232	1
+         0.232*2=0.464	0
+         0.464*2=0.928	0
+         0.928*2=1.856	1
+         0.856*2=1.712	1
+         0.712*2=1.424	1
+         0.424*2=0.848	0  etc….
+
+       On obtient donc 61,154 =111101,00100111…. en base 2	.
+#### Exercices 
+1) Trouver la représentation décimale de 1101101,011
+
+2) Trouver la représentation binaire  de 24,625
+Remarques importantes : En base 10, 61,154 = 6,154*$10^{1}$ et 0.0061154= 6.154*$10^{-3}$
+
+??? success "correction"
+
+     1. La partie entière est 109 et on doit ajouter $2^{-2}$ +$2^{-3}$ soit 0.375 , donc au total 109,375
+
+     2. 24 s'écrit 11000 et 0.625 = 0.5+0.125 soit $2^{-1}$ +$2^{-3}$ doonc 24,625 sécrit 1100,101
