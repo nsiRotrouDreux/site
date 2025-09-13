@@ -197,7 +197,7 @@ C'est le moment de bien écouter, c'est un peu plus dur :confused:
          0.424*2=0.848	0  etc….
 
        On obtient donc 61,154 =111101,00100111…. en base 2	.
-#### Exercices 
+### Exercices 
 1) Trouver la représentation décimale de 1101101,011
 
 2) Trouver la représentation binaire  de 24,625
@@ -208,3 +208,76 @@ Remarques importantes : En base 10, 61,154 = 6,154*$10^{1}$ et 0.0061154= 6.154*
      1. La partie entière est 109 et on doit ajouter $2^{-2}$ +$2^{-3}$ soit 0.375 , donc au total 109,375
 
      2. 24 s'écrit 11000 et 0.625 = 0.5+0.125 soit $2^{-1}$ +$2^{-3}$ doonc 24,625 sécrit 1100,101
+
+
+Remarques importantes : En base 10, 61,154 = 6,154*$10^{1}$ et 0.0061154= 6.154*$10^{-3}$
+
+Il en va de même en base 2 : 1101,1101= 1,1011101*$2^{3}$, l’exposant 3 correspondant à un décalage de 3 vers la droite de la virgule.
+
+De même 0.0011=1,1* $2^{-3}$, l’exposant -3 correspondant à un décalage de 3 vers la gauche.
+ :warning: Un nombre décimal "fini" ne l'est pas forcément en binaire.
+
+###  Représentation en machine d’un nombre flottant
+Les machines utilisent une norme pour coder les nombres réels : La Norme IEEE 754. Pour cela , le nombre devra préalablement être écrit sous la forme 1,XXXXX.2e(avec e l'exposant)
+!!! tip "La technique "
+      •	Le nombre est codé sur 32 bits
+
+      •	Le bit de poids le plus fort sert à coder le signe (0 pour positif, 1 pour négatif)
+
+      •	L’exposant est codé sur les 8 bits consécutifs au signe.
+
+      •	La mantisse est codée sur les 23 bits restants et correspondant aux bits situés après la virgule.
+
+
+     La principale difficulté vient du codage de l’exposant : En effet, il nous faut pouvoir coder les exposants négatifs. Nous avons 8 bits et pouvons alors coder théoriquement 256 valeurs. Deux valeurs étant réservées, il nous reste 254 valeurs, que l’on fait varier de -126 à 127. Pour que l’exposant soit toujours positif, on ajoute 127 à la valeur de l’exposant.
+     
+       ![mantisse](mantisse.png)
+
+     
+
+    !!! example "Exemple" 
+
+         Donnons le code en machine de 124,75
+
+        Il nous faut d'abord écrire ce nombre en binaire : 1111100,11, je vous laisse vérifier maintenant que vous êtes balaises. :muscle:
+
+        On écrit le nombre sous la forme adaptée :1,11110011*$2^{6}$
+
+        bit 31 : C'est 0 puisque le nombre est positif
+
+        8 bits de l'exposant : c'est donc 127+6 soit 133 : 10000101
+
+        La mantisse : 11110011
+
+        On obtient donc 010000101111100110...............0 (32 bits au total)
+
+        --------------------------------------------------------------------
+
+        :fearful: Et donc l'autre sens ?????
+
+        Allons y avec 01000000101101   (on n'écrit pas les 0 finaux)
+
+        Le signe est positif .
+        L'exposant vaut 10000001 soit 129: +2 
+        La mantisse : 01101 
+
+        L'ecriture est donc **1**,01101 *$2^{2}$ :warning: NE PAS OUBLIER LE 1 AVANT LA VIRGULE
+
+        Finalement on a 101,101 soit 5,625
+
+### Exercice 
+
+ 1. Donner la représentation en machine de 177,5
+ 2. Quel est représenté en machine par 1 10000010 111101 ?
+
+??? success "correction"
+   
+    1.  177: 10110001 et 0.5: 0.1  soit 10110001,1 ou avec la norme utilisée 1,01100011**$2^{7}$
+
+    L'exposant à coder est 134, on obteint : 1 1000111 011000110....0  
+   
+    2. C'est un nombre négatif, l'exposant vaut 130 donc +3 
+
+       On a donc 1,111101 *$2^{3}$ soit 1111,101 ou 15,625
+
+    
