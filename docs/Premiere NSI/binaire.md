@@ -116,7 +116,7 @@ De même pour obtenir un nombre en hexadécimal à partir d’un nombre en déci
     | 11 |    3 |3
     |  01101101| 109        |6D
     | 11110100|  244   |F4
-    | 11011110 |222 | CD
+    | 11001101 |205 | CD
 
 ### Représentation d'un entier relatif en binaire 
 
@@ -160,7 +160,7 @@ De même pour obtenir un nombre en hexadécimal à partir d’un nombre en déci
 ??? success "correction"
 
 
-    121  donne 01111001 donc -121 s'écrit 10000110
+    121  donne 01111001 donc -121 s'écrit 10000111
 
       8 s'écrit 00001000 donc  =8 s'écrit 11111000
 
