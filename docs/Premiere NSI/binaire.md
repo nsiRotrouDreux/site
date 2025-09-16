@@ -208,7 +208,7 @@ C'est le moment de bien écouter, c'est un peu plus dur :confused:
 
      1. La partie entière est 109 et on doit ajouter $2^{-2}$ +$2^{-3}$ soit 0.375 , donc au total 109,375
 
-     2. 24 s'écrit 11000 et 0.625 = 0.5+0.125 soit $2^{-1}$ +$2^{-3}$ doonc 24,625 sécrit 1100,101
+     2. 24 s'écrit 11000 et 0.625 = 0.5+0.125 soit $2^{-1}$ +$2^{-3}$ doonc 24,625 sécrit 11000,101
 
 
 Remarques importantes : En base 10, 61,154 = 6,154x$10^{1}$ et 0.0061154= 6.154x$10^{-3}$
@@ -250,13 +250,13 @@ Les machines utilisent une norme pour coder les nombres réels : La Norme IEEE 7
 
         La mantisse : 11110011
 
-        On obtient donc 010000101111100110...............0 (32 bits au total)
+        On obtient donc 0 10000101 111100110...............0 (32 bits au total)
 
         --------------------------------------------------------------------
 
         :fearful: Et donc l'autre sens ?????
 
-        Allons y avec 01000000101101   (on n'écrit pas les 0 finaux)
+        Allons y avec 0 10000001 01101   (on n'écrit pas les 0 finaux)
 
         Le signe est positif .
         L'exposant vaut 10000001 soit 129: +2 
@@ -275,7 +275,7 @@ Les machines utilisent une norme pour coder les nombres réels : La Norme IEEE 7
    
     1.  177: 10110001 et 0.5: 0.1  soit 10110001,1 ou avec la norme utilisée 1,01100011**$2^{7}$
 
-    L'exposant à coder est 134, on obteint : 1 1000111 011000110....0  
+    L'exposant à coder est 134, on obteint : 1 10000110 011000110....0  
    
     2. C'est un nombre négatif, l'exposant vaut 130 donc +3 
 
