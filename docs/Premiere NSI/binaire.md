@@ -179,8 +179,8 @@ De même pour obtenir un nombre en hexadécimal à partir d’un nombre en déci
 C'est le moment de bien écouter, c'est un peu plus dur :confused:
 
 !!! info " Ecriture d'un nombre flottant en base 2"
-    En base 10 , le nombre 61,154 est sous forme décomposée 6*101+1*100+1*10-1+5*10-2+4*10-3
-    De même, en base deux   1101,101 signifie 1*23+1*22+0*21+1*20+1*2-1+0*2-2+1*2-3=11,625
+    En base 10 , le nombre 61,154 est sous forme décomposée 6x$10^{1}$+1x$10^{0}$+1x$10^{-1}$+5x$10^{-2}$+4xx$10^{-3$
+    De même, en base deux   1101,101 signifie 1x$2^{3}$+1x$2^{2}$+0x$2^{1}$+1x$2^{0}$+1x$2^{-1}$+0x$2^{-2}$+1x$2^{-3}$=11,625
      Il est plus difficile de passer de la base 10 à la base 2.
     Exemple : Ecrire 61,154 en base 2.
     Nous n’avons aucun problème à écrire 61 en base deux : 111101 
@@ -201,7 +201,7 @@ C'est le moment de bien écouter, c'est un peu plus dur :confused:
 1) Trouver la représentation décimale de 1101101,011
 
 2) Trouver la représentation binaire  de 24,625
-Remarques importantes : En base 10, 61,154 = 6,154*$10^{1}$ et 0.0061154= 6.154*$10^{-3}$
+Remarques importantes : En base 10, 61,154 = 6,154x$10^{1}$ et 0.0061154= 6.154x$10^{-3}$
 
 ??? success "correction"
 
@@ -210,11 +210,11 @@ Remarques importantes : En base 10, 61,154 = 6,154*$10^{1}$ et 0.0061154= 6.154*
      2. 24 s'écrit 11000 et 0.625 = 0.5+0.125 soit $2^{-1}$ +$2^{-3}$ doonc 24,625 sécrit 1100,101
 
 
-Remarques importantes : En base 10, 61,154 = 6,154*$10^{1}$ et 0.0061154= 6.154*$10^{-3}$
+Remarques importantes : En base 10, 61,154 = 6,154x$10^{1}$ et 0.0061154= 6.154x$10^{-3}$
 
 Il en va de même en base 2 : 1101,1101= 1,1011101*$2^{3}$, l’exposant 3 correspondant à un décalage de 3 vers la droite de la virgule.
 
-De même 0.0011=1,1* $2^{-3}$, l’exposant -3 correspondant à un décalage de 3 vers la gauche.
+De même 0.0011=1,1x$2^{-3}$, l’exposant -3 correspondant à un décalage de 3 vers la gauche.
  :warning: Un nombre décimal "fini" ne l'est pas forcément en binaire.
 
 ###  Représentation en machine d’un nombre flottant
@@ -241,7 +241,7 @@ Les machines utilisent une norme pour coder les nombres réels : La Norme IEEE 7
 
         Il nous faut d'abord écrire ce nombre en binaire : 1111100,11, je vous laisse vérifier maintenant que vous êtes balaises. :muscle:
 
-        On écrit le nombre sous la forme adaptée :1,11110011*$2^{6}$
+        On écrit le nombre sous la forme adaptée :1,11110011x$2^{6}$
 
         bit 31 : C'est 0 puisque le nombre est positif
 
@@ -261,7 +261,7 @@ Les machines utilisent une norme pour coder les nombres réels : La Norme IEEE 7
         L'exposant vaut 10000001 soit 129: +2 
         La mantisse : 01101 
 
-        L'ecriture est donc **1**,01101 *$2^{2}$ :warning: NE PAS OUBLIER LE 1 AVANT LA VIRGULE
+        L'ecriture est donc **1**,01101 x$2^{2}$ :warning: NE PAS OUBLIER LE 1 AVANT LA VIRGULE
 
         Finalement on a 101,101 soit 5,625
 
@@ -278,6 +278,6 @@ Les machines utilisent une norme pour coder les nombres réels : La Norme IEEE 7
    
     2. C'est un nombre négatif, l'exposant vaut 130 donc +3 
 
-       On a donc 1,111101 *$2^{3}$ soit 1111,101 ou 15,625
+       On a donc 1,111101 x$2^{3}$ soit 1111,101 ou 15,625
 
     
