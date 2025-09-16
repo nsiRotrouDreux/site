@@ -201,7 +201,8 @@ C'est le moment de bien écouter, c'est un peu plus dur :confused:
 1) Trouver la représentation décimale de 1101101,011
 
 2) Trouver la représentation binaire  de 24,625
-Remarques importantes : En base 10, 61,154 = 6,154x$10^{1}$ et 0.0061154= 6.154x$10^{-3}$
+   
+
 
 ??? success "correction"
 
