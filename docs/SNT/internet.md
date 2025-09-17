@@ -86,33 +86,37 @@ Le modèle TCP/IP est composé de quatre couches :
 * La couche réseau qui s'assure de la liaison physique et donc du mode d'acheminement sur les machines : Ethernet, fibre ... 
 
 !!! info "Que fait le protocole TCP ?"
-
-      C'est lui qui régit les écahnges de données entre deux machines . Plus précisement:
       
+
+      C'est lui qui régit les écahnges de données en tre deux machines . Plus précisement
+
       * Il vérifie que le destinataire est prêt à recevoir les données
       
       * Il prépare les envoie de paquets en découpant les données à envoyer en 'paquet' de petite taille
-      
+
       * Il vérifie que chaque paquet est bien arrivé . Si ce n'est pas le cas , le TCP du destinataire  redemande les paquets manquants et il les assemble pour reformer le message initial
 
 !!! info "Quel est le röle du protocole IP ?"
 
-    Avant de voir le rôle du protocole IP, définissons ce que l'on appelle une adresse IP.
+       Avant de voir le rôle du protocole IP, définissons ce que l'on appelle une adresse IP.
 
-    !!! danger " Definition : Adresse IP"
+    !!! danger "Definition : Adresse IP"
 
-           Tout objet connecté sur internet possède une adresse IP, de type IPV4, unique . Celle ci est composée de quatre nombre entre 0 et 255 séparé par des points : Ex 192.168.21.1
-           Cette adresse IP est composée de deux parties : 
+       Tout objet connecté sur internet possède une adresse IP, de type IPV4, unique . Celle ci est composée de quatre nombre entre 0 et 255 séparé par des points : Ex 192.168.21.1
 
-           * Une partie qui identifie le réseau, c'est la partie à gauche.
+       Cette adresse IP est composée de deux parties : 
 
-           * Une partie qui identifie la machine sur le réseau , c'est la parie à droite.
+        * Une partie qui identifie le réseau, c'est la partie à gauche. 
 
-           * Il est toujours précisé combien de nombres identifient la partie réseau et donc machine.
+        * Une partie qui identifie la machine sur le réseau , c'est la parie à droite.
 
-           Remarque : Afin de pouvoir utiliser plus d'adresse IP, il existe des adresses IPV6, permettant d' accueillir beaucoup plus d'appreils connectés sur un réseau.
+        * Il est toujours précisé combien de nombres identifient la partie réseau et donc machine.
 
-      Le rôle du protocole IP est de s'assurer du bon acheminement des données à transmettre entre deux machines. Il s'appuie pour cela sur les adresses IP des machines , en s'aidant des tables de routage de chaque routeur traversé.
+        Remarque : Afin de pouvoir utiliser plus d'adresse IP, il existe des adresses IPV6, permettant d' accueillir 
+        beaucoup plus d'appreils connectés sur un réseau.
+
+      Le rôle du protocoel IP est de s'assurer du bon acheminement des données à transmettre entre deux machines. Il s'appuie pour cela sur les adresses IP des machines , en s'aidant des tables de routage de chaque routeur traversés.
       
                  
+     
  
