@@ -115,7 +115,7 @@ Le modèle TCP/IP est composé de quatre couches :
         Remarque : Afin de pouvoir utiliser plus d'adresse IP, il existe des adresses IPV6, permettant d' accueillir 
         beaucoup plus d'appreils connectés sur un réseau.
 
-      Le rôle du protocoel IP est de s'assurer du bon acheminement des données à transmettre entre deux machines. Il s'appuie pour cela sur les adresses IP des machines , en s'aidant des tables de routage de chaque routeur traversés.
+      Le rôle du protocole IP est de s'assurer du bon acheminement des données à transmettre entre deux machines. Il s'appuie pour cela sur les adresses IP des machines , en s'aidant des tables de routage de chaque routeur traversés.
       
                  
      
