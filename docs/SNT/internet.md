@@ -96,7 +96,7 @@ Le modèle TCP/IP est composé de quatre couches :
 
       * Il vérifie que chaque paquet est bien arrivé . Si ce n'est pas le cas , le TCP du destinataire  redemande les paquets manquants et il les assemble pour reformer le message initial
 
-!!! info "Quel est le röle du protocole IP ?"
+!!! info "Quel est le rôle du protocole IP ?"
 
        Avant de voir le rôle du protocole IP, définissons ce que l'on appelle une adresse IP.
 
@@ -117,6 +117,12 @@ Le modèle TCP/IP est composé de quatre couches :
 
       Le rôle du protocole IP est de s'assurer du bon acheminement des données à transmettre entre deux machines. Il s'appuie pour cela sur les adresses IP des machines , en s'aidant des tables de routage de chaque routeur traversés.
       
-                 
+!!! info "Et le protocole DNS dans tout ça ?"
+
+    Le protocole DNS (domain name system )  est un protocole qui permet de lier une adresse IP et une URL (www.lyceerotroudreux.com est l'URL qui permet de se rendre sur le site du lycée  )           
+
+    **Le DNS est l'annuaire d'internet**: Il transforme l'url demandée en l'adresse IP correpsondante . Pour le lycée , il s'agit de 62.210.16.61.Plus simple de retenir  l'url...
      
- 
+!!!success "La video ultime"
+
+      [Comment fonctionne la transmission de données sur internet](<https://www.youtube.com/watch?v=aX3z3JoVEdE>)
