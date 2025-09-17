@@ -53,7 +53,7 @@
 
 !!! info "Définitions" 
         
-       0. **Octet** :C'est l'unité de base utilisée en informatique pour quantifier les grandeurs . Chaque octets est composé de 8 symboles, appelés bits et prenant la valeur 0 ou 1.
+       0. **Octet** :C'est l'unité de base utilisée en informatique pour quantifier les grandeurs . Chaque octet est composé de 8 symboles, appelés bits et prenant la valeur 0 ou 1.
        1. **Paquet** : C'est un ensemble de données qui transite sur le réseau. Un paquet a une taille très limitée(1500 octets maximum)
        2. **Routage** : C'est le mécanisme de transport d'un paquet de données d'une source à un destinataire .
        3. **Routeur**  : C'est l'équipement informatique qui assure l'acheminement des données de l'émetteur au destinaitaire . 
@@ -66,6 +66,7 @@ _un réseau informatique_
     Un ensemble de données doit être transmis depuis une machine A vers un machine B. La machine A est connectée à un réseau et la porte d'entrée de cette machine sur le réseau est souvent, au moins dans les habitations , une box. Cette box est un routeur et est en liaison avec ses routeurs voisins. Chacun possède une **table de routage** qui lui permet d'envoyer le paquet au bon endroit.
 
     Remarque : Lorsqu'une route est coupée, les routeurs ont toujours une solution pour acheminer les paquets : Ils trouvent un autre chemin. On peut faire l'analogie avec les GPS 
+    
 ### Les protocoles de routage 
  Les transferts de données , les communications se font sur internet à l'aide d'une série de protocole selon un modèle appelé **TCP/IP**
 
@@ -84,4 +85,34 @@ Le modèle TCP/IP est composé de quatre couches :
 * La couche interne utilise le protocole IP qui permet le cheminement des données à travers les différents routeurs à l'aide de l'adresse IP
 * La couche réseau qui s'assure de la liaison physique et donc du mode d'acheminement sur les machines : Ethernet, fibre ... 
 
+!!! info "Que fait le protocole TCP ?"
+
+      C'est lui qui régit les écahnges de données entre deux machines . Plus précisement:
+      
+      * Il vérifie que le destinataire est prêt à recevoir les données
+      
+      * Il prépare les envoie de paquets en découpant les données à envoyer en 'paquet' de petite taille
+      
+      * Il vérifie que chaque paquet est bien arrivé . Si ce n'est pas le cas , le TCP du destinataire  redemande les paquets manquants et il les assemble pour reformer le message initial
+
+!!! info "Quel est le röle du protocole IP ?"
+
+    Avant de voir le rôle du protocole IP, définissons ce que l'on appelle une adresse IP.
+
+    !!! danger " Definition : Adresse IP"
+
+           Tout objet connecté sur internet possède une adresse IP, de type IPV4, unique . Celle ci est composée de quatre nombre entre 0 et 255 séparé par des points : Ex 192.168.21.1
+           Cette adresse IP est composée de deux parties : 
+
+           * Une partie qui identifie le réseau, c'est la partie à gauche.
+
+           * Une partie qui identifie la machine sur le réseau , c'est la parie à droite.
+
+           * Il est toujours précisé combien de nombres identifient la partie réseau et donc machine.
+
+           Remarque : Afin de pouvoir utiliser plus d'adresse IP, il existe des adresses IPV6, permettant d' accueillir beaucoup plus d'appreils connectés sur un réseau.
+
+      Le rôle du protocole IP est de s'assurer du bon acheminement des données à transmettre entre deux machines. Il s'appuie pour cela sur les adresses IP des machines , en s'aidant des tables de routage de chaque routeur traversé.
+      
+                 
  
