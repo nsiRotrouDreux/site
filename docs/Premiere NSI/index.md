@@ -4,9 +4,9 @@
 
 ## Chapitres
 
-* Représentation des nombres
+* [Représentation des nombres](binaire.md)
 * Encodage des caractères
-* Booléens
+* [Booléens](booleens.md)
 * Données en table
 * Intéraction Homme Machine
 * Architecture matérielle

@@ -45,6 +45,7 @@ nav:
     - Première NSI: 
         - Accueil: Premiere NSI/index.md
         - Binaire: Premiere NSI/binaire.md
+        - Booléens: Premiere NSI/booleens.md
     - SNT: 
         - Accueil: SNT/index.md
         - Internet: SNT/internet.md
