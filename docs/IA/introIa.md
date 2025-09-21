@@ -1,4 +1,5 @@
 # Introduction à l'Intelligence Artificielle
+<base target="_blank">
 
 
 ## Petit historique 
@@ -39,7 +40,16 @@ Bon, on va voir si tu es capable de situer correctement dans le temps quelques �
       [video4](https://nuage03.apps.education.fr/index.php/s/AHdJ5z5S27wzxmo?dir=/Seq_1%20videos%20Luc%20Julia&openfile=true)
     
     
-
 ## Intelligence artificielle ...ou pas ?
 
  On met un peu l'intelligence artificielle à toutes les sauces . Alors, on va voir si vous avez une bonne vision des domaines où elle intervient !
+
+## Un petit plus
+On a travaillé sur l'histoire de l'IA. Mais pourquoi ne pas lui demander ce qu'elle en pense ?
+
+!!! info Mistral
+    [L'histoire de l'IA par Mistral](https://chat.mistral.ai/chat/12d225cf-1b17-4ef9-9a2e-1c9a3a179bee)
+!!! info ChatGpt
+    [L'hsitoire de l'IA par ChatGpt](https://chatgpt.com/share/68d00778-d76c-800f-8768-947934c89c13)
+!!! info Perplexity 
+    [L'hsitoire de l'IA par Perplexity](https://www.perplexity.ai/search/je-peux-avoir-kl-histoire-de-l-AcdvvSg8TlWmAmWcjr0QsA?0=d)
