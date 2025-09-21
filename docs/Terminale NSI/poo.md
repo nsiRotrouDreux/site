@@ -162,3 +162,43 @@ On est bien avancé ...On a vu plus haut qu'avec un print, on peut afficher les 
      #On a une Fiat de couleur rouge 
     ```
 C'est quand même plus explicite :smirk:
+
+### Un peu HS , mais de  bonne pratique 
+
+Vous avez vu que l'on peut modifier l'argument d'un attribut, on l'a fait au dessus avec la couleur.
+Ce n'est pas une pratique usuelle, on préferera créer une méthode qui permettra de changer la valeur d'un attribut, comme on l'a fait avec la méthode peindre .
+La syntaxe de ces méthodes est assez uniforme et s'écrit sous la forme setXXX
+Une telle méthode permet de vérifier que l'argument affecté à l'attribut est bien valable .
+
+!!! Example "Un exemple"
+
+    ```py
+     class Voiture:
+        def __init__ (self, couleur, marque, année ):
+            self.c = couleur
+            self.m = marque
+            self.a = année 
+            
+        def  __str__(self):
+               return f" On a une {self.m} de couleur {self.c}"
+            
+        def setCouleur(self,nvle_couleur):
+            if self.m =='Ferrari' and nvle_couleur not in ('jaune', 'noire', 'rouge'):
+                print (f" immpossible , on n'est pas chez Fiat ici")
+           
+            self.c = nvle_couleur
+        def getCouleur(self):
+            return f" La couleur de la voiture est {self.c}"
+              
+            
+     v= Voiture('rouge', 'Ferrari', 2015)
+     print(v)
+
+     v.setCouleur('jaune') 
+     v.getCouleur()
+     # On a une Ferrari de couleur rouge # affichage après le print(v)
+
+     #' La couleur de la voiture est jaune'  (affichage après l'appel de getCouleur)
+    ```
+   
+Les méthodes qui permettent de modifier les valeurs des attributs sont appelées des **Setters**  ou mutateurs en français et celles qui permettent les affichages , des **Getters**, ou accesseurs en farnçais .
