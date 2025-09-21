@@ -70,6 +70,8 @@ Les autres paramètres sont facultatifs et désignent les attributs d’instance
 
         ```
     !!! tip "Remarques sur les attributs"
+        
+      
         Les valeurs des attributs sont modifiables .
         Par exemple, si l'on repeint la voiture il suffit d'écrire v.c='bleue' pour que l'argument associé à la couleur de l'objet soit bleue.
 
@@ -91,13 +93,72 @@ Les autres paramètres sont facultatifs et désignent les attributs d’instance
                 self.m = marque
                 self.a = année 
         
-        v= Voiture(2015)
+        v= Voiture()
 
         ```
         On a ici une Fiat rouge de 2015.
+        
+        
 
 
+### Les méthodes
 
+Les méthodes ne sont ni plus ni moins que des fonctions définies à l'intérieur d'une classe. Elles ne peuvent être utilisées qu'avec des objets de la classse dont elles dépendent.
 
-    
-       
+Vous connaissez toutes et tous la méthode append  qui s'appliquent aux objets de la classe Liste.
+
+Créeons une méthode qui "repeind" la voiture.
+
+```py
+     class Voiture:
+           def __init__ (self, couleur, marque, année ):
+               self.c = couleur
+               self.m = marque
+               self.a = année 
+            
+           def peindre (self, nouvelle_couleur):
+               self.c = nouvelle_couleur
+
+     v= Voiture('rouge', 'Fiat', 2015)
+     print (f" On a une {v.m} de couleur {v.c}")
+     #On a une Fiat de couleur rouge
+     v.peindre ('jaune')
+     print (f" On a une {v.m} de couleur {v.c}")
+     #On a une Fiat de couleur jaune
+```
+### Une méthode particulière
+
+On a déjà vu la méthode construteur (*def__init__*) on peut aussi la méthode __str__
+Cette méthode est utilisée pour permettre un affichage compréhensible des objets à l'aide la fonction print
+
+Regardons la différence d'affichage
+
+```py
+     class Voiture:
+           def __init__ (self, couleur, marque, année ):
+               self.c = couleur
+               self.m = marque
+               self.a = année 
+            
+     v= Voiture('rouge', 'Fiat', 2015)
+     print(v)
+     #<__main__.Voiture object at 0x1256ae0>
+```
+On est bien avancé ...On a vu plus haut qu'avec un print, on peut afficher les caractéristqiues de l'objet. Mais on peut créer une méthode qui automatise cet affichage 
+!!! tip "Le truc en plus"
+
+    ```py
+     class Voiture:
+           def __init__ (self, couleur, marque, année ):
+               self.c = couleur
+               self.m = marque
+               self.a = année 
+            
+           def  __str__(self):
+               return f" On a une {self.m} de couleur {self.c}"
+            
+     v= Voiture('rouge', 'Fiat', 2015)
+     print(v)
+     #On a une Fiat de couleur rouge 
+    ```
+C'est quand même plus explicite :smirk:

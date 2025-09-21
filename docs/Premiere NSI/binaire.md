@@ -275,7 +275,7 @@ Les machines utilisent une norme pour coder les nombres réels : La Norme IEEE 7
    
     1.  177: 10110001 et 0.5: 0.1  soit 10110001,1 ou avec la norme utilisée 1,01100011**$2^{7}$
 
-    L'exposant à coder est 134, on obteint : 1 10000110 011000110....0  
+    L'exposant à coder est 134, on obtient : 1 10000110 011000110....0  
    
     2. C'est un nombre négatif, l'exposant vaut 130 donc +3 
 
