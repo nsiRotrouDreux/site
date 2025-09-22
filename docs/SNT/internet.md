@@ -126,3 +126,85 @@ Le modèle TCP/IP est composé de quatre couches :
 !!!success "La video ultime"
 
       [Comment fonctionne la transmission de données sur internet](<https://www.youtube.com/watch?v=aX3z3JoVEdE>)
+
+### Activité autour des adresses IP
+
+!!! success "Un  peu plus loin avec les adresses ip"
+   
+
+    On a vu en cours qu’une adresse IPv4 était composées de 4 octets séparés par des points
+    Une partie de cette adresse sert à identifier le réseau, la partie de gauche et le reste sert à identifier les machines sur le réseau.
+
+    **Dans le reste de ce TD les trois octets les plus à gauche servent à identifier le réseau.**
+#### Exercice  1
+Le réseau est identifié par les trois premiers octets
+Quels sont les ordinateurs qui sont sur le réseau identifié par l’adresse ip 192.168.21.0 ?
+1.	192.168.21.87
+2.	192.168.21.258
+3.	192.168.0.21
+4.	192.168.21.255
+
+#### Exercice 2
+
+1. Donner une adresse IP possible pour un réseau. 
+2. Donner trois adresses possibles pour des machines sur ce réseau.
+
+
+#### Conversion en binaire 
+
+#### Le système binaire 
+Le système binaire s’appuie sur deux symboles, le 0 et le 1 , mais fonctionne exactement comme le système décimal . Dès qu’un rang est plein, on augmente de 1 celui d’après et on réinitialise à 0. Voici la construction de l’écriture des premiers entiers en binaire.
+
+  
+
+|décimal| binaire|       
+| :---: | :----: |
+| 0     | 0      |
+| 1  | 1    |
+ | 2  | 10        |
+| 3| 11      |
+| 4 | 100  |
+| 5 | 101        |
+| 6| 110      |
+| 7 | 111  |
+| 8 | 1000 |
+| 9| 1001     |
+| 10 | 1010  |
+
+#### Passage du système décimal au binaire et réciproquement
+   
+!!!info   "Du décimal au  binaire"
+     Il existe une méthode très simple pour passer du décimal au binaire. Cette méthode est fondée sur l’algorithme d’’Euclide et les restes successifs de la division euclidienne par 2 de l’entier que l’on veut convertir. On obtient une succession de reste (0 ou 1) . Il suffit de les écrire du dernier obtenu , qui doit être 1, au premier.
+     Exemple : Convertissons 104 en binaire 
+
+    |104| Reste de la division par 2|       
+    | :---: | :----: |
+     | 104=2*52|0|
+       |52=2*26|0|       
+       |26=2*13|0|
+       |13= 6*2+1|1|
+       |6=3*2|0|
+       |3=2*1+1|1|
+       |1=2*0+1|1|
+
+       L'écriture binaire de 104 s'obtient en écrivant les restes obtenus du dernier au permier soit ici **1101000**
+
+        > Un nombre pair se finira toujours par un 1 en binaire
+
+#### Le binaire sur un octet
+
+ *  L'unité de base en informatqiue est le bit , qui prend donc la valeur 0 ou 1
+ * Un octet est composé de 8 bits .
+ * Le plus petit nombre que l'on peut écrire sur un octet est 0 et le plus grand 255, qui correspond à 11111111
+ * La notation internationale pour l'octet est _o_. On parlera alors de _ko_ (kilooctet), _Mo_ (Megaoctet);_Go_(Gigaoctet)...
+
+  
+!!! success "L'astuce pour écrire rapidement un nombre en binaire"  
+  
+    L'astuce repose sur la connaissance des puissances de 2 , jusqu'à $2^{7}$
+
+     ![alt text](conversionBinaire.png)
+     
+     [source: siloged.fr](https://siloged.fr/cours/NSI/codage/Changementsdebases.html)
+
+     Il suffit donc de voir si les différentes puissances de 2 "rentre" dans le nombre que l'on veut écrire . Si c'est le cas , on soustrait la;puissance de 2 au nombre à decimal et on reccomence avec la puissance inférieure .
