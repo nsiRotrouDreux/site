@@ -139,9 +139,13 @@ Le modèle TCP/IP est composé de quatre couches :
 #### Exercice  1
 Le réseau est identifié par les trois premiers octets
 Quels sont les ordinateurs qui sont sur le réseau identifié par l’adresse ip 192.168.21.0 ?
+
 1.	192.168.21.87
+
 2.	192.168.21.258
+
 3.	192.168.0.21
+
 4.	192.168.21.255
 
 #### Exercice 2
@@ -208,3 +212,8 @@ Le système binaire s’appuie sur deux symboles, le 0 et le 1 , mais fonctionne
      [source: siloged.fr](https://siloged.fr/cours/NSI/codage/Changementsdebases.html)
 
      Il suffit donc de voir si les différentes puissances de 2 "rentre" dans le nombre que l'on veut écrire . Si c'est le cas , on soustrait la;puissance de 2 au nombre à decimal et on reccomence avec la puissance inférieure .
+
+#### Exercice 3
+
+Convertir en binaire les nombre suivants:
+  .19           . 25         .65             .108       .217    .254
