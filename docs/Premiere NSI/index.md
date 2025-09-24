@@ -11,7 +11,7 @@
 * Intéraction Homme Machine
 * Architecture matérielle
 * Réseaux 
-* Bases de l'algorithmique
+* [Bases de l'algorithmique](<algorithme et programmation>)
 * La programmation 
 * Algorithme gloutons
 * k plus proches voisins
