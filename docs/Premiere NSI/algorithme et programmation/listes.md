@@ -99,10 +99,32 @@ list(range(0,10)) renvoie la liste [0,1,2,3,4,5,6,7,8,9]
   len(l)
   3
   ```
+### Copie d'une liste 
 
+!!! danger "La copie d'une liste"
 
+    ```py
+    l=[1,2,3]
+    m = l
+    l[2] =-17
+    print(l)
+    [1,-17,3]
+    print(m)
+    [1,-17,3] 
+    ```
 
+    :fearful: m et l représente ici le même objet. Quand on modifie l'un, on modifie l'autre.
+    Deux possibilités pour pouvoir garder une copie initiale de la liste
 
+    ```py
+    l=[1,2,3]
+    m = l[:]   # ou m = list(l)
+    l[2] =-17
+    print(l)
+    [1,-17,3]
+    print(m)
+    [1,2,3] 
+    ```
 
 
 
