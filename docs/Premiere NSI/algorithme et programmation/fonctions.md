@@ -69,7 +69,7 @@ print(resultat)  # Affiche 25
 ## La documentation
  Il peut être utile de commenter une fonction en expliquant ce qu'elle fait, le type des paramètres, ce qu'elle renvoie... On parle de **docstring**
 
- ```py
+```py
  def carre(x):
     """ Cette fonction renvoie le carré d'un nombre passé en paramètre
     entrée : Un entier x
