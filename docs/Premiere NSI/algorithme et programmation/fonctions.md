@@ -66,7 +66,7 @@ resultat = carre(5)
 print(resultat)  # Affiche 25
 ```
 
-## Compléments
+## La documentation
  Il peut être utile de commenter une fonction en expliquant ce qu'elle fait, le type des paramètres, ce qu'elle renvoie... On parle de **docstring**
 
  ```py
@@ -80,7 +80,7 @@ print(resultat)  # Affiche 25
 ## Différence entre le print et le return
 Voici la différence entre `print` et `return` dans une fonction Python :
 
-- **`print`** affiche une information à l'écran (dans la console ou l'output pane de VS Code). Il sert à communiquer avec l'utilisateur ou à déboguer.
+- **`print`** affiche une information à l'écran (dans la console par exemple). Il sert à communiquer avec l'utilisateur ou à déboguer.
 - **`return`** renvoie une valeur à l'endroit où la fonction a été appelée. Cette valeur peut être utilisée dans d'autres calculs ou stockée dans une variable.
 
 Exemple :
