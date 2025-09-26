@@ -111,3 +111,4 @@ def carre (n):
     for i in range(1,n+1):
         print(i**2)
 carre(10)   # affiche les carrés des nombres entre 1 et 10
+```
