@@ -73,3 +73,41 @@ La boucle for est à utiliser quand on connaît le nombre d'itérations à faire
     'b'
 
     ```
+### Programmes du TD capytale
+1. Ecrire un programme qui affiche les nombres entiers de 10 à 19.
+```py
+for i in range(10,20):
+    print(i)
+```
+2.  Ecrire un programme qui affiche des lignes d'éoiles avec i étoiles sur la i eme ligne
+```py 
+for i in range(10):
+    print('*'*i)
+```
+3. Ecrire un programme qui affiche tous les nombres pairs de 2 à 250 inclus.
+4. Calculer la somme des 20 premiers entiers.
+5. Ecrire un programme qui affiche les carrés des nombres compris entre 10 et 20 inclus.
+6. Reprendre cet exercice en programmant une fonction **carre**  dont la description est donnée dans le docstring. le "pass" dans le programme , il vous faut l'enlever.
+```py
+#3
+for i in range (2,251,2):
+    print(i)
+#4
+S=0 
+for i in range (1,21):
+    s = S+i
+print(f" la somme des 20 premiers entiers est {S}")
+
+#5
+for i in range (10,21):
+    print (i**2)
+
+#6
+def carre (n):
+    """ Fonction qui affiche (print) les carrées des entiers jusqu'à n inclus
+        Entrée : La valeur de n
+        Sortie : Rien (pas de return).On affiche juste les carrés des nombres jusqu'à n.
+    """
+    for i in range(1,n+1):
+        print(i**2)
+carre(10)   # affiche les carrés des nombres entre 1 et 10
