@@ -106,7 +106,7 @@ list(range(0,10)) renvoie la liste [0,1,2,3,4,5,6,7,8,9]
     ```py
     l=[1,2,3]
     m = l
-    l[2] =-17
+    l[1] =-17
     print(l)
     [1,-17,3]
     print(m)
@@ -119,7 +119,7 @@ list(range(0,10)) renvoie la liste [0,1,2,3,4,5,6,7,8,9]
     ```py
     l=[1,2,3]
     m = l[:]   # ou m = list(l)
-    l[2] =-17
+    l[1] =-17
     print(l)
     [1,-17,3]
     print(m)
