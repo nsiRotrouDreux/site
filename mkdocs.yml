@@ -46,6 +46,7 @@ nav:
         - Accueil: Premiere NSI/index.md
         - Binaire: Premiere NSI/binaire.md
         - Booléens: Premiere NSI/booleens.md
+        - Chaines de caractères: Premiere NSI/chaines.md
         - algorithmique et programmation: 
              -Les Listes : Premiere NSI/algorithme et programmation/listes.md
              -Les Dictionnaires : Premiere NSI/algorithmique/dictionnaires.md
