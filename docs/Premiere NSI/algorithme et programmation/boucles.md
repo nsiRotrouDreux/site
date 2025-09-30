@@ -15,13 +15,13 @@ Par exemple , tant qu'il n'est pas midi ( on sait quand cela s'arrête ) ou tant
      * Il faut penser à initialiser la variable que l'on utilise dans la condition du while.
      * Il faut penser à modifier cette variable dans la boucle sinon , le programme ne s'arrêtera pas.
 
-     !!! example "Exemple"
+    !!! example "Exemple"
         ```py
         a= 0
         while a <100:  # on ne connait pas le moment de l'arrêt
             a= a*1.5
         print(a)
-         ```
+        ```
         ```py
         S = 0
         n = 0
@@ -29,6 +29,7 @@ Par exemple , tant qu'il n'est pas midi ( on sait quand cela s'arrête ) ou tant
            S= S+n
            n = n+1
         print(S)
+        ```
 ### For
 
 La boucle for est à utiliser quand on connaît le nombre d'itérations à faire.
