@@ -53,8 +53,7 @@ Alphago
 
 
 ### Le processus en détail
-
-!!! Le processus d'apprentissage en détail
+!!! note "Le processus d'apprentissage en détail"
 
      Explorer le jeu de Nim avec 8 bâtonnets par apprentissage
      Prenons l’exemple du jeu de Nim avec 8 bâtonnets posés sur la table. Deux joueurs (ici : la "machine" et un humain) jouent à tour de rôle. À chaque tour, on peut retirer 1 ou 2 bâtonnets. Celui qui prend le dernier bâtonnet gagne.
@@ -98,7 +97,7 @@ Alphago
       La machine joue et il reste 8 bâtonnets.
 
       Dans sa mémoire, elle a noté :
-      
+
       En enlevant 1 bâtonnet à 8, elle a gagné 2 fois / perdu 3 fois (score = -1)
 
       En enlevant 2 bâtonnets à 8, elle a gagné 5 fois / perdu 1 fois (score = +4)
