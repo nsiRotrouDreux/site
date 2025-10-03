@@ -16,20 +16,19 @@ L'agent n'est pas explicitement programmé pour accomplir une tâche, mais il d�
 
      Supposons un robot qui doit traverser une pièce remplie d’obstacles pour atteindre une sortie. À chaque mouvement, il peut recevoir :
 
-    +10 s’il se rapproche de la sortie
+     +10 s’il se rapproche de la sortie
 
-    -5 s’il heurte un obstacle
+     -5 s’il heurte un obstacle
 
-    Au début, le robot agit un peu au hasard. À force d’essais, il apprend à éviter les obstacles et à trouver le chemin le plus rapide vers la sortie, car les récompenses lui indiquent ce qui est bénéfique ou non. Et vive les tondeuses qui tondent toutes seules !
-
-
+     Au début, le robot agit un peu au hasard. À force d’essais, il apprend à éviter les obstacles et à trouver le chemin le plus rapide vers la sortie, car les récompenses lui indiquent ce qui est bénéfique ou non. Et vive les tondeuses qui tondent toutes seules !
 
 
-!!! example  ' Robot ramasseur d'objets'
 
-    Un robot doit ramasser des objets dans une pièce :
-    - +5 points pour chaque objet ramassé,
-    - -2 points s'il heurte un obstacle.
+!!! example  "Robot ramasseur d'objets"
+
+     Un robot doit ramasser des objets dans une pièce :
+     - +5 points pour chaque objet ramassé,
+     - -2 points s'il heurte un obstacle.
 
      Le robot apprend à naviguer efficacement pour maximiser les objets collectés.
 
