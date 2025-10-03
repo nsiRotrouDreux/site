@@ -35,14 +35,18 @@ Le robot apprend à naviguer efficacement pour maximiser les objets collectés.
 L'apprentissage par renforcement est utilisé dans de nombreux domaines comme les jeux vidéo, la robotique, et l'optimisation de processus.
 
 
-## Deep Blue et Alpha Go
+## Deep Blue et AlphaZero pour comprendre la différence de fonctionnement
+
+### Deep Blue
 
 Deep Blue est le nom de la machine qui fit sensation en 1997, battant le champion du monde G. Kasparov aux échecs. Pour autant, cette machine n'a pas été formée avec du renforcement mais préformatée par des humains .
 
 Son approche reposait principalement sur des techniques de calcul intensif : il évaluait des millions de positions à chaque coup grâce à des algorithmes de recherche (Minimax) et une vaste base de données de parties d’échecs humaines. En informatique  on parle de **Force Brute** .
 Deep Blue n’apprenait donc pas par essai-erreur en recevant des « récompenses » comme c’est le cas pour l’apprentissage par renforcement. 
 
-Alphago
+### AlphaRZero
+
+AlphaZero est une intelligence artificielle conçue par DeepMind (Google) qui s’est illustrée en maîtrisant à un niveau surhumain les jeux d’échecs, de go et de shogi. Contrairement aux anciennes nmachines qui jouaient aux échecs  (comme  Deep Blue), AlphaZero n’utilise pas une base de données de parties humaines : il ne connaît que les règles du jeu et apprend tout seul, « à partir de zéro" : On a ici un exemple d'utilisation de l'apprentissage par renforcement.
 
 
 ## Le jeu du Nim
@@ -56,6 +60,7 @@ Alphago
 !!! note "Le processus d'apprentissage en détail"
 
      Explorer le jeu de Nim avec 8 bâtonnets par apprentissage
+
      Prenons l’exemple du jeu de Nim avec 8 bâtonnets posés sur la table. Deux joueurs (ici : la "machine" et un humain) jouent à tour de rôle. À chaque tour, on peut retirer 1 ou 2 bâtonnets. Celui qui prend le dernier bâtonnet gagne.
 
      Imaginons que l’on veuille entraîner une machine avec apprentissage par renforcement à bien jouer.
@@ -71,7 +76,10 @@ Alphago
 
      3. Départ
 
-         La machine commence. Par exemple, il y a 8 bâtonnets :
+         La machine commence. 
+         
+         
+         Par exemple, il y a 8 bâtonnets :
 
          Si elle prend 1, il en reste 7.
 
@@ -82,9 +90,11 @@ Alphago
 
            -1 si la machine perd
 
-            0 autrement
+           0 autrement
+
 
     5. Processus d’apprentissage
+    
          Au début, la machine choisit ses coups au hasard.
 
          À chaque partie, elle mémorise quelle action, dans quel état, lui a valu une victoire (ou une défaite).
