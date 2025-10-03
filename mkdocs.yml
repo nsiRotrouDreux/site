@@ -59,6 +59,7 @@ nav:
     - IA: 
         - Accueil: IA/index.md
         - Historique et premiers problèmes : IA/introIa.md
+        - Apprentissage par renforcement : iaRenforcement.md
         
     - Liens : Liens/Liens.md
         
