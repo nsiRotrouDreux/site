@@ -44,7 +44,7 @@ Deep Blue est le nom de la machine qui fit sensation en 1997, battant le champio
 Son approche reposait principalement sur des techniques de calcul intensif : il évaluait des millions de positions à chaque coup grâce à des algorithmes de recherche (Minimax) et une vaste base de données de parties d’échecs humaines. En informatique  on parle de **Force Brute** .
 Deep Blue n’apprenait donc pas par essai-erreur en recevant des « récompenses » comme c’est le cas pour l’apprentissage par renforcement. 
 
-### AlphaRZero
+### AlphaZero
 
 AlphaZero est une intelligence artificielle conçue par DeepMind (Google) qui s’est illustrée en maîtrisant à un niveau surhumain les jeux d’échecs, de go et de shogi. Contrairement aux anciennes nmachines qui jouaient aux échecs  (comme  Deep Blue), AlphaZero n’utilise pas une base de données de parties humaines : il ne connaît que les règles du jeu et apprend tout seul, « à partir de zéro" : On a ici un exemple d'utilisation de l'apprentissage par renforcement.
 
@@ -94,7 +94,7 @@ AlphaZero est une intelligence artificielle conçue par DeepMind (Google) qui s�
 
 
     5. Processus d’apprentissage
-    
+
          Au début, la machine choisit ses coups au hasard.
 
          À chaque partie, elle mémorise quelle action, dans quel état, lui a valu une victoire (ou une défaite).
