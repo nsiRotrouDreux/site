@@ -27,6 +27,12 @@ print(texte[2])  # t
 for lettre in texte:
     print(lettre)
 ```
+Autre façon de parcourir une chaine de caractères, si jamais on avaoit besoin de l'indice :
+```python
+for i in range(len(mot)):
+    print(mot[i])
+```
+>remarque len(mot ) nous donne la longueur du mot, mais le dernier indice      >s'arrête un rang avant...puisque l'on commence de 0
 
 ### c. Longueur d'une chaîne
 
