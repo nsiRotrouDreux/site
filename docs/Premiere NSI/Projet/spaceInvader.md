@@ -19,8 +19,7 @@ Une fois le site chargé:
  * Vous enregistrez  le lien qui vous est donné pour pouvoir retroucver votre travail
  * Vous allez coder dans la fenêtre de gauche , sous _import pyxel_
  * Et vous codez le jeu de space invaders :grin:
-
- ### Le début du jeu: Fixer la fenêtre et dessiner un vaisseau.
+### Le début du jeu: Fixer la fenêtre et dessiner un vaisseau.
 
  Il y a dans notre progamme deux fonctions très importantes : draw et update ...la première dessine et la seconde met à jour .
 
@@ -61,6 +60,7 @@ def deplacement_vaisseau (x,y):
     sortie : les coordonnées du vaisseau après le déplacement
     """
     pass
+
 ```
 * Compléter la fonction update() ci dessous
 
