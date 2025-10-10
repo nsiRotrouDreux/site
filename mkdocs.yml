@@ -47,12 +47,13 @@ nav:
         - Binaire: Premiere NSI/binaire.md
         - Booléens: Premiere NSI/booleens.md
         - Chaines de caractères: Premiere NSI/chaines.md
-        - algorithmique et programmation: 
+        - Algorithmique et programmation: 
              -Les Listes : Premiere NSI/algorithme et programmation/listes.md
              -Les Dictionnaires : Premiere NSI/algorithmique/dictionnaires.md
              -Les Boucles : Premiere NSI/algorithme et programmation/boucles.md
              -Les Fonctions : Premiere NSI/algorithme et programmation/fonctions.md
              -Les Fichiers : Premiere NSI/algorithmique/fichiers.md
+        - Projets: Premiere NSI/projets.md
     - SNT: 
         - Accueil: SNT/index.md
         - Internet: SNT/internet.md
