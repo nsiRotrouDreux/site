@@ -45,7 +45,6 @@ pyxel.run(update, draw) # on met à jour , on dessine .
 ```
 
 A l'aide cet exemple :
-
 * Créer une fenêtre carrée de 128 de coté
 * Créer deux variables vaisseau_x et vaisseau_y et leur affecter à chacune une abscisse et une ordonnée (entre 0 et 128 :grin:)
 * Créer une fonction deplacement_vaisseau donc voici la documentation
@@ -62,7 +61,7 @@ def deplacement_vaisseau (x,y):
     pass
 
 ```
-* Compléter la fonction update() ci dessous
+ * Compléter la fonction update() ci dessous
 
 ```py
 
@@ -73,7 +72,7 @@ def update():
      global vaisseau_x, vaisseau_y
      pass
 ```
-* Compléter la fonction draw()
+ * Compléter la fonction draw()
 
 ```py
 
