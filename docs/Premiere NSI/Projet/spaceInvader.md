@@ -9,7 +9,7 @@ Un truc bien vintage , avec juste quelques couleurs, uet un module de python qui
 
 Voici [le lien](<https://github.com/kitao/pyxel/blob/main/docs/README.fr.md>)   pour une documentation complète du module pyxel
 
-On y retrouve par exemple les couleurs possibles ![alt text](couleur.png) et le numéro à utiliser pour les obtenirs
+On y retrouve par exemple les couleurs possibles ![alt text](couleur.png) et le numéro à utiliser pour les obtenir.
 
 On va travailler en ligne sur le site https://www.pyxelstudio.net 
 
@@ -28,7 +28,7 @@ Une fois le site chargé:
 
  Voici l'exemple 1 donné par la documentation: 
 
- ```py
+```py
 import pyxel
 
 pyxel.init(160, 120)      # on crée une fenêtre de 160 par 120
@@ -61,7 +61,6 @@ def deplacement_vaisseau (x,y):
     sortie : les coordonnées du vaisseau après le déplacement
     """
     pass
-
 ```
 * Compléter la fonction update() ci dessous
 
