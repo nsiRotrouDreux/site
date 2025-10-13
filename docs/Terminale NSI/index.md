@@ -10,6 +10,7 @@
 * [Algorithmique :Tri insertion ](<algorithmique/Les Tris/tri_insertion.md>)
 *  [Algorithmique :La dichotomie](<algorithmique/dichotomie.md>)
 * [Décidabilité](<decidabilite.md>)
+* [Structures de données](<sda/files.md>)
 * Récursivité
 * Routage
 * Sécurisation des communications

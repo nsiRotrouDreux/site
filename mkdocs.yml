@@ -37,6 +37,10 @@ nav:
              -Tri Insertion: Terminale NSI/algorithmique/Les Tris/tri_insertion.md
              -Algorithmes sur les arbres: Terminale NSI/algorithmique/algoArbre.md
              -Algorithmes sur les graphes: Terminale NSI/algorithmique/algoGraphe.md
+        - Structure de données : 
+             
+             -Les Files : Terminale NSI/sda/files.md
+             -Les Piles : Terminale NSI/sda/piles.md
         - Récursivité: Terminale NSI/recursivite.md
         - POO: Terminale NSI/poo.md
         - Recherche Textuelle: Terminale NSI/rechercheTextuelle.md
@@ -53,6 +57,7 @@ nav:
              -Les Boucles : Premiere NSI/algorithme et programmation/boucles.md
              -Les Fonctions : Premiere NSI/algorithme et programmation/fonctions.md
              -Les Fichiers : Premiere NSI/algorithmique/fichiers.md
+        
         - Projets: Premiere NSI/Projet/spaceInvader.md
     - SNT: 
         - Accueil: SNT/index.md
