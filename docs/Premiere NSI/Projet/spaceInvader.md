@@ -4,7 +4,7 @@ apqrn5
 
 Tu es prêt à coder ton premier jeu ? 
 
-Un truc bien vintage , avec juste quelques couleurs, uet un module de python qui va te faciliter la tache , Pyxel.
+Un truc bien vintage , avec juste quelques couleurs, et un module de python qui va te faciliter la tache , Pyxel.
 
 ### Débuter
 
@@ -46,8 +46,11 @@ pyxel.run(update, draw) # on met à jour , on dessine .
 ```
 
 A l'aide cet exemple :
+
 * Créer une fenêtre carrée de 128 de coté
+
 * Créer deux variables vaisseau_x et vaisseau_y et leur affecter à chacune une abscisse et une ordonnée (entre 0 et 128 :grin:)
+
 * Créer une fonction deplacement_vaisseau donc voici la documentation
 
 ```py
