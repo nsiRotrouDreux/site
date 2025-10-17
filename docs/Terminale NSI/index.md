@@ -16,7 +16,8 @@
 * Sécurisation des communications
 * Processus
 * SOC
-* Piles et files
+* [Piles](<sda/piles.md>)
+* [Files] (<sda/files.md>)
 * [Arbres](<algorithmique/algoArbre.md>)
 * [Graphes](<algorithmique/algoGraphe.md>)
 * Diviser pour regner
