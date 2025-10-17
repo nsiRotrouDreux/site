@@ -17,7 +17,7 @@
 * Processus
 * SOC
 * [Piles](<sda/piles.md>)
-* [Files] (<sda/files.md>)
+* [Files](<sda/files.md>)
 * [Arbres](<algorithmique/algoArbre.md>)
 * [Graphes](<algorithmique/algoGraphe.md>)
 * Diviser pour regner
