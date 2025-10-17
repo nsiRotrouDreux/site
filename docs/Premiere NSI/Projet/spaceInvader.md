@@ -39,7 +39,7 @@ def update():
 
 def draw():
     pyxel.cls(0)   # on efface
-    pyxel.rect(10, 10, 20, 20, 11) # on dessine un rectangle de coté 10 et 20, couleur 11 soit vert clair.
+    pyxel.rect(10, 10, 20, 20, 11) # on dessine un carré de coté 20 au point de coordonnées (10,10), couleur 11 soit vert clair.
 
 pyxel.run(update, draw) # on met à jour , on dessine .
 
@@ -85,6 +85,67 @@ def draw():
     """
     pyxel.cls(0)
     pyxel.rect(......)
+
+pyxel.run(update, draw)
+```
+### Correction partie 1
+
+```py
+# Pyxel Studio
+import pyxel
+
+# taille de la fenetre 128x128 pixels
+# ne pas modifier
+pyxel.init(128, 128)
+
+# position initiale du vaisseau
+# (origine des positions : coin haut gauche)
+vaisseau_x = 60
+vaisseau_y = 60
+
+
+def vaisseau_deplacement(x, y):
+    """déplacement avec les touches de directions.
+    Retourne le nouvelles coordonnées
+    """
+
+    if pyxel.btn(pyxel.KEY_RIGHT):
+        x = x + 1
+
+    # à continuer
+    return x, y
+
+
+
+# =========================================================
+# == UPDATE
+# =========================================================
+# =========================================================
+# == UPDATE
+# =========================================================
+def update():
+    """mise à jour des variables (30 fois par seconde)"""
+
+    global vaisseau_x, vaisseau_y, 
+
+    # mise à jour de la position du vaisseau
+    vaisseau_x, vaisseau_y = vaisseau_deplacement(vaisseau_x, vaisseau_y)
+
+    
+
+# =========================================================
+# == DRAW
+# =========================================================
+def draw():
+    """création des objets (30 fois par seconde)"""
+
+    # vide la fenetre
+    pyxel.cls(0)
+
+    # vaisseau (carre 8x8)
+    pyxel.rect(vaisseau_x, vaisseau_y, 8, 8, 11)
+
+    
 
 pyxel.run(update, draw)
 ```
