@@ -9,9 +9,10 @@ L'intelligence artificielle : Omniprésente, affolante, dérioutante, fascinante
 On va essayer ici non pas de répondre à toutes ces interrogations mais d'esquisser un début de compréhension de cette fameuse IA.
 
 ### Le programme 
- [Introduction : Petite histoire et premiers problèmes](introIa.md)
- [Apprentissage par renforcement : Le jeu de Nim](<iaRenforcement.md>)
- [Q learning](<QLearning.md>)
+ * [Introduction : Petite histoire et premiers problèmes](introIa.md)
+ * [Apprentissage par renforcement : Le jeu de Nim](<iaRenforcement.md>)
+ * [Q learning](<QLearning.md>)
+ 
      *  Apprentissage supervisé : le KNN
      *  I A générative : LLM et Token
      *  Classification d'images 

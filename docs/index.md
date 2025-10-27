@@ -10,7 +10,7 @@
 
     [SNT](SNT)
 
-    [I.A.](<Intelligence artificielle>)
+    [I.A.](<IA>)
 
     [Pourquoi faire de l'informatique ? ](<Pourquoi faire de l'informatique>)
 
