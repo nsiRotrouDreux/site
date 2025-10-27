@@ -11,7 +11,7 @@ On va essayer ici non pas de répondre à toutes ces interrogations mais d'esqui
 ### Le programme 
  [Introduction : Petite histoire et premiers problèmes](introIa.md)
  [Apprentissage par renforcement : Le jeu de Nim](<iaRenforcement.md>)
-     *  Q learning
+ [Q learning](<QLearning.md>)
      *  Apprentissage supervisé : le KNN
      *  I A générative : LLM et Token
      *  Classification d'images 
