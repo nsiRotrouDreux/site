@@ -84,7 +84,7 @@ with open('data.csv','w') as fichier_csv:
     writer.writerow(en_tete)                         # Les clés de notre dictionnaire deviennent les descripteurs de notre fichier csv.
     pass                                             # Dépend de la forme de la structure sur laquelle on travaille.
     
-
+```
 
 ## Exercices
 1. Écrire un programme qui compte le nombre de lignes non vides d'un fichier.
