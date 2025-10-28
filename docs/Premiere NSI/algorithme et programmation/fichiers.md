@@ -52,7 +52,7 @@ with open("sortie.txt", "a", encoding="utf-8") as f:
 
 Lire un fichier `*.csv` avec  le module `csv` :
 
-* On importe chaque enregistremets dans une liste
+* On importe chaque enregistrement dans une liste.
 ```python
 import csv
 with open("table.csv", newline="", encoding="utf-8") as f:
@@ -60,7 +60,7 @@ with open("table.csv", newline="", encoding="utf-8") as f:
     for row in lecteur:
         print(row)
 ```
-* On imoporte les données de chaque enregsitrement dans un dictionnaire : En clés les descripteurs, en valeur la donnée correpsondante.
+* On importe les données de chaque enregistrement dans un dictionnaire : En clés les descripteurs, en valeur la donnée correpsondante.
 
 
 
@@ -71,6 +71,19 @@ with open("table.csv", newline="", encoding="utf-8") as f:
     for row in lecteur:
         print(row)
 ```
+Exportation dans un fichier csv
+
+```python
+# Créer une liste pour les en-têtes
+en_tete = ["titre", "description"]
+
+# Créer un nouveau fichier pour écrire dans le fichier appelé « data.csv »
+with open('data.csv','w') as fichier_csv:
+    # Créer un objet writer (écriture) avec ce fichier
+    writer = csv.writer(fichier_csv, delimiter=';')
+    writer.writerow(en_tete)                         # Les clés de notre dictionnaire deviennent les descripteurs de notre fichier csv.
+    pass                                             # Dépend de la forme de la structure sur laquelle on travaille.
+    
 
 
 ## Exercices

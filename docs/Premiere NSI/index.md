@@ -11,8 +11,12 @@
 * Architecture matérielle
 * Réseaux 
 * Bases de programmation
+    * [Les boucles](<algorithme et programmation/boucles.md>)
     * [Les listes](<algorithme et programmation/listes.md>)
     * [Les fonctions](<algorithme et programmation/fonctions.md>)
+    * [Les dictionnaires](<algorithme et programmation/dictionnaires.md>)
+    * [Les fichiers](<algorithme et programmation/fichiers.md>)
+
 * [Chaines de caracères](<chaines.md>)
 * Algorithme gloutons
 * k plus proches voisins
