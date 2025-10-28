@@ -53,10 +53,10 @@ nav:
         - Chaines de caractères: Premiere NSI/chaines.md
         - Algorithmique et programmation: 
              -Les Listes : Premiere NSI/algorithme et programmation/listes.md
-             -Les Dictionnaires : Premiere NSI/algorithmique/dictionnaires.md
+             -Les Dictionnaires : Premiere NSI/algorithme et programmation/dictionnaires.md
              -Les Boucles : Premiere NSI/algorithme et programmation/boucles.md
              -Les Fonctions : Premiere NSI/algorithme et programmation/fonctions.md
-             -Les Fichiers : Premiere NSI/algorithmique/fichiers.md
+             -Les Fichiers : Premiere NSI/algorithme et programmation/fichiers.md
         
         - Projets: Premiere NSI/Projet/spaceInvader.md
     - SNT: 
