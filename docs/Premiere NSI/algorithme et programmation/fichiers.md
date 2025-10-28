@@ -15,12 +15,26 @@ with open("notes.txt", "r", encoding="utf-8") as f: #as f : on utilise un alias
     texte = f.read()
 print(texte)
 ```
+Autre méthode , sans with
+
+``` python
+f = open("notes.txt", "r", encoding="utf-8") 
+texte = f.read()
+print(texte)
+f.close()
+
+```
 
 Lire ligne par ligne :
 ```python
 with open("notes.txt", "r", encoding="utf-8") as f:
     for ligne in f:
         print(ligne.strip())
+```
+ou utiliser la méthode readline
+```python
+with open("notes.txt", "r", encoding="utf-8") as f:
+    f.readline()
 ```
 
 Écrire dans un fichier (écrase) :
@@ -37,6 +51,8 @@ with open("sortie.txt", "a", encoding="utf-8") as f:
 
 
 Lire un fichier `*.csv` avec  le module `csv` :
+
+* On importe chaque enregistremets dans une liste
 ```python
 import csv
 with open("table.csv", newline="", encoding="utf-8") as f:
@@ -44,9 +60,17 @@ with open("table.csv", newline="", encoding="utf-8") as f:
     for row in lecteur:
         print(row)
 ```
+* On imoporte les données de chaque enregsitrement dans un dictionnaire : En clés les descripteurs, en valeur la donnée correpsondante.
 
 
 
+```python
+import csv
+with open("table.csv", newline="", encoding="utf-8") as f:
+    lecteur = csv.DictReader(f, delimiter=';')
+    for row in lecteur:
+        print(row)
+```
 
 
 ## Exercices
