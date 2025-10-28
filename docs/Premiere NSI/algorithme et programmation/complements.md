@@ -41,7 +41,22 @@ len(l)      # 4  : nombre de lignes
 len (l[0])  # 3  : nombre de colonnes 
 ```
 
+!!! danger "Attention"
 
+```python
+liste = [[0]*10]*10     # On obient une liste de dix listes de dix  0
+liste[1][2]= -5         # L'élément de rang 2 de chaque sous liste prend la valeur -5 
+```
+En générant la liste , le second *10 ne fait que recopier la première sous liste . On a donc 10 fois la même sous liste et si on en modifie une , on les modifie toutes .
+
+Pour avoir le résultat voulu :
+```python
+l =[]
+for i in range (10):
+    l.append([0]*10)
+# ou
+l =[[0]*10 for i in range(10)]
+```
 
 
 ## Quand utiliser quoi ?
