@@ -106,7 +106,7 @@ Le format d'un fichier en informatique est indiqué par son extension, général
 
 
 
-## Activité 3
+## Activité 3 : Récupération d'un fichier "données ouvertes"
 
 Nous allons importer puis préparer nos données afin de les étudier .
 Pour cela , vous allez vous rendre sur le site [data.gouv](<https://www.data.gouv.fr/>) et accéder aux données relatives aux incendies en France en 2024.
@@ -121,7 +121,7 @@ Pour retrouver le bon fichier :
  SNT/StructuresDeDonnes/incendies2024.csv
 
 
-## Activité 3
+## Activité 4
  Votre fichier , sans être illisible , n'est pas très présentable. C'est un problème d'encodage des caractères.
  
   **Essayer de l'enregistrer au format csv, point virgule , utf8.**
@@ -134,6 +134,8 @@ Pour retrouver le bon fichier :
 
 
 ## Datacenters et coût écologique
+
+
 Les datacenters hébergent serveurs et stockent d'énormes quantités de données ; ils consomment beaucoup d'électricité pour le fonctionnement et le refroidissement. Cette consommation entraîne des émissions de CO2 selon la source d'énergie, et produit de l'équipement obsolète (e‑waste). Pour réduire l'impact : optimiser l'efficacité logicielle (moins de calculs inutiles), mutualiser les ressources (virtualisation), utiliser des centres conçus pour l'efficacité énergétique et privilégier les énergies renouvelables. Sensibiliser aux bonnes pratiques (supprimer les données inutiles, limiter les sauvegardes excessives) contribue aussi à diminuer l'empreinte écologique.
 
 
