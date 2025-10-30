@@ -21,3 +21,4 @@
 * Algorithme gloutons
 * k plus proches voisins
 * [Space Invaders](<Projet/spaceInvader.md>)
+* [Le slicing](<slicing.md>)

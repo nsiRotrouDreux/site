@@ -34,7 +34,7 @@ Un enregsitrement est donc caractérisé par un certains nombres de données .
 
 Une donnée peut prendre des valeurs de différentes natures : Cela peut être un nombre (entier ou réel), une chaine de caractères, une format spécial de type date ...
 
-#### Exercice :
+#### Exercice 
 Dans le tableau ci dessus, citez les descripteurs  et expliquez ce que représente chaque objet de la collection.
 
 
@@ -138,4 +138,7 @@ Pour retrouver le bon fichier :
 
 Les datacenters hébergent serveurs et stockent d'énormes quantités de données ; ils consomment beaucoup d'électricité pour le fonctionnement et le refroidissement. Cette consommation entraîne des émissions de CO2 selon la source d'énergie, et produit de l'équipement obsolète (e‑waste). Pour réduire l'impact : optimiser l'efficacité logicielle (moins de calculs inutiles), mutualiser les ressources (virtualisation), utiliser des centres conçus pour l'efficacité énergétique et privilégier les énergies renouvelables. Sensibiliser aux bonnes pratiques (supprimer les données inutiles, limiter les sauvegardes excessives) contribue aussi à diminuer l'empreinte écologique.
 
+#### Un cas d'école : L'Arizona 
+ [Arizona et Data center ](<https://www.franceinfo.fr/internet/intelligence-artificielle/data-centers-quand-la-soif-du-numerique-asseche-les-sols-americains_7577110.html>)
 
+ 
