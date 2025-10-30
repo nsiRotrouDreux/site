@@ -13,6 +13,7 @@ ici, nous allons nous intéresser à des exemples simples , en utilisant notamme
 
 !!! success  " A retenir"
     Les structures de données permettent de :
+
     * Stocker
     * Structurer
     * Exploiter 
@@ -39,8 +40,18 @@ Dans le tableau ci dessus, citez les descripteurs  et expliquez ce que représen
 
 ## Format 
 
+Le format d'un fichier en informatique est indiqué par son extension, généralement quelques lettres après un point dans le nom du fichier . C'est cette extension qui indique "à l'ordinateur ' comment lire et utiliser le fichier 
 
-!!! info "Il existe plusieurs formats pour les structures de données "
+!!! example "Exemples"
+    ![extension](extension.png)
+     On a ici deux format texte : docx et csv
+     Des formats binaires xlsx, pdf: Les formats binaires ne sont pas lisibles par des logiciels de  traitements de texte .
+
+     > Remarque : Pour afficher les extensions dans windows, ouvrir l'explorateur de fichiers, puis affichage et cochez extension des noms de fichiers.
+
+
+
+!!! info "Format et données structurées "
     . Les formats xsl, xlsx, ods utilisés par des logiciels comme Excel , Libre Office ou Open Office.
 
     . Le format csv qui présente l'avantage de pouvoir être utilisé directement par des langages informatiques comme Python. Ce format est exploitable par des tableurs classiques.
@@ -49,26 +60,56 @@ Dans le tableau ci dessus, citez les descripteurs  et expliquez ce que représen
 
     . Le format sql , utilisé pour les bases de données qui regroupent des collections géantes .
 
+!!! success "A retenir"
+      *  Une extension de fichier permet de savoir comment l'ouvrir et l'utliser
+      *  Le format csv , qui est un format texte, présente la spécificité d'être facilement exploittable par différents types de programmes : Tableur, lecteur de fichier texte , programme informatique .
+      *  Les formats binaires ne sont pas lisibles par des logiciels de traitements de texte
+
+    
 ## Activité 1
 
-Par groupe de cinq, vous devez choisir quatre descripteurs qui permettent de faire deviner, sans citer son nom:
+:arrow_forward:  Par groupe de cinq, vous devez choisir quatre descripteurs qui permettent de faire deviner, sans citer son nom:
 
 1. Un pays
 2. Une voiture
 3. Un individu
 4. Un aliment
 
- 
 !!! success "A retenir"
 
-     Les descriptifs sont fondamentaux pour bien classer et identifier les données .
+     Les descripteurs sont fondamentaux pour bien classer et identifier les données .
      On retrouve cette exigence lorsqu'on écrit un prompt avec l'IA 
 
 
 ## Activité 2
+:arrow_forward: Vous allez créer un fichier *.csv à l'aide du logiciel Excel
+
+!!! tip "Consignes"
+    
+    * Le thême est libre 
+    * Votre table contient au moins dix objets et quatre descripteurs 
+    * Le fichier est enregistré au format csv, délimiteur : point virgule.
+    * Le fichier est enregistré dans le dossier de votre espace personnel :
+       SNT/StructuresDeDonnes
+
+:arrow_forward: Réalisation d'une feuille de calcul pour calucler la moyenne d'un élève :
+
+!!! tip "Consignes"
+    
+    * 3 descripteurs : Matière, Note, Coefiicient.
+    * 8 enregsitrements : Maths, PC, EPS, Français, HG, SNT, SVT, Anglais 
+    * Les coefficients respectifs sont : 5, 2, 2, 6, 2, 1, 1, 3
+    * Vous mettez une note entre 0 et 20
+    * Vous devez calculer votre moyenne en tenant compte des coefficients
+    * Le fichier est enregistré dans le dossier de votre espace personnel :
+       SNT/StructuresDeDonnes
+
+
+
+## Activité 3
 
 Nous allons importer puis préparer nos données afin de les étudier .
-Pour cela , vous aller vous rendre sur le site [data.gouv](<https://www.data.gouv.fr/>) et accéder aux données relatives aux incendies en France en 2024.
+Pour cela , vous allez vous rendre sur le site [data.gouv](<https://www.data.gouv.fr/>) et accéder aux données relatives aux incendies en France en 2024.
 Pour retrouver le bon fichier :
 
 
