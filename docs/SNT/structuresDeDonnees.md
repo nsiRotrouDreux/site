@@ -92,7 +92,7 @@ Le format d'un fichier en informatique est indiqué par son extension, général
     * Le fichier est enregistré dans le dossier de votre espace personnel :
        SNT/StructuresDeDonnes
 
-:arrow_forward: Réalisation d'une feuille de calcul pour calucler la moyenne d'un élève :
+:arrow_forward: Réalisation d'une feuille de calcul pour calculer la moyenne d'un élève :
 
 !!! tip "Consignes"
     
