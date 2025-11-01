@@ -87,7 +87,7 @@
 
     *Après plusieurs échanges de messages, les routeurs d’une zone doivent avoir une vision complète de leur zone.
 
-    *L’ensemble de cette première phase est appelé **diffusion ou inondation (flooding)**
+    * L’ensemble de cette première phase est appelé **diffusion ou inondation (flooding)**
 
     *Une fois que chaque routeur connaît la topologie de sa zone, il lui faut établir la meilleure route pour accéder à n’importe quel autre routeur de sa zone. Ceci fait, il inscrit ces données dans sa table de routage.
 
