@@ -31,19 +31,25 @@
 - Famille : protocole vectoriel de distance.
 - Versions : RIP v1 (classful), RIP v2 (classless, supports mask, auth).
 - Métrique : nombre de sauts (hop count). Maximum = 15 (16 = inaccessible).
-- Fonctionnement :
-            Chaque routeur transmet à ses voisins les informations dont il dispose :
-            Les adresses de ses propres voisins, les informations qu’il a déjà reçues. Le routeur indique aussi la
-            distance (en nombre de sauts) qui le sépare d’une machine donnée, soit combien de routeurs il faut
-            traverser pour atteindre une machine en passant par lui. Le protocole RIP permet donc aux routeurs
-            d’échanger un couple (appelé vecteur de distance ) adresse distance
+
+!!! info "Principes"
+
+        Chaque routeur transmet à ses voisins les informations dont il dispose :
+        Les adresses de ses propres voisins, les informations qu’il a déjà 
+        reçues. Le routeur indique aussi la distance (en nombre de sauts) qui
+         le sépare d’une machine donnée, soit combien de routeurs il faut
+        traverser pour atteindre une machine en passant par lui. Le protocole RIP permet donc aux routeurs  
+        d’échanger un couple (appelé vecteur de distance ) adresse distance
 
 
-            Après une phase d’initialisation :
+         Après une phase d’initialisation :
                 • Un routeur peut découvrir une route vers un sous réseau inconnu : Il l’inscrit dans sa table.
+        
                 • Un routeur découvre une route plus courte vers un sous réseau déjà connu. Il efface
                   l’ancienne route et ajoute la route plus courte.
+        
                 • Un routeur reçoit une nouvelle route plus longue qu’un déjà connue. Il l’ignore
+             
                 • Un routeur reçoit une route existante mais plus longue vers un routeur passant par le même
                   voisin. Cela induit un problème sur le réseau. La table est mise à jour.
    
@@ -56,7 +62,7 @@
 ## OSPF (Open Shortest Path First)
 - Famille : protocoleà état des liens.
 - Métrique : coût (généralement fonction inverse de la bande passante).         
-    Formule généralement utilisée : $ \frac{10^8}{débit} $ 
+    Formule généralement utilisée : $\frac{10^8}{débit}$ 
 
   | débit | coût |
   | -- | -- |
@@ -68,16 +74,25 @@
 !!! info "Principes "
     
     • Les routeurs sont répartis en zone et ne peuvent communiquer qu’avec les routeurs de leur zone, sauf un routeur de la zone , appelé ABR (Area Border Router).
+
     • Toutes les zones sont reliées à une zone centrale, la Zone 0, appelé BACKBONE.
+
     • La communication entre les différentes zones et la Backbone se fait par l’intermédiaire du routeur ABR.
+
     * Chaque routeur choisit une adresse unique parmi les adresses de son sous réseau.
+
     * Les routeurs envoient des messages à toutes les interfaces réseaux de leur zone. Ces messages contiennent l’identificateur du routeur, le numéro de zone et la liste des voisins qu’il connait déjà.
+
     * Quand un routeur reçoit ce type de message, il vérifie s’il connaît déjà l’expéditeur. Dans ce cas, il secontente d’envoyer un accusé de réception, validant le bon fonctionnement de la liaison. Dans le cas contraire, il transmet les informations dont il dispose. On parle de messages LSA ( Link state advertisement)
+
     *Après plusieurs échanges de messages, les routeurs d’une zone doivent avoir une vision complète de leur zone.
+
     *L’ensemble de cette première phase est appelé **diffusion ou inondation (flooding)**
+
     *Une fois que chaque routeur connaît la topologie de sa zone, il lui faut établir la meilleure route pour accéder à n’importe quel autre routeur de sa zone. Ceci fait, il inscrit ces données dans sa table de routage.
+
     *Le routeur ABR aura une autre spécificité. L’algorithme lui permettra de communiquer à toutes les autres zones, via la Backbone, les meilleures routes pour atteindre chaque sous réseau d’une zone
-    
+
 - Avantages :
     - Convergence rapide, meilleure échelle, routage optimisé selon coût, pas de limite artificielle de sauts.
 - Complexité :
