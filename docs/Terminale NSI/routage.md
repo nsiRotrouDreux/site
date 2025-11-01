@@ -54,12 +54,30 @@
 ---
 
 ## OSPF (Open Shortest Path First)
-- Famille : protocole link‑state (état des liens).
-- Métrique : coût (généralement fonction inverse de la bande passante).
-- Principes :
-    - Chaque routeur découvre topologie locale puis inonde des LSAs (Link State Advertisements).
-    - Chaque routeur calcule l’arbre des plus courts chemins (algorithme de Dijkstra) pour obtenir la table.
-    - Supporte hiérarchie avec areas (Area 0 = backbone) pour scalabilité.
+- Famille : protocoleà état des liens.
+- Métrique : coût (généralement fonction inverse de la bande passante).         
+    Formule généralement utilisée : $ \frac{10^8}{débit} $ 
+
+  | débit | coût |
+  | -- | -- |
+  |10 mbits| 10|
+  |100 mbits| 1|
+  |1 Gbits| 0.1|
+  | 10 Gbits| 0.01|
+
+!!! info "Principes "
+    
+    • Les routeurs sont répartis en zone et ne peuvent communiquer qu’avec les routeurs de leur zone, sauf un routeur de la zone , appelé ABR (Area Border Router).
+    • Toutes les zones sont reliées à une zone centrale, la Zone 0, appelé BACKBONE.
+    • La communication entre les différentes zones et la Backbone se fait par l’intermédiaire du routeur ABR.
+    * Chaque routeur choisit une adresse unique parmi les adresses de son sous réseau.
+    * Les routeurs envoient des messages à toutes les interfaces réseaux de leur zone. Ces messages contiennent l’identificateur du routeur, le numéro de zone et la liste des voisins qu’il connait déjà.
+    * Quand un routeur reçoit ce type de message, il vérifie s’il connaît déjà l’expéditeur. Dans ce cas, il secontente d’envoyer un accusé de réception, validant le bon fonctionnement de la liaison. Dans le cas contraire, il transmet les informations dont il dispose. On parle de messages LSA ( Link state advertisement)
+    *Après plusieurs échanges de messages, les routeurs d’une zone doivent avoir une vision complète de leur zone.
+    *L’ensemble de cette première phase est appelé **diffusion ou inondation (flooding)**
+    *Une fois que chaque routeur connaît la topologie de sa zone, il lui faut établir la meilleure route pour accéder à n’importe quel autre routeur de sa zone. Ceci fait, il inscrit ces données dans sa table de routage.
+    *Le routeur ABR aura une autre spécificité. L’algorithme lui permettra de communiquer à toutes les autres zones, via la Backbone, les meilleures routes pour atteindre chaque sous réseau d’une zone
+    
 - Avantages :
     - Convergence rapide, meilleure échelle, routage optimisé selon coût, pas de limite artificielle de sauts.
 - Complexité :
