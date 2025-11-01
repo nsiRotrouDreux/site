@@ -13,9 +13,9 @@
 - Masque = 32 bits indiquant la partie réseau : ex. /24 équivaut à 255.255.255.0.
 - Notation CIDR : adresse/longueur (ex. 192.168.1.0/24).
 - Calculs utiles :
-    - Nombre d’adresses dans un préfixe /N = 2^(32−N).
-    - Nombre d’hôtes utilisables ≈ 2^(32−N) − 2 (réseau + broadcast) 
-- Exemple : /26 → 2^(32−26)=64 adresses, 62 hôtes utilisables, masque 255.255.255.192.
+    - Nombre d’adresses dans un préfixe /N = ${2}^{32−N}$.
+    - Nombre d’hôtes utilisables ≈ ${2}^{32−N} − 2$ (réseau + broadcast) 
+- Exemple : /26 → ${2}^{32−26}$=64 adresses, 62 hôtes utilisables, masque 255.255.255.192.
 
 ---
 
