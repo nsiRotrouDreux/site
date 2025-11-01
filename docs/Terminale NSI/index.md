@@ -12,7 +12,7 @@
 * [Décidabilité](<decidabilite.md>)
 * [Structures de données](<sda/files.md>)
 * Récursivité
-* Routage
+* [Routage](<routage.md>)
 * Sécurisation des communications
 * Processus
 * SOC
