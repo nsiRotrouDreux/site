@@ -30,7 +30,7 @@ Nous avons présenté dans un premier temps, les types de base (nombre entier ou
     print(l[2])
     #7
     ```
-
+---
 ### Génération d'une liste 
 
 Il existe plussieurs façons de générer une liste 
@@ -46,6 +46,30 @@ Il existe plussieurs façons de générer une liste
 :rainbow: On peut aussi utiliser la fonction range :
 list(range(0,10)) renvoie la liste [0,1,2,3,4,5,6,7,8,9]
 
+---
+### Parcours d'une liste 
+
+Il existe deux méthodes principales pour parcourir une liste :
+
+  * A l'aide d'un indice :
+
+    ```python
+     l= [1,25,3]
+     for i in range (3):  # i prend successivement les valeurs 0,1,2
+         print(l[i])      # 1 puis 25 puis 3
+
+    ```
+  
+  * Directement :
+
+   ```python
+     l= [1,25,3]
+     for elt in l:  # i prend successivement les valeurs 0,1,2
+         print(elt)      # 1 puis 25 puis 3
+
+   ```
+
+---
 ### Opération sur les listes
 
 !!! info "Les méthodes"
@@ -99,6 +123,30 @@ list(range(0,10)) renvoie la liste [0,1,2,3,4,5,6,7,8,9]
   len(l)
   3
   ```
+
+  ---
+### Tri d'une liste
+
+Avant de vois des algorithmes spécifiques au tri des listes , il existe deux méthodes qui réalisent le travail
+
+  * La méthode sort
+
+  ```py
+  # Trier une liste en la modifiant
+  l= [10,2,3]
+  l.sort()    # l=[2,3,10]
+ 
+  ```
+
+  * La fonction sorted :
+
+```py
+  # Trier une liste en la modifiant
+  l= [10,2,3]
+  ltrie = sorted(l)    # ltrie=[2,3,10] et l =[10,2,3]
+ 
+  ```
+  
 ### Copie d'une liste 
 
 !!! danger "La copie d'une liste"

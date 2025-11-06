@@ -15,7 +15,7 @@
 - Calculs utiles :
     - Nombre d’adresses dans un préfixe /N = ${2}^{32−N}$.
     - Nombre d’hôtes utilisables ≈ ${2}^{32−N} − 2$ (réseau + broadcast) 
-- Exemple : /26 → ${2}^{32−26}$=64 adresses, 62 hôtes utilisables, masque 255.255.255.192.
+- Exemple : /26 → ${2}^{32−26}$ = 64 adresses, 62 hôtes utilisables, masque 255.255.255.192.
 
 ---
 
@@ -60,7 +60,7 @@
 ---
 
 ## OSPF (Open Shortest Path First)
-- Famille : protocoleà état des liens.
+- Famille : protocole à état des liens.
 - Métrique : coût (généralement fonction inverse de la bande passante).         
     Formule généralement utilisée : $\frac{10^8}{débit}$ 
 
@@ -141,12 +141,3 @@ Découpage en /26 (chaque /26 = 64 adresses, 62 hôtes utilisables) — on obtie
     - Réseau : 192.168.1.192  
     - Broadcast : 192.168.1.255  
     - Hôtes utilisables : 192.168.1.193 — 192.168.1.254
-
-Schéma ASCII simple :
-
-[192.168.1.0/24]
-|— 192.168.1.0/26
-|— 192.168.1.64/26
-|— 192.168.1.128/26
-|— 192.168.1.192/26
-
