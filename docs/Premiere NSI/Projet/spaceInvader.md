@@ -138,3 +138,32 @@ def draw():
 
 pyxel.run(update, draw)
 ```
+### Gérer les tirs 
+
+Cahier des charges :
+   
+* Créer une liste vide  tir dans le programme principal : Cette liste contiendra des listes de deux valeurs, les coordonnées du tir.
+
+!!! tip "Créer les tirs"
+    * Créer une fonction tirs_creation ayant trois paramètres :
+                
+        * La liste des tirs 
+        * Les coordonnées du vaisseau (que l'on peut noter x et y) 
+
+    Un tir se déclenche **si** l'on appuie (btnr) sur la touche espace (SPACE) : On ajoute alors dans la liste un élement dont les valeurs sont x+4 et y -4 (x, y sont le scoordonnées du centre du vaisseau , on fait partir le tir du centre "haut" du vaisseau)
+
+
+!!! tip " Déplacer les tirs "
+    
+    *  Créer une fonction tir_dep ayant pour parametrte la liste des tir:
+     
+    On parcourt la liste et:
+        * On diminue l'ordonnée de 1
+         * Quand l'ordonnée est <-4, on supprime le tir de la liste (avec remove )
+
+!!! tip "Modification de update et draw"
+
+    * **update**  : On met à jour la liste des tirs en affectant à cette liste la fonction tir_creation puis tirs_dep
+
+
+    * **draw** : il faut dessiner les tirs : On va faire un rectangle en utilisant les coordonnées x et y de chaque tir puis une hauteur de 4 et une largeur de un , vous choisissez la couleur . Vous parcourez la liste et créer un tel dessin pour chaque élément.
