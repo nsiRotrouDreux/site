@@ -179,7 +179,7 @@ De même pour obtenir un nombre en hexadécimal à partir d’un nombre en déci
 C'est le moment de bien écouter, c'est un peu plus dur :confused:
 
 !!! info " Ecriture d'un nombre flottant en base 2"
-    En base 10 , le nombre 61,154 est sous forme décomposée 6x$10^{1}$+1x$10^{0}$+1x$10^{-1}$+5x$10^{-2}$+4xx$10^{-3$
+    En base 10 , le nombre 61,154 est sous forme décomposée 6x$10^{1}$+1x$10^{0}$+1x$10^{-1}$+5x$10^{-2}$+4x$10^{-3}$
     De même, en base deux   1101,101 signifie 1x$2^{3}$+1x$2^{2}$+0x$2^{1}$+1x$2^{0}$+1x$2^{-1}$+0x$2^{-2}$+1x$2^{-3}$=11,625
      Il est plus difficile de passer de la base 10 à la base 2.
     Exemple : Ecrire 61,154 en base 2.

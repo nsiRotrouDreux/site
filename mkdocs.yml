@@ -57,7 +57,9 @@ nav:
              -Les Boucles : Premiere NSI/algorithme et programmation/boucles.md
              -Les Fonctions : Premiere NSI/algorithme et programmation/fonctions.md
              -Les Fichiers : Premiere NSI/algorithme et programmation/fichiers.md
-             -Les tuples/Liste de listes : Premiere NSI/algorithme et programmation/complements.md      
+             -Les tuples/Liste de listes : Premiere NSI/algorithme et programmation/complements.md  
+        - Architecture matérielle :
+              -Adressage : Premiere NSI/Routage/adressage.md
         - Projets: Premiere NSI/Projet/spaceInvader.md
         - Slicing: Premiere NSI/slicing.md
     - SNT: 

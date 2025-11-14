@@ -9,6 +9,8 @@
 * Données en table
 * Intéraction Homme Machine
 * Architecture matérielle
+* Routage
+    * [adressage](<Routage/adressage.md>)
 * Réseaux 
 * Bases de programmation
     * [Les boucles](<algorithme et programmation/boucles.md>)
@@ -16,6 +18,7 @@
     * [Les fonctions](<algorithme et programmation/fonctions.md>)
     * [Les dictionnaires](<algorithme et programmation/dictionnaires.md>)
     * [Les fichiers](<algorithme et programmation/fichiers.md>)
+
 
 * [Chaines de caracères](<chaines.md>)
 * Algorithme gloutons
