@@ -31,12 +31,17 @@ with open("notes.txt", "r", encoding="utf-8") as f:
     for ligne in f:
         print(ligne.strip())
 ```
-ou utiliser la méthode readline
+ou utiliser la méthode readline , qui ne lit qu'une ligne 
 ```python
 with open("notes.txt", "r", encoding="utf-8") as f:
     f.readline()
 ```
 
+lLire et stocker chaue ligne dans une liste ; méthode readlines()
+```python
+with open("notes.txt", "r", encoding="utf-8") as f:
+    f.readlines()
+```
 Écrire dans un fichier (écrase) :
 ```python
 with open("sortie.txt", "w", encoding="utf-8") as f:
