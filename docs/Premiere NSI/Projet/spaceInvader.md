@@ -170,3 +170,28 @@ Cahier des charges :
     * **draw** : il faut dessiner les tirs : On va faire un rectangle en utilisant les coordonnées x et y de chaque tir puis une hauteur de 4 et une largeur de un , vous choisissez la couleur . Vous parcourez la liste et créer un tel dessin pour chaque élément.
 
 
+### Correction partie 2
+```py 
+ # A venir
+ ```
+
+ ### Gestion des vaisseaus ennemis
+
+ Il y a beaucoup de similitude avec la création des tirs. Ici aussi on va obtenir une liste de listes de deux élements : l'abscisse et l'ordonnée du mechant.
+
+   * Créer une liste vide : mechants_liste et la déclarer en variable globale dans update
+   * Créer deux fonctions : mechant_creation et mechant_deplacement
+   * Les mettre à jour dans update (idem que celles des tirs)
+   * Dessiner les ennemis dans draw 
+
+   !!! tips " Aide pour les fonctions"
+
+    La fonction creation ne peut pas s'inventer:
+     ``` py
+      if (pyxel.frame_count % 30 == 0):  # 1 toutes les secondes
+        mechants_liste.append([random.randint(..,..), ...]) # en haut et aleatoire pour l'abscisse
+      return mechants_liste
+     ```
+
+      La fonction déplacement : Le mechant se déplace vers le bas et doit être retirer si son ordonnée dépasse 128...Vous savez coder :strong:
+

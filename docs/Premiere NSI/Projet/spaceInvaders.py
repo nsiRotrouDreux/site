@@ -17,7 +17,7 @@ vies = 4
 tirs_liste = []
 
 # initialisation des ennemis
-ennemis_liste = []
+mecahnts_liste = []
 
 # initialisation des explosions
 explosions_liste = []
@@ -63,16 +63,16 @@ def tirs_deplacement(tirs_liste):
     return tirs_liste
 
 
-def ennemis_creation(ennemis_liste):
+def mechant_creation(mechants_liste):
     """création aléatoire des ennemis"""
 
     # un ennemi par seconde
     if (pyxel.frame_count % 30 == 0):
-        ennemis_liste.append([random.randint(0, 120), 0])
+        mechant_liste.append([random.randint(0, 120), 0])
     return ennemis_liste
 
 
-def ennemis_deplacement(ennemis_liste):
+def mechant_deplacement(ennemis_liste):
     """déplacement des ennemis vers le haut et suppression s'ils sortent du cadre"""
 
     for ennemi in ennemis_liste:
