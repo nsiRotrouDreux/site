@@ -12,7 +12,7 @@
 
     [I.A.](<IA>)
 
-    [Pourquoi faire de l'informatique ? ](<Pourquoi faire de l'informatique>)
+    [Pourquoi faire de l'informatique ? ](<Pourquoi faire de l'informatique/specialite_nsi_etudes_complet_v2.md>)
 
     [Liens](Liens)
 
