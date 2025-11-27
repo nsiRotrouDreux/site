@@ -171,9 +171,10 @@ Cahier des charges :
 
 
 ### Correction partie 2
-!!! success " Les tirs "
+??? success " Les tirs "
 
     ```py 
+    
     import pyxel
 
     # taille de la fenetre 128x128 pixels
@@ -262,7 +263,8 @@ Cahier des charges :
             pyxel.rect(tir[0], tir[1], 1, 4, 10)
 
     pyxel.run(update, draw)
-```
+
+    ```
 !!!
 
 ### Gestion des vaisseaux ennemis
