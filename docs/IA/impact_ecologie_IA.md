@@ -124,7 +124,11 @@ Le PUE  indique quel est le ratio entre l'énergie totale consommée par l'ensem
 
 [Pour aller plus loin]( https://generationia.flint.media/p/comment-calculer-vraiment-impact-carbone-de-chatgpt-climat-ia-eau)
 
-## 🧭 8. Conclusion
+A  retenir le nom de **Sasha Luccioni** qui a réalisé une des études les plus sérieuses quand à la consommation des IA.
+Elle a notamment comparé différents usages de l'IA et leur coût énergetique avec la charge d'un smartphone.
+Générer 1000 textes avec un petit modèle correspond à 16% de la charge d'un smartphone mais générer une image de haute qualité peut couter l'équivalent d'une charge de smartphones. Et pour l'impact écologique , tout dépend comment est produit l'énergie...[Une belle carte pour voir qui est responable et qui ne l'est pas ](https://app.electricitymaps.com/map/live/fifteen_minutes?utm_source=generationia.flint.media&utm_medium=referral&utm_campaign=comment-calculer-vraiment-l-impact-carbone-de-chatgpt)
+
+## 🧭 9. Conclusion
 
 Les data centers et l’IA ont une empreinte écologique croissante, tant en énergie qu’en eau.  
 Même si des progrès technologiques existent, la **demande en calcul IA augmente plus vite que l’efficacité**, ce qui risque de renforcer :
