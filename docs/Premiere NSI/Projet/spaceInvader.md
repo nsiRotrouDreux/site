@@ -88,57 +88,58 @@ def draw():
 
 pyxel.run(update, draw)
 ```
-### Correction partie 1
+#### Correction partie 1
+??? success "Le vaisseau "
 
-```py
-# Pyxel Studio
-import pyxel
+    ```py
+    # Pyxel Studio
+    import pyxel
 
-# taille de la fenetre 128x128 pixels
-# ne pas modifier
-pyxel.init(128, 128)
+    # taille de la fenetre 128x128 pixels
+    # ne pas modifier
+    pyxel.init(128, 128)
 
-# position initiale du vaisseau
-# (origine des positions : coin haut gauche)
-vaisseau_x = 60
-vaisseau_y = 60
-
-
-def vaisseau_deplacement(x, y):
-    """déplacement avec les touches de directions.
-    Retourne le nouvelles coordonnées
-    """
-
-    if pyxel.btn(pyxel.KEY_RIGHT):
-        x = x + 1
-    if ....
-    # à continuer
-    return x, y
+    # position initiale du vaisseau
+    # (origine des positions : coin haut gauche)
+    vaisseau_x = 60
+    vaisseau_y = 60
 
 
+    def vaisseau_deplacement(x, y):
+        """déplacement avec les touches de directions.
+        Retourne le nouvelles coordonnées
+        """
 
-def update():
-    """mise à jour des variables (30 fois par seconde)"""
+        if pyxel.btn(pyxel.KEY_RIGHT):
+            x = x + 1
+        if ....
+        # à continuer
+        return x, y
 
-    global vaisseau_x, vaisseau_y
 
-    # mise à jour de la position du vaisseau
-    vaisseau_x, vaisseau_y = vaisseau_deplacement(vaisseau_x, vaisseau_y)
 
-def draw():
-    """création des objets (30 fois par seconde)"""
+    def update():
+        """mise à jour des variables (30 fois par seconde)"""
 
-    # vide la fenetre
-    pyxel.cls(0)
+        global vaisseau_x, vaisseau_y
 
-    # vaisseau (carre 8x8)
-    pyxel.rect(vaisseau_x, vaisseau_y, 8, 8, 11)
+        # mise à jour de la position du vaisseau
+        vaisseau_x, vaisseau_y = vaisseau_deplacement(vaisseau_x, vaisseau_y)
 
-    
+    def draw():
+        """création des objets (30 fois par seconde)"""
 
-pyxel.run(update, draw)
-```
+        # vide la fenetre
+        pyxel.cls(0)
 
+        # vaisseau (carre 8x8)
+        pyxel.rect(vaisseau_x, vaisseau_y, 8, 8, 11)
+
+        
+
+    pyxel.run(update, draw)
+    ```
+-----------------------------------
 ### Gérer les tirs 
 
 Cahier des charges :
@@ -170,7 +171,7 @@ Cahier des charges :
     * **draw** : il faut dessiner les tirs : On va faire un rectangle en utilisant les coordonnées x et y de chaque tir puis une hauteur de 4 et une largeur de un , vous choisissez la couleur . Vous parcourez la liste et créer un tel dessin pour chaque élément.
 
 
-### Correction partie 2
+#### Correction partie 2
 ??? success " Les tirs "
 
     ```py 
@@ -265,9 +266,9 @@ Cahier des charges :
     pyxel.run(update, draw)
 
     ```
-!!!
+--------------------------------------------
 
-### Gestion des vaisseaux ennemis
+### Gérer  des vaisseaux ennemis
 
 Il y a beaucoup de similitude avec la création des tirs. Ici aussi on va obtenir une liste de listes de deux élements : l'abscisse et l'ordonnée du mechant.
 
@@ -290,3 +291,6 @@ Il y a beaucoup de similitude avec la création des tirs. Ici aussi on va obteni
 
      La fonction déplacement : Le mechant se déplace vers le bas et doit être retirer si son ordonnée dépasse 128...Vous savez coder :muscle:
 
+#### Correction partie 3 
+
+??? success "Il pleut des méchants"

@@ -16,4 +16,4 @@ On va essayer ici non pas de répondre à toutes ces interrogations mais d'esqui
      *  Apprentissage supervisé : le KNN
      *  I A générative : LLM et Token
      *  Classification d'images 
-     *  Ethique, écologie...
+ *  [IA et Ecologie](<impact_ecologie_IA.md>)
