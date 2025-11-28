@@ -187,6 +187,8 @@ Leur impact environnemental croît rapidement, notamment du fait de :
 Le PUE  indique quel est le ratio entre l'énergie totale consommée par l'ensemble du centre d'exploitation (avec entre autres, le refroidissement, le traitement d'air, les UPS (onduleurs)...) et la partie qui est effectivement consommée par les systèmes informatiques que ce centre exploite (serveurs, stockage, réseau)  _source wikipedia_
 ![alt text](image.png)
 
+[Pour aller plus loin]( https://generationia.flint.media/p/comment-calculer-vraiment-impact-carbone-de-chatgpt-climat-ia-eau)
+
 ## 🧭 8. Conclusion
 
 Les data centers et l’IA ont une empreinte écologique croissante, tant en énergie qu’en eau.  
