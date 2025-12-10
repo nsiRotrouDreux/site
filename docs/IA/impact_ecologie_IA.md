@@ -1,6 +1,6 @@
 # Impact Écologique de l'Intelligence Artificielle
 
-
+<base target="_blank">
 ### (Énergie, Eau, Émissions & Tendances 2000–2024)
 
 ---
