@@ -66,6 +66,7 @@ nav:
         - Accueil: SNT/index.md
         - Internet: SNT/internet.md
         - Structures de données: SNT/structuresDeDonnees.md
+        - Reseaux sociaux: SNT/reseaux.md
     - IA: 
         - Accueil: IA/index.md
         - Historique et premiers problèmes : IA/introIa.md
