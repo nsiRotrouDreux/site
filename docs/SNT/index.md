@@ -5,5 +5,5 @@
 ## Chapitres
 
 * [Internet](<internet.md>)
-. [Structure de données](<structuresDeDonnees.md>)
-. [Réseaux sociaux](<reseaux.md>)
+* [Structure de données](<structuresDeDonnees.md>)
+* [Réseaux sociaux](<reseaux.md>)
