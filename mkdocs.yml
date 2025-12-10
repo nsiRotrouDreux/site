@@ -64,6 +64,7 @@ nav:
         - Slicing: Premiere NSI/slicing.md
     - SNT: 
         - Accueil: SNT/index.md
+            =- Algorithmique: SNT/algorithmique.md
         - Internet: SNT/internet.md
         - Structures de données: SNT/structuresDeDonnees.md
         - Reseaux sociaux: SNT/reseaux.md
