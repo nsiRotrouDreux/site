@@ -291,6 +291,155 @@ Il y a beaucoup de similitude avec la création des tirs. Ici aussi on va obteni
 
      La fonction déplacement : Le mechant se déplace vers le bas et doit être retirer si son ordonnée dépasse 128...Vous savez coder :muscle:
 
-#### Correction partie 3 
+#### Correction partie 4
 
-??? success "Il pleut des méchants"
+```py
+
+# Pyxel Studio
+import pyxel, random
+
+# taille de la fenetre 128x128 pixels
+# ne pas modifier
+pyxel.init(128, 128)
+
+# position initiale du vaisseau
+# (origine des positions : coin haut gauche)
+vaisseau_x = 60
+vaisseau_y = 60
+# initialisation des tirs
+tirs_liste = []
+# initialisation des vaisseaux ennemis
+mechants_liste =[]
+
+
+# vies
+vies = 5
+
+def vaisseau_deplacement(x, y):
+    """déplacement avec les touches de directions.
+    Retourne le nouvelles coordonnées
+    """
+
+    if pyxel.btn(pyxel.KEY_RIGHT):
+        x = x + 1
+    if pyxel.btn(pyxel.KEY_LEFT):
+
+        x = x - 1
+    if pyxel.btn(pyxel.KEY_DOWN):
+            y = y + 1
+    if pyxel.btn(pyxel.KEY_UP):
+            y = y - 1
+    return x, y
+
+def tirs_creation(x, y, tirs_liste):
+    """création d'un tir avec la barre d'espace"""
+
+    # btnr pour eviter les tirs multiples
+    if pyxel.btnr(pyxel.KEY_SPACE):
+        tirs_liste.append([x+4, y-4])
+    return tirs_liste
+
+
+def tirs_deplacement(tirs_liste):
+    """déplacement des tirs vers le haut et suppression s'ils sortent du cadre"""
+
+    for tir in tirs_liste:
+        tir[1] -= 1
+        if  tir[1]<-8:
+            tirs_liste.remove(tir)
+    return tirs_liste
+# Gestion ds vaisseax ennemis
+def mechant_creation(mechants_liste):
+    """création d'un vaisseau ennemis en haut de l'écran"""
+
+    # btnr pour eviter les tirs multiples
+    if (pyxel.frame_count % 30 == 0):
+        mechants_liste.append([random.randint(0, 120), 0])
+    return mechants_liste
+
+
+def mechant_deplacement(mechants_liste):
+    """déplacement des mechants vers le bas et suppression s'ils sortent du cadre en bas"""
+
+    for mechant in mechants_liste:
+       mechant [1] +=1
+       if mechant[1]>128:
+           mechants_liste.remove(mechant)
+    return mechants_liste
+    
+def vaisseau_suppression(vies):
+    """disparition du vaisseau et d'un ennemi si contact"""
+
+    for ennemi in mechants_liste:
+        if ennemi[0] <= vaisseau_x+7 and ennemi[1] <= vaisseau_y+7 and ennemi[0]+7 >= vaisseau_x and ennemi[1]+7 >= vaisseau_y:
+            mechants_liste.remove(ennemi)
+            vies = vies-1
+    return vies
+
+
+def ennemis_suppression():
+    """disparition d'un ennemi et d'un tir si contact"""
+
+    for ennemi in mechants_liste:
+        for tir in tirs_liste:
+            if ennemi[0] <= tir[0]+1 and ennemi[0]+7 >= tir[0] and ennemi[1]+7 >= tir[1]:
+                mechants_liste.remove(ennemi)
+                tirs_liste.remove(tir)
+
+# =========================================================
+# == UPDATE
+# =========================================================
+# =========================================================
+# == UPDATE
+# =========================================================
+def update():
+    """mise à jour des variables (30 fois par seconde)"""
+
+    global vaisseau_x, vaisseau_y, tirs_liste, mechants_liste, vies
+
+    # mise à jour de la position du vaisseau
+    vaisseau_x, vaisseau_y = vaisseau_deplacement(vaisseau_x, vaisseau_y)
+
+    # creation des tirs en fonction de la position du vaisseau
+    tirs_liste = tirs_creation(vaisseau_x, vaisseau_y, tirs_liste)
+
+    # mise a jour des positions des tirs
+    tirs_liste = tirs_deplacement(tirs_liste)
+    # creation des ennemis
+    mechants_liste= mechant_creation(mechants_liste)
+
+    # mise a jour des positions des ennemis
+    mechants_liste = mechant_deplacement(mechants_liste)
+ # suppression des ennemis et tirs si contact
+    ennemis_suppression()
+
+    # suppression du vaisseau et ennemi si contact
+    vies = vaisseau_suppression(vies)
+# =========================================================
+# == DRAW
+# =========================================================
+def draw():
+    """création des objets (30 fois par seconde)"""
+
+    # vide la fenetre
+    pyxel.cls(0)
+ # si le vaisseau possede des vies le jeu continue
+    if vies > 0:    
+        # vaisseau (carre 8x8)
+        pyxel.rect(vaisseau_x, vaisseau_y, 8, 8, 10)
+
+        # tirs
+        for tir in tirs_liste:
+            pyxel.rect(tir[0], tir[1], 1, 4, 8)
+       
+    
+        for mechant in mechants_liste :
+             pyxel.rect(mechant[0], mechant[1], 6, 6, 2)
+
+     # sinon: GAME OVER
+    else:
+
+        pyxel.text(50,64, 'GAME OVER', 7)
+pyxel.run(update, draw)
+
+```
