@@ -40,15 +40,15 @@
 ## 2.L'algorithme
 
 ```py 
-def triInsretion( tab):  # tab=[5,4,1,0,3]
+def triInsertion( tab):  # tab=[5,4,1,0,3]
     n = len(tab)
     for i in range(1,n):
         insertion = tab[i]
-        j = i 
-        while j >= 0 and insertion <tab[j-1]: 
-            tab[j] = tab[j-1]
+        j = i-1 
+        while j >= 0 and insertion <tab[j]: 
+            tab[j+1] = tab[j]
             j= j-1
-        tab[j]  = insertion
+        tab[j+1]  = insertion
         
         print(f" A la fin de la {i+1} ème étape , la liste est  {tab}")
     return tab
