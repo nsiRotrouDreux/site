@@ -44,7 +44,7 @@ def triInsertion( tab):  # tab=[5,4,1,0,3]
     n = len(tab)
     for i in range(1,n):
         insertion = tab[i]
-        j = i-1 
+        j = i-1
         while j >= 0 and insertion <tab[j]: 
             tab[j+1] = tab[j]
             j= j-1
