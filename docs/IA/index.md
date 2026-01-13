@@ -17,3 +17,4 @@ On va essayer ici non pas de répondre à toutes ces interrogations mais d'esqui
      *  I A générative : LLM et Token
      *  Classification d'images 
  *  [IA et Ecologie](<impact_ecologie_IA.md>)
+ * [Apprentissage supervisé](<Apprentissage_supervisé.md>)
