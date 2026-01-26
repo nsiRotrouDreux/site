@@ -61,6 +61,7 @@ nav:
              -Les tuples/Liste de listes : Premiere NSI/algorithme et programmation/complements.md  
         - Architecture matérielle :
               -Adressage : Premiere NSI/Routage/adressage.md
+              -lignes de commande : Premiere NSI/Architecture matérielle/lignes_de_commande.md
               -Système d'exploitaion : Premiere NSI/Architecture matérielle/systemes_d_exploitation.md
         - Projets: Premiere NSI/Projet/spaceInvader.md
         - Slicing: Premiere NSI/slicing.md
