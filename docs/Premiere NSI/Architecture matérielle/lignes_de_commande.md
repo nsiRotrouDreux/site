@@ -1,7 +1,7 @@
-# Cours d’introduction à Linux
-## Principales lignes de commande et notions de chemins
 
----
+# Principales lignes de commande et notions de chemins sous LINUX
+
+
 
 ## 1. Le terminal et le shell
 
@@ -31,7 +31,7 @@ ls -l /home/user
 
 Rappels utiles :
 - `.` = répertoire courant
-- `..` = répertoire parent
+- `..` = répertoire parent   : on remonte dans l'arborescence 
 - `~` = répertoire personnel (home)
 
 ---
@@ -43,11 +43,15 @@ Rappels utiles :
 | `touch` | Crée un fichier vide | `touch notes.txt` |
 | `mkdir` | Crée un dossier | `mkdir projets` |
 | `rm` | Supprime un fichier | `rm notes.txt` |
-| `rmdir` | Supprime un dossier vide | `rmdir anciens` |
 | `rm -r` | Supprime un dossier et son contenu | `rm -r test` |
 | `cp` | Copie un fichier ou dossier | `cp a.txt b.txt` , `cp -r dir1 dir2` |
 | `mv` | Déplace ou renomme | `mv old.txt new.txt` |
-
+ 
+:boom: Exemple de copie d'un fichier 
+```text
+cp  documents/cours.txt  images
+```
+On copie, depuis le répertoire alice le fichier cours.txt qui est dans le réperoire document et on place la copie dans le répertoire images.
 ---
 
 ### 2.3 Consultation de fichiers
@@ -67,8 +71,6 @@ Rappels utiles :
 |----------|-------------|---------|
 | `man` | Manuel d’une commande | `man ls` |
 | `--help` | Aide rapide | `ls --help` |
-| `whoami` | Utilisateur courant | `whoami` |
-| `uname -a` | Infos système | `uname -a` |
 
 ---
 
@@ -137,10 +139,25 @@ documents/cours.txt
 (`..` signifie « remonter d’un niveau »)
 
 ---
+!!! tip A RETENIR
+    - Un **chemin absolu** commence par `/` et est indépendant du répertoire courant.
+    - Un **chemin relatif** dépend de l’endroit où l’on se trouve. 
 
 ## 5. Exemples pratiques
+```
+/
+├── home
+│   └── alice
+│       ├── documents
+│       │   └── cours.txt
+│       └── images
+│           └── photo.jpg
+└── etc
+    └── config.conf
+```
 
 ### Exemple 1 : se déplacer et lister
+
 
 ```bash
 cd /home/alice
@@ -161,24 +178,11 @@ cat documents/cours.txt
 cat /home/alice/documents/cours.txt
 ```
 
----
+### Exemple 4 : déplacer un fichier avec un chemin relatif 
+Le répertoire courant est images
+```bash
+mv photo.jpg   ../documents/
+```
 
-## 6. Exercices simples
 
-1. Crée un dossier `test` dans ton répertoire personnel.
-2. Crée un fichier `hello.txt` dans ce dossier.
-3. Affiche son contenu avec un chemin relatif, puis avec un chemin absolu.
-4. Supprime le dossier `test`.
-
----
-
-## 7. Résumé
-
-- Les commandes de base permettent de naviguer, créer, supprimer et consulter des fichiers.
-- Un **chemin absolu** commence par `/` et est indépendant du répertoire courant.
-- Un **chemin relatif** dépend de l’endroit où l’on se trouve.
-
----
-
-Fin du cours.
 
