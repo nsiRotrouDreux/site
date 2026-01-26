@@ -9,7 +9,7 @@
 * Données en table
 * Intéraction Homme Machine
 * Architecture matérielle
-    * [Système d'exploitation](<Architecture matérielle/systemes_d_exploitation.md>)
+    * [Systèmes d'exploitation](<Architecture matérielle/systemes_d_exploitation.md>)
 * Routage
     * [adressage](<Routage/adressage.md>)
 * Réseaux 
