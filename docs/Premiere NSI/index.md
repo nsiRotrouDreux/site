@@ -10,7 +10,7 @@
 * Intéraction Homme Machine
 * Architecture matérielle
     * [Systèmes d'exploitation](<Architecture matérielle/systemes_d_exploitation.md>)
-    * [Lignes de commancdes](<Architecture matérielle/lignes_de_commande.md>)
+    * [Lignes de commandes](<Architecture matérielle/lignes_de_commande.md>)
 * Routage
     * [adressage](<Routage/adressage.md>)
 * Réseaux 
