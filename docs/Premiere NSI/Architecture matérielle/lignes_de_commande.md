@@ -41,7 +41,8 @@ Rappels utiles :
 | Commande | Description | Exemple |
 |----------|-------------|---------|
 | `touch` | Crée un fichier vide | `touch notes.txt` |
-| `mkdir` | Crée un dossier | `mkdir projets` |
+| `echo` | Crée un fichier text avec le texte ici "banana" | `echo "banana" > notes.txt` |
+|`mkdir` | Crée un dossier | `mkdir projets` |
 | `rm` | Supprime un fichier | `rm notes.txt` |
 | `rm -r` | Supprime un dossier et son contenu | `rm -r test` |
 | `cp` | Copie un fichier ou dossier | `cp a.txt b.txt` , `cp -r dir1 dir2` |
