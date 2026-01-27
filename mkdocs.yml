@@ -71,7 +71,7 @@ nav:
         - Structures de données: SNT/structuresDeDonnees.md
         - Reseaux sociaux: SNT/reseaux.md
         - Html/Css: 
-             -Html : SN/html.md
+             -Html : SNT/html.md
              -Css : SNT/css.md
     - IA: 
         - Accueil: IA/index.md
