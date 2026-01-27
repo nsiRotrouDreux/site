@@ -70,9 +70,8 @@ nav:
         - Internet: SNT/internet.md
         - Structures de données: SNT/structuresDeDonnees.md
         - Reseaux sociaux: SNT/reseaux.md
-        - Html/Css: 
-             -Html : SNT/html.md
-             -Css : SNT/css.md
+        - Html : SNT/html.md
+        - Css : SNT/css.md
     - IA: 
         - Accueil: IA/index.md
         - Historique et premiers problèmes : IA/introIa.md
