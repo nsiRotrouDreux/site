@@ -52,7 +52,7 @@ Rappels utiles :
 ```text
 cp  documents/cours.txt  images
 ```
-On copie, depuis le répertoire alice le fichier cours.txt qui est dans le répertoire document et on place la copie dans le répertoire images.
+On copie,  depuis le répertoire alice le fichier cours.txt qui est dans le répertoire document et on place la copie dans le répertoire images.
 ---
 
 ### 2.3 Consultation de fichiers
