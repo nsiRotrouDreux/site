@@ -142,7 +142,7 @@ documents/cours.txt
 ---
 !!! tip A RETENIR
     - Un **chemin absolu** commence par `/` et est indépendant du répertoire courant.
-    - Un **chemin relatif** dépend de l’endroit où l’on se trouve. Il ne commence pas par /
+    - Un **chemin relatif** dépend de l’endroit où l’on se trouve. 
 
 ## 5. Exemples pratiques
 ```
