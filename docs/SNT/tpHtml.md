@@ -57,7 +57,8 @@ Par exmemple une couleur de fond.
 Pour modifier la couleur de fond du contenu de l'élément' article, il faut dans le css ajouter une couleur **dans l'attribut** article.
 
 De la même façon article et aside dépendent de main.
-1. Vous devez  compléter le css pour que main occuppe 100% de la largeur 
+
+ 1. Vous devez  compléter le css pour que main occuppe 100% de la largeur 
 
 ```css
     main{    /* ici on gère l'alignement horizontal des éléments*/
@@ -107,8 +108,8 @@ De la même façon article et aside dépendent de main.
 ```
 
 
-2. Vous devez compléter les margeurs des balises article et aside en définissant en pourcentage l'espace en largeur que vous voulez que ces balises occupent.
-3.  :fire: Si vous ne laissez pas d"'espace ntre les différents éléments, "tout" va être collé 
+ 2. Vous devez compléter les margeurs des balises article et aside en définissant en pourcentage l'espace en largeur que vous voulez que ces balises occupent.
+ 3.  :fire: Si vous ne laissez pas d"'espace ntre les différents éléments, "tout" va être collé 
 
 Voici quelques indications sur deux attributs css que vous pouvrez utilisez 
 
@@ -116,12 +117,14 @@ Voici quelques indications sur deux attributs css que vous pouvrez utilisez
 
      Le margin est un espace entre la boite et les autres éléments de la page 
      ![alt text](margin.png)
+
      Vous pouvez différencier les écarts avec les attributs margin-top (-left, -right,-bottom)
 
 
 !!!tip Le padding
       Le padding est un espace entre la boite et son contenu  
      ![alt text](padding.png)
+     
      Vous pouvez différencier les écarts avec les attributs padding-top (-left, -right,-bottom)
     
 **La principale différence entre padding et margin est que margin affecte l’espace entourant un élément, tandis que padding contrôle l’espace à l’intérieur d’un élément.**
