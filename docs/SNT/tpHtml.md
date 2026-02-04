@@ -21,6 +21,7 @@ Vous créez votre site à partir du code déjà donné
 ```
 ### Mise en page 
 Pour que votre page s'affiche correctement, il faut faire un peu de ... mise en page : Pour cela on utilise une feuille de style qui est un fichier css. On gère notamment:
+
    * La police
    * Les couelurs du texte , de fond
    * L'apparence des liens url, quand on passe dessus, une fois visité
