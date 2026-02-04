@@ -108,10 +108,10 @@ De la même façon article et aside dépendent de main.
 ```
 
 
- 2. Vous devez compléter les margeurs des balises article et aside en définissant en pourcentage l'espace en largeur que vous voulez que ces balises occupent.
- 3.  :fire: Si vous ne laissez pas d"'espace ntre les différents éléments, "tout" va être collé 
+ 2. Vous devez compléter les largeurs des balise des éléments article et aside en définissant en pourcentage l'espace en largeur que vous voulez que ces balises occupent.
+  :fire: Si vous ne laissez pas d'espace entre les différents éléments, "tout" va être collé 
 
-Voici quelques indications sur deux attributs css que vous pouvrez utilisez 
+Voici quelques indications sur deux attributs css que vous pouvez utilisez 
 
 !!! tip Le margin
 
@@ -124,7 +124,7 @@ Voici quelques indications sur deux attributs css que vous pouvrez utilisez
 !!!tip Le padding
       Le padding est un espace entre la boite et son contenu  
      ![alt text](padding.png)
-     
+
      Vous pouvez différencier les écarts avec les attributs padding-top (-left, -right,-bottom)
     
 **La principale différence entre padding et margin est que margin affecte l’espace entourant un élément, tandis que padding contrôle l’espace à l’intérieur d’un élément.**
