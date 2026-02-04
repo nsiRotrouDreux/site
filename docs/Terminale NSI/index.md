@@ -4,7 +4,7 @@
 
 ## Chapitres
 * Structures de données
-* [P.O.O.](<poo.md>)
+* [P.O.O](<poo.md>)
 * [Récursivité](<recursivite.md>)
 *  [Algorithmique :Tri selection ](<algorithmique/Les Tris/tri_selection.md>)
 * [Algorithmique :Tri insertion ](<algorithmique/Les Tris/tri_insertion.md>)

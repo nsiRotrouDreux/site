@@ -16,3 +16,4 @@
 
     [Liens](Liens)
 
+  [![alt text](../images/cc.png)](https://creativecommons.org/publicdomain/zero/1.0/deed.fr)                  
