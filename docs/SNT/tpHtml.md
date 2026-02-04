@@ -30,11 +30,11 @@ Pour que votre page s'affiche correctement, il faut faire un peu de ... mise en 
 
    Vous avez plein d'indications dans [le cours sur le css ](css.md).
 
-   !!!example Exemple de codes css sur le footer
+   !!! example Exemple de codes css sur le footer
 
 
-      ```css
-        footer {
+    ```css
+         footer {
           width:100%; /* occupe toute la largeur de la page */
           border-radius: 20px; /* à adapter : Pour arrondir la bordure*/
           background-color:blue; 
@@ -42,6 +42,6 @@ Pour que votre page s'affiche correctement, il faut faire un peu de ... mise en 
     
           font-size:1.5em; /* adapte la taille de l'écriture */
           }
-      ```
+    ```
 
 ### Semaine 2 voire 3 au rythme où ça va
