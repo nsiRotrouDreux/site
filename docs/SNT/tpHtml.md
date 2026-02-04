@@ -31,7 +31,7 @@ Pour que votre page s'affiche correctement, il faut faire un peu de ... mise en 
    Vous avez plein d'indications dans [le cours sur le css ](css.md).
 
    !!!example Exemple de codes css sur le footer
-   
+
 
       ```css
         footer {
@@ -44,4 +44,4 @@ Pour que votre page s'affiche correctement, il faut faire un peu de ... mise en 
           }
       ```
 
-     ### Semaine 2 voire 3 au rythme où ça va
+### Semaine 2 voire 3 au rythme où ça va
