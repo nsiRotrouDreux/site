@@ -58,7 +58,7 @@ Pour modifier la couleur de fond du contenu de l'élément' article, il faut dan
 
 De la même façon article et aside dépendent de main.
 
- 1. Vous devez  compléter le css pour que main occuppe 100% de la largeur 
+ 1. Vous devez  compléter le css pour que main occupe 100% de la largeur 
 
 ```css
     main{    /* ici on gère l'alignement horizontal des éléments*/
@@ -109,6 +109,7 @@ De la même façon article et aside dépendent de main.
 
 
  2. Vous devez compléter les largeurs des balise des éléments article et aside en définissant en pourcentage l'espace en largeur que vous voulez que ces balises occupent.
+ 
   :fire: Si vous ne laissez pas d'espace entre les différents éléments, "tout" va être collé 
 
 Voici quelques indications sur deux attributs css que vous pouvez utilisez 
