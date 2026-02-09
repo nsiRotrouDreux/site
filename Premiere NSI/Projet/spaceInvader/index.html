@@ -1,0 +1,2889 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../Architecture%20mat%C3%A9rielle/systemes_d_exploitation/">
+      
+      
+        <link rel="next" href="../../slicing/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Projets - INFORMATIQUE LYCEE ROTROU DREUX</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#space-invaders" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="INFORMATIQUE LYCEE ROTROU DREUX" class="md-header__button md-logo" aria-label="INFORMATIQUE LYCEE ROTROU DREUX" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M348.8 32C340.7 46.1 336 62.5 336 80v16H64v224h272v64H64c-35.3 0-64-28.7-64-64V96c0-35.3 28.7-64 64-64zM336 432c0 17.5 4.7 33.9 12.8 48H120c-13.3 0-24-10.7-24-24s10.7-24 24-24zm96-400h96c26.5 0 48 21.5 48 48v352c0 26.5-21.5 48-48 48h-96c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48m24 64c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24zm56 144a32 32 0 1 0-64 0 32 32 0 1 0 64 0"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            INFORMATIQUE LYCEE ROTROU DREUX
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Projets
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="purple"  aria-label="Dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="orange"  aria-label="Light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Accueil
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../Terminale%20NSI/" class="md-tabs__link">
+          
+  
+  
+  Terminale NSI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  
+  Première NSI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../SNT/" class="md-tabs__link">
+          
+  
+  
+  SNT
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../IA/" class="md-tabs__link">
+          
+  
+  
+  IA
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../Liens/Liens/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Liens
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="INFORMATIQUE LYCEE ROTROU DREUX" class="md-nav__button md-logo" aria-label="INFORMATIQUE LYCEE ROTROU DREUX" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M348.8 32C340.7 46.1 336 62.5 336 80v16H64v224h272v64H64c-35.3 0-64-28.7-64-64V96c0-35.3 28.7-64 64-64zM336 432c0 17.5 4.7 33.9 12.8 48H120c-13.3 0-24-10.7-24-24s10.7-24 24-24zm96-400h96c26.5 0 48 21.5 48 48v352c0 26.5-21.5 48-48 48h-96c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48m24 64c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24zm56 144a32 32 0 1 0-64 0 32 32 0 1 0 64 0"/></svg>
+
+    </a>
+    INFORMATIQUE LYCEE ROTROU DREUX
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Accueil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Terminale NSI
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Terminale NSI
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Terminale%20NSI/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Accueil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Algorithmique
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Algorithmique
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Terminale%20NSI/algorithmique/dichotomie/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    -Dichotomie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Terminale%20NSI/algorithmique/Les%20Tris/tri_selection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    -Tri Selection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Terminale%20NSI/algorithmique/Les%20Tris/tri_insertion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    -Tri Insertion
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Terminale%20NSI/algorithmique/algoArbre/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    -Algorithmes sur les arbres
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Terminale%20NSI/algorithmique/algoGraphe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    -Algorithmes sur les graphes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Structure de données
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Structure de données
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Terminale%20NSI/sda/files/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    -Les Files
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Terminale%20NSI/sda/piles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    -Les Piles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Terminale%20NSI/sda/listesChainees/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    -Les listes chaînées
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Terminale%20NSI/cours_graphes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Les graphes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Terminale%20NSI/recursivite/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Récursivité
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Terminale%20NSI/poo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    POO
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Terminale%20NSI/routage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Routage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Terminale%20NSI/rechercheTextuelle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recherche Textuelle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Terminale%20NSI/decidabilite/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Décidabilité
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Terminale%20NSI/Machine_de_Turing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Machine de Turing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Première NSI
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Première NSI
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Accueil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../binaire/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Binaire
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../booleens/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Booléens
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chaines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chaines de caractères
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Algorithmique et programmation
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Algorithmique et programmation
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../algorithme%20et%20programmation/listes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    -Les Listes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../algorithme%20et%20programmation/dictionnaires/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    -Les Dictionnaires
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../algorithme%20et%20programmation/boucles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    -Les Boucles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../algorithme%20et%20programmation/fonctions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    -Les Fonctions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../algorithme%20et%20programmation/fichiers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    -Les Fichiers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../algorithme%20et%20programmation/complements/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    -Les tuples/Liste de listes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture matérielle
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Architecture matérielle
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Routage/adressage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    -Adressage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Architecture%20mat%C3%A9rielle/lignes_de_commande/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    -Lignes de commande
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Architecture%20mat%C3%A9rielle/systemes_d_exploitation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    -Système d'exploitaion
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projets
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Projets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#space-invaders" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SPACE INVADERS
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SPACE INVADERS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#debuter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Débuter
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#le-debut-du-jeu-fixer-la-fenetre-et-dessiner-un-vaisseau" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Le début du jeu: Fixer la fenêtre et dessiner un vaisseau.
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Le début du jeu: Fixer la fenêtre et dessiner un vaisseau.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#correction-partie-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Correction partie 1
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gerer-les-tirs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gérer les tirs
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gérer les tirs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#correction-partie-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Correction partie 2
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gerer-des-vaisseaux-ennemis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gérer des vaisseaux ennemis
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gérer des vaisseaux ennemis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#correction-partie-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Correction partie 4
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../slicing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Slicing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SNT
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    SNT
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SNT/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Accueil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SNT/internet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Internet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SNT/structuresDeDonnees/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Structures de données
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SNT/reseaux/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reseaux sociaux
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SNT/html/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Html
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SNT/css/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Css
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IA
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    IA
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../IA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Accueil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../IA/introIa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Historique et premiers problèmes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../IA/iaRenforcement/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apprentissage par renforcement
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../IA/QLearning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    QLearning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../IA/impact_ecologie_IA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ecologie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Liens/Liens/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Liens
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#space-invaders" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SPACE INVADERS
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SPACE INVADERS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#debuter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Débuter
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#le-debut-du-jeu-fixer-la-fenetre-et-dessiner-un-vaisseau" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Le début du jeu: Fixer la fenêtre et dessiner un vaisseau.
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Le début du jeu: Fixer la fenêtre et dessiner un vaisseau.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#correction-partie-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Correction partie 1
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gerer-les-tirs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gérer les tirs
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gérer les tirs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#correction-partie-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Correction partie 2
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gerer-des-vaisseaux-ennemis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gérer des vaisseaux ennemis
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gérer des vaisseaux ennemis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#correction-partie-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Correction partie 4
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Projets</h1>
+
+<h2 id="space-invaders">SPACE INVADERS</h2>
+<p><img alt="alt text" src="../spaceinvader.png" />
+apqrn5</p>
+<p>Tu es prêt à coder ton premier jeu ? </p>
+<p>Un truc bien vintage , avec juste quelques couleurs, et un module de python qui va te faciliter la tache , Pyxel.</p>
+<h3 id="debuter">Débuter</h3>
+<p>Voici <a href="https://github.com/kitao/pyxel/blob/main/docs/README.fr.md">le lien</a>   pour une documentation complète du module pyxel</p>
+<p>On y retrouve par exemple les couleurs possibles <img alt="alt text" src="../couleur.png" /> et le numéro à utiliser pour les obtenir.</p>
+<p>On va travailler en ligne sur le site https://www.pyxelstudio.net </p>
+<p>Une fois le site chargé:</p>
+<ul>
+<li>Vous cliquez sur Create</li>
+<li>Vous enregistrez  le lien qui vous est donné pour pouvoir retroucver votre travail</li>
+<li>Vous allez coder dans la fenêtre de gauche , sous <em>import pyxel</em></li>
+<li>Et vous codez le jeu de space invaders <img alt="😁" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/1f601.svg" title=":grin:" /></li>
+</ul>
+<h3 id="le-debut-du-jeu-fixer-la-fenetre-et-dessiner-un-vaisseau">Le début du jeu: Fixer la fenêtre et dessiner un vaisseau.</h3>
+<p>Il y a dans notre progamme deux fonctions très importantes : draw et update ...la première dessine et la seconde met à jour .</p>
+<p>Donc , on fixe notre cadre, on place notre vaisseau dans le cadre en le dessinant (hyper basiquement, ne revez pas ! ), on le fait bouger et ...c'est déjà pas mal !</p>
+<p>Voici l'exemple 1 donné par la documentation: </p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-0-1"><span class="kn">import</span><span class="w"> </span><span class="nn">pyxel</span>
+</span><span id="__span-0-2">
+</span><span id="__span-0-3"><span class="n">pyxel</span><span class="o">.</span><span class="n">init</span><span class="p">(</span><span class="mi">160</span><span class="p">,</span> <span class="mi">120</span><span class="p">)</span>      <span class="c1"># on crée une fenêtre de 160 par 120</span>
+</span><span id="__span-0-4">
+</span><span id="__span-0-5"><span class="k">def</span><span class="w"> </span><span class="nf">update</span><span class="p">():</span>
+</span><span id="__span-0-6">    <span class="k">if</span> <span class="n">pyxel</span><span class="o">.</span><span class="n">btnp</span><span class="p">(</span><span class="n">pyxel</span><span class="o">.</span><span class="n">KEY_Q</span><span class="p">):</span>   <span class="c1"># appuyer sur la touche Q fait quitter </span>
+</span><span id="__span-0-7">        <span class="n">pyxel</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
+</span><span id="__span-0-8">
+</span><span id="__span-0-9"><span class="k">def</span><span class="w"> </span><span class="nf">draw</span><span class="p">():</span>
+</span><span id="__span-0-10">    <span class="n">pyxel</span><span class="o">.</span><span class="n">cls</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>   <span class="c1"># on efface</span>
+</span><span id="__span-0-11">    <span class="n">pyxel</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">11</span><span class="p">)</span> <span class="c1"># on dessine un carré de coté 20 au point de coordonnées (10,10), couleur 11 soit vert clair.</span>
+</span><span id="__span-0-12">
+</span><span id="__span-0-13"><span class="n">pyxel</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">update</span><span class="p">,</span> <span class="n">draw</span><span class="p">)</span> <span class="c1"># on met à jour , on dessine .</span>
+</span></code></pre></div>
+<p>A l'aide cet exemple :</p>
+<ul>
+<li>
+<p>Créer une fenêtre carrée de 128 de coté</p>
+</li>
+<li>
+<p>Créer deux variables vaisseau_x et vaisseau_y et leur affecter à chacune une abscisse et une ordonnée (entre 0 et 128 <img alt="😁" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/1f601.svg" title=":grin:" />)</p>
+</li>
+<li>
+<p>Créer une fonction deplacement_vaisseau donc voici la documentation</p>
+</li>
+</ul>
+<p><div class="language-py highlight"><pre><span></span><code><span id="__span-1-1"><span class="k">def</span><span class="w"> </span><span class="nf">deplacement_vaisseau</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
+</span><span id="__span-1-2"><span class="w">    </span><span class="sd">&quot;&quot;&quot; Cette fonction permet de dpélacer la position du vaisseau:</span>
+</span><span id="__span-1-3"><span class="sd">    On utilisera la touche gauche (KEY_LEFT) pour aller vers la gauche, et les touches KEY_RIGHT, KEY_UP,KEY_DOWN pour les autres déplacements.</span>
+</span><span id="__span-1-4"><span class="sd">    On utilisera btn au lieu de btnp de l&#39;exemple</span>
+</span><span id="__span-1-5"><span class="sd">    ATTENTION : l&#39;origine du repère est en haut à gauche (coordonnées (0,0))</span>
+</span><span id="__span-1-6"><span class="sd">    entrée : Les coordonnées du vaisseau avant le mouvement</span>
+</span><span id="__span-1-7"><span class="sd">    sortie : les coordonnées du vaisseau après le déplacement</span>
+</span><span id="__span-1-8"><span class="sd">    &quot;&quot;&quot;</span>
+</span><span id="__span-1-9">    <span class="k">pass</span>
+</span></code></pre></div>
+ * Compléter la fonction update() ci dessous</p>
+<p><div class="language-py highlight"><pre><span></span><code><span id="__span-2-1"><span class="k">def</span><span class="w"> </span><span class="nf">update</span><span class="p">():</span>
+</span><span id="__span-2-2"><span class="w">    </span><span class="sd">&quot;&quot;&quot; cette fonction met à jour les coordonnées du vaisseau</span>
+</span><span id="__span-2-3"><span class="sd">    &quot;&quot;&quot;</span>
+</span><span id="__span-2-4">     <span class="k">global</span> <span class="n">vaisseau_x</span><span class="p">,</span> <span class="n">vaisseau_y</span>
+</span><span id="__span-2-5">     <span class="k">pass</span>
+</span></code></pre></div>
+ * Compléter la fonction draw()</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-3-1"><span class="k">def</span><span class="w"> </span><span class="nf">draw</span><span class="p">():</span>
+</span><span id="__span-3-2"><span class="w">    </span><span class="sd">&quot;&quot;&quot; Cette fonction  efface l&#39;ecran et dessine un vaisseau carre de coté entre 7 et 9 , à votre choix . Vous avez le choix de la couleur</span>
+</span><span id="__span-3-3"><span class="sd">    &quot;&quot;&quot;</span>
+</span><span id="__span-3-4">    <span class="n">pyxel</span><span class="o">.</span><span class="n">cls</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</span><span id="__span-3-5">    <span class="n">pyxel</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="o">..</span><span class="p">)</span>
+</span><span id="__span-3-6">
+</span><span id="__span-3-7"><span class="n">pyxel</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">update</span><span class="p">,</span> <span class="n">draw</span><span class="p">)</span>
+</span></code></pre></div>
+<h4 id="correction-partie-1">Correction partie 1</h4>
+<details class="success">
+<summary>Le vaisseau </summary>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-4-1"><span class="c1"># Pyxel Studio</span>
+</span><span id="__span-4-2"><span class="kn">import</span><span class="w"> </span><span class="nn">pyxel</span>
+</span><span id="__span-4-3">
+</span><span id="__span-4-4"><span class="c1"># taille de la fenetre 128x128 pixels</span>
+</span><span id="__span-4-5"><span class="c1"># ne pas modifier</span>
+</span><span id="__span-4-6"><span class="n">pyxel</span><span class="o">.</span><span class="n">init</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span> <span class="mi">128</span><span class="p">)</span>
+</span><span id="__span-4-7">
+</span><span id="__span-4-8"><span class="c1"># position initiale du vaisseau</span>
+</span><span id="__span-4-9"><span class="c1"># (origine des positions : coin haut gauche)</span>
+</span><span id="__span-4-10"><span class="n">vaisseau_x</span> <span class="o">=</span> <span class="mi">60</span>
+</span><span id="__span-4-11"><span class="n">vaisseau_y</span> <span class="o">=</span> <span class="mi">60</span>
+</span><span id="__span-4-12">
+</span><span id="__span-4-13">
+</span><span id="__span-4-14"><span class="k">def</span><span class="w"> </span><span class="nf">vaisseau_deplacement</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+</span><span id="__span-4-15"><span class="w">    </span><span class="sd">&quot;&quot;&quot;déplacement avec les touches de directions.</span>
+</span><span id="__span-4-16"><span class="sd">    Retourne le nouvelles coordonnées</span>
+</span><span id="__span-4-17"><span class="sd">    &quot;&quot;&quot;</span>
+</span><span id="__span-4-18">
+</span><span id="__span-4-19">    <span class="k">if</span> <span class="n">pyxel</span><span class="o">.</span><span class="n">btn</span><span class="p">(</span><span class="n">pyxel</span><span class="o">.</span><span class="n">KEY_RIGHT</span><span class="p">):</span>
+</span><span id="__span-4-20">        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+</span><span id="__span-4-21">    <span class="k">if</span> <span class="o">....</span>
+</span><span id="__span-4-22">    <span class="c1"># à continuer</span>
+</span><span id="__span-4-23">    <span class="k">return</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span>
+</span><span id="__span-4-24">
+</span><span id="__span-4-25">
+</span><span id="__span-4-26">
+</span><span id="__span-4-27"><span class="k">def</span><span class="w"> </span><span class="nf">update</span><span class="p">():</span>
+</span><span id="__span-4-28"><span class="w">    </span><span class="sd">&quot;&quot;&quot;mise à jour des variables (30 fois par seconde)&quot;&quot;&quot;</span>
+</span><span id="__span-4-29">
+</span><span id="__span-4-30">    <span class="k">global</span> <span class="n">vaisseau_x</span><span class="p">,</span> <span class="n">vaisseau_y</span>
+</span><span id="__span-4-31">
+</span><span id="__span-4-32">    <span class="c1"># mise à jour de la position du vaisseau</span>
+</span><span id="__span-4-33">    <span class="n">vaisseau_x</span><span class="p">,</span> <span class="n">vaisseau_y</span> <span class="o">=</span> <span class="n">vaisseau_deplacement</span><span class="p">(</span><span class="n">vaisseau_x</span><span class="p">,</span> <span class="n">vaisseau_y</span><span class="p">)</span>
+</span><span id="__span-4-34">
+</span><span id="__span-4-35"><span class="k">def</span><span class="w"> </span><span class="nf">draw</span><span class="p">():</span>
+</span><span id="__span-4-36"><span class="w">    </span><span class="sd">&quot;&quot;&quot;création des objets (30 fois par seconde)&quot;&quot;&quot;</span>
+</span><span id="__span-4-37">
+</span><span id="__span-4-38">    <span class="c1"># vide la fenetre</span>
+</span><span id="__span-4-39">    <span class="n">pyxel</span><span class="o">.</span><span class="n">cls</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</span><span id="__span-4-40">
+</span><span id="__span-4-41">    <span class="c1"># vaisseau (carre 8x8)</span>
+</span><span id="__span-4-42">    <span class="n">pyxel</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">vaisseau_x</span><span class="p">,</span> <span class="n">vaisseau_y</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">11</span><span class="p">)</span>
+</span><span id="__span-4-43">
+</span><span id="__span-4-44">
+</span><span id="__span-4-45">
+</span><span id="__span-4-46"><span class="n">pyxel</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">update</span><span class="p">,</span> <span class="n">draw</span><span class="p">)</span>
+</span></code></pre></div>
+</details>
+<hr />
+<h3 id="gerer-les-tirs">Gérer les tirs</h3>
+<p>Cahier des charges :</p>
+<ul>
+<li>Créer une liste vide  tir dans le programme principal : Cette liste contiendra des listes de deux valeurs, les coordonnées du tir.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Créer les tirs</p>
+<ul>
+<li>
+<p>Créer une fonction tirs_creation ayant trois paramètres :</p>
+<ul>
+<li>La liste des tirs </li>
+<li>Les coordonnées du vaisseau (que l'on peut noter x et y) </li>
+</ul>
+</li>
+</ul>
+<p>Un tir se déclenche <strong>si</strong> l'on appuie (btnr) sur la touche espace (SPACE) : On ajoute alors dans la liste un élement dont les valeurs sont x+4 et y -4 (x, y sont les coordonnées du centre du vaisseau , on fait partir le tir du centre "haut" du vaisseau)</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title"> Déplacer les tirs </p>
+<ul>
+<li>Créer une fonction tir_dep ayant pour paramètre la liste des tirs:</li>
+</ul>
+<p>On parcourt la liste et:
+    * On diminue l'ordonnée de 1
+     * Quand l'ordonnée est &lt;-4, on supprime le tir de la liste (avec remove )</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Modification de update et draw</p>
+<ul>
+<li>
+<p><strong>update</strong>  : On met à jour la liste des tirs en affectant à cette liste la fonction tir_creation puis tirs_dep</p>
+</li>
+<li>
+<p><strong>draw</strong> : il faut dessiner les tirs : On va faire un rectangle en utilisant les coordonnées x et y de chaque tir puis une hauteur de 4 et une largeur de un , vous choisissez la couleur . Vous parcourez la liste et créer un tel dessin pour chaque élément.</p>
+</li>
+</ul>
+</div>
+<h4 id="correction-partie-2">Correction partie 2</h4>
+<details class="success">
+<summary> Les tirs </summary>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-5-1"><span class="kn">import</span><span class="w"> </span><span class="nn">pyxel</span>
+</span><span id="__span-5-2">
+</span><span id="__span-5-3"><span class="c1"># taille de la fenetre 128x128 pixels</span>
+</span><span id="__span-5-4"><span class="c1"># ne pas modifier</span>
+</span><span id="__span-5-5"><span class="n">pyxel</span><span class="o">.</span><span class="n">init</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span> <span class="mi">128</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Nuit du c0de&quot;</span><span class="p">)</span>
+</span><span id="__span-5-6">
+</span><span id="__span-5-7"><span class="c1"># position initiale du vaisseau</span>
+</span><span id="__span-5-8"><span class="c1"># (origine des positions : coin haut gauche)</span>
+</span><span id="__span-5-9"><span class="n">vaisseau_x</span> <span class="o">=</span> <span class="mi">60</span>
+</span><span id="__span-5-10"><span class="n">vaisseau_y</span> <span class="o">=</span> <span class="mi">60</span>
+</span><span id="__span-5-11">
+</span><span id="__span-5-12"><span class="c1"># initialisation des tirs</span>
+</span><span id="__span-5-13"><span class="n">tirs_liste</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span id="__span-5-14">
+</span><span id="__span-5-15">
+</span><span id="__span-5-16"><span class="k">def</span><span class="w"> </span><span class="nf">vaisseau_deplacement</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+</span><span id="__span-5-17"><span class="w">    </span><span class="sd">&quot;&quot;&quot;déplacement avec les touches de directions&quot;&quot;&quot;</span>
+</span><span id="__span-5-18">
+</span><span id="__span-5-19">    <span class="k">if</span> <span class="n">pyxel</span><span class="o">.</span><span class="n">btn</span><span class="p">(</span><span class="n">pyxel</span><span class="o">.</span><span class="n">KEY_RIGHT</span><span class="p">):</span>
+</span><span id="__span-5-20">        <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">&lt;</span> <span class="mi">120</span><span class="p">)</span> <span class="p">:</span>
+</span><span id="__span-5-21">            <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+</span><span id="__span-5-22">    <span class="k">if</span> <span class="n">pyxel</span><span class="o">.</span><span class="n">btn</span><span class="p">(</span><span class="n">pyxel</span><span class="o">.</span><span class="n">KEY_LEFT</span><span class="p">):</span>
+</span><span id="__span-5-23">        <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">:</span>
+</span><span id="__span-5-24">            <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">-</span> <span class="mi">1</span>
+</span><span id="__span-5-25">    <span class="k">if</span> <span class="n">pyxel</span><span class="o">.</span><span class="n">btn</span><span class="p">(</span><span class="n">pyxel</span><span class="o">.</span><span class="n">KEY_DOWN</span><span class="p">):</span>
+</span><span id="__span-5-26">        <span class="k">if</span> <span class="p">(</span><span class="n">y</span> <span class="o">&lt;</span> <span class="mi">120</span><span class="p">)</span> <span class="p">:</span>
+</span><span id="__span-5-27">            <span class="n">y</span> <span class="o">=</span> <span class="n">y</span> <span class="o">+</span> <span class="mi">1</span>
+</span><span id="__span-5-28">    <span class="k">if</span> <span class="n">pyxel</span><span class="o">.</span><span class="n">btn</span><span class="p">(</span><span class="n">pyxel</span><span class="o">.</span><span class="n">KEY_UP</span><span class="p">):</span>
+</span><span id="__span-5-29">        <span class="k">if</span> <span class="p">(</span><span class="n">y</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">:</span>
+</span><span id="__span-5-30">            <span class="n">y</span> <span class="o">=</span> <span class="n">y</span> <span class="o">-</span> <span class="mi">1</span>
+</span><span id="__span-5-31">    <span class="k">return</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span>
+</span><span id="__span-5-32">
+</span><span id="__span-5-33">
+</span><span id="__span-5-34"><span class="k">def</span><span class="w"> </span><span class="nf">tirs_creation</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">tirs_liste</span><span class="p">):</span>
+</span><span id="__span-5-35"><span class="w">    </span><span class="sd">&quot;&quot;&quot;création d&#39;un tir avec la barre d&#39;espace&quot;&quot;&quot;</span>
+</span><span id="__span-5-36">
+</span><span id="__span-5-37">    <span class="c1"># btnr pour eviter les tirs multiples</span>
+</span><span id="__span-5-38">    <span class="k">if</span> <span class="n">pyxel</span><span class="o">.</span><span class="n">btnr</span><span class="p">(</span><span class="n">pyxel</span><span class="o">.</span><span class="n">KEY_SPACE</span><span class="p">):</span>
+</span><span id="__span-5-39">        <span class="n">tirs_liste</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">x</span><span class="o">+</span><span class="mi">4</span><span class="p">,</span> <span class="n">y</span><span class="o">-</span><span class="mi">4</span><span class="p">])</span>
+</span><span id="__span-5-40">    <span class="k">return</span> <span class="n">tirs_liste</span>
+</span><span id="__span-5-41">
+</span><span id="__span-5-42">
+</span><span id="__span-5-43"><span class="k">def</span><span class="w"> </span><span class="nf">tirs_deplacement</span><span class="p">(</span><span class="n">tirs_liste</span><span class="p">):</span>
+</span><span id="__span-5-44"><span class="w">    </span><span class="sd">&quot;&quot;&quot;déplacement des tirs vers le haut et suppression s&#39;ils sortent du cadre</span>
+</span><span id="__span-5-45"><span class="sd">    &quot;&quot;&quot;</span>
+</span><span id="__span-5-46">
+</span><span id="__span-5-47">    <span class="k">for</span> <span class="n">tir</span> <span class="ow">in</span> <span class="n">tirs_liste</span><span class="p">:</span>
+</span><span id="__span-5-48">        <span class="n">tir</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-=</span> <span class="mi">1</span>
+</span><span id="__span-5-49">        <span class="k">if</span>  <span class="n">tir</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">&lt;-</span><span class="mi">8</span><span class="p">:</span>
+</span><span id="__span-5-50">            <span class="n">tirs_liste</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">tir</span><span class="p">)</span>
+</span><span id="__span-5-51">    <span class="k">return</span> <span class="n">tirs_liste</span>
+</span><span id="__span-5-52">
+</span><span id="__span-5-53">
+</span><span id="__span-5-54"><span class="c1"># =========================================================</span>
+</span><span id="__span-5-55"><span class="c1"># == UPDATE</span>
+</span><span id="__span-5-56"><span class="c1"># =========================================================</span>
+</span><span id="__span-5-57"><span class="k">def</span><span class="w"> </span><span class="nf">update</span><span class="p">():</span>
+</span><span id="__span-5-58"><span class="w">    </span><span class="sd">&quot;&quot;&quot;mise à jour des variables (30 fois par seconde)&quot;&quot;&quot;</span>
+</span><span id="__span-5-59">
+</span><span id="__span-5-60">     <span class="k">global</span> <span class="n">vaisseau_x</span><span class="p">,</span> <span class="n">vaisseau_y</span><span class="p">,</span> <span class="n">tirs_liste</span>
+</span><span id="__span-5-61">
+</span><span id="__span-5-62">    <span class="c1"># mise à jour de la position du vaisseau</span>
+</span><span id="__span-5-63">    <span class="n">vaisseau_x</span><span class="p">,</span> <span class="n">vaisseau_y</span> <span class="o">=</span> <span class="n">vaisseau_deplacement</span><span class="p">(</span><span class="n">vaisseau_x</span><span class="p">,</span> <span class="n">vaisseau_y</span><span class="p">)</span>
+</span><span id="__span-5-64">
+</span><span id="__span-5-65">    <span class="c1"># creation des tirs en fonction de la position du vaisseau</span>
+</span><span id="__span-5-66">    <span class="n">tirs_liste</span> <span class="o">=</span> <span class="n">tirs_creation</span><span class="p">(</span><span class="n">vaisseau_x</span><span class="p">,</span> <span class="n">vaisseau_y</span><span class="p">,</span> <span class="n">tirs_liste</span><span class="p">)</span>
+</span><span id="__span-5-67">
+</span><span id="__span-5-68">    <span class="c1"># mise a jour des positions des tirs</span>
+</span><span id="__span-5-69">    <span class="n">tirs_liste</span> <span class="o">=</span> <span class="n">tirs_deplacement</span><span class="p">(</span><span class="n">tirs_liste</span><span class="p">)</span>
+</span><span id="__span-5-70">
+</span><span id="__span-5-71">
+</span><span id="__span-5-72"><span class="c1"># =========================================================</span>
+</span><span id="__span-5-73"><span class="c1"># == DRAW</span>
+</span><span id="__span-5-74"><span class="c1"># =========================================================</span>
+</span><span id="__span-5-75"><span class="k">def</span><span class="w"> </span><span class="nf">draw</span><span class="p">():</span>
+</span><span id="__span-5-76"><span class="w">    </span><span class="sd">&quot;&quot;&quot;création des objets (30 fois par seconde)&quot;&quot;&quot;</span>
+</span><span id="__span-5-77">
+</span><span id="__span-5-78">    <span class="c1"># vide la fenetre</span>
+</span><span id="__span-5-79">    <span class="n">pyxel</span><span class="o">.</span><span class="n">cls</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</span><span id="__span-5-80">
+</span><span id="__span-5-81">    <span class="c1"># vaisseau (carre 8x8)</span>
+</span><span id="__span-5-82">    <span class="n">pyxel</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">vaisseau_x</span><span class="p">,</span> <span class="n">vaisseau_y</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-5-83">
+</span><span id="__span-5-84">    <span class="c1"># tirs</span>
+</span><span id="__span-5-85">    <span class="k">for</span> <span class="n">tir</span> <span class="ow">in</span> <span class="n">tirs_liste</span><span class="p">:</span>
+</span><span id="__span-5-86">        <span class="n">pyxel</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">tir</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">tir</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+</span><span id="__span-5-87">
+</span><span id="__span-5-88"><span class="n">pyxel</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">update</span><span class="p">,</span> <span class="n">draw</span><span class="p">)</span>
+</span></code></pre></div>
+</details>
+<hr />
+<h3 id="gerer-des-vaisseaux-ennemis">Gérer  des vaisseaux ennemis</h3>
+<p>Il y a beaucoup de similitude avec la création des tirs. Ici aussi on va obtenir une liste de listes de deux élements : l'abscisse et l'ordonnée du mechant.</p>
+<ul>
+<li>Créer une liste vide : mechants_liste et la déclarer en variable globale dans update</li>
+<li>Créer deux fonctions : mechant_creation et mechant_deplacement</li>
+<li>Les mettre à jour dans update (idem que celles des tirs)</li>
+<li>Dessiner les ennemis dans draw </li>
+</ul>
+<div class="admonition tips">
+<p class="admonition-title"> Aide pour les fonctions</p>
+<p>La fonction creation ne peut pas s'inventer:</p>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-6-1"><span class="k">if</span> <span class="p">(</span><span class="n">pyxel</span><span class="o">.</span><span class="n">frame_count</span> <span class="o">%</span> <span class="mi">30</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>  <span class="c1"># 1 toutes les secondes</span>
+</span><span id="__span-6-2">    <span class="n">mechants_liste</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="o">..</span><span class="p">,</span><span class="o">..</span><span class="p">),</span> <span class="o">...</span><span class="p">])</span> <span class="c1"># en haut et aleatoire pour l&#39;abscisse</span>
+</span><span id="__span-6-3"><span class="k">return</span> <span class="n">mechants_liste</span>
+</span></code></pre></div>
+<p>La fonction déplacement : Le mechant se déplace vers le bas et doit être retirer si son ordonnée dépasse 128...Vous savez coder <img alt="💪" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/svg/1f4aa.svg" title=":muscle:" /></p>
+</div>
+<h4 id="correction-partie-4">Correction partie 4</h4>
+<div class="language-py highlight"><pre><span></span><code><span id="__span-7-1"><span class="c1"># Pyxel Studio</span>
+</span><span id="__span-7-2"><span class="kn">import</span><span class="w"> </span><span class="nn">pyxel</span><span class="o">,</span><span class="w"> </span><span class="nn">random</span>
+</span><span id="__span-7-3">
+</span><span id="__span-7-4"><span class="c1"># taille de la fenetre 128x128 pixels</span>
+</span><span id="__span-7-5"><span class="c1"># ne pas modifier</span>
+</span><span id="__span-7-6"><span class="n">pyxel</span><span class="o">.</span><span class="n">init</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span> <span class="mi">128</span><span class="p">)</span>
+</span><span id="__span-7-7">
+</span><span id="__span-7-8"><span class="c1"># position initiale du vaisseau</span>
+</span><span id="__span-7-9"><span class="c1"># (origine des positions : coin haut gauche)</span>
+</span><span id="__span-7-10"><span class="n">vaisseau_x</span> <span class="o">=</span> <span class="mi">60</span>
+</span><span id="__span-7-11"><span class="n">vaisseau_y</span> <span class="o">=</span> <span class="mi">60</span>
+</span><span id="__span-7-12"><span class="c1"># initialisation des tirs</span>
+</span><span id="__span-7-13"><span class="n">tirs_liste</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span id="__span-7-14"><span class="c1"># initialisation des vaisseaux ennemis</span>
+</span><span id="__span-7-15"><span class="n">mechants_liste</span> <span class="o">=</span><span class="p">[]</span>
+</span><span id="__span-7-16">
+</span><span id="__span-7-17">
+</span><span id="__span-7-18"><span class="c1"># vies</span>
+</span><span id="__span-7-19"><span class="n">vies</span> <span class="o">=</span> <span class="mi">5</span>
+</span><span id="__span-7-20">
+</span><span id="__span-7-21"><span class="k">def</span><span class="w"> </span><span class="nf">vaisseau_deplacement</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+</span><span id="__span-7-22"><span class="w">    </span><span class="sd">&quot;&quot;&quot;déplacement avec les touches de directions.</span>
+</span><span id="__span-7-23"><span class="sd">    Retourne le nouvelles coordonnées</span>
+</span><span id="__span-7-24"><span class="sd">    &quot;&quot;&quot;</span>
+</span><span id="__span-7-25">
+</span><span id="__span-7-26">    <span class="k">if</span> <span class="n">pyxel</span><span class="o">.</span><span class="n">btn</span><span class="p">(</span><span class="n">pyxel</span><span class="o">.</span><span class="n">KEY_RIGHT</span><span class="p">):</span>
+</span><span id="__span-7-27">        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+</span><span id="__span-7-28">    <span class="k">if</span> <span class="n">pyxel</span><span class="o">.</span><span class="n">btn</span><span class="p">(</span><span class="n">pyxel</span><span class="o">.</span><span class="n">KEY_LEFT</span><span class="p">):</span>
+</span><span id="__span-7-29">
+</span><span id="__span-7-30">        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">-</span> <span class="mi">1</span>
+</span><span id="__span-7-31">    <span class="k">if</span> <span class="n">pyxel</span><span class="o">.</span><span class="n">btn</span><span class="p">(</span><span class="n">pyxel</span><span class="o">.</span><span class="n">KEY_DOWN</span><span class="p">):</span>
+</span><span id="__span-7-32">            <span class="n">y</span> <span class="o">=</span> <span class="n">y</span> <span class="o">+</span> <span class="mi">1</span>
+</span><span id="__span-7-33">    <span class="k">if</span> <span class="n">pyxel</span><span class="o">.</span><span class="n">btn</span><span class="p">(</span><span class="n">pyxel</span><span class="o">.</span><span class="n">KEY_UP</span><span class="p">):</span>
+</span><span id="__span-7-34">            <span class="n">y</span> <span class="o">=</span> <span class="n">y</span> <span class="o">-</span> <span class="mi">1</span>
+</span><span id="__span-7-35">    <span class="k">return</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span>
+</span><span id="__span-7-36">
+</span><span id="__span-7-37"><span class="k">def</span><span class="w"> </span><span class="nf">tirs_creation</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">tirs_liste</span><span class="p">):</span>
+</span><span id="__span-7-38"><span class="w">    </span><span class="sd">&quot;&quot;&quot;création d&#39;un tir avec la barre d&#39;espace&quot;&quot;&quot;</span>
+</span><span id="__span-7-39">
+</span><span id="__span-7-40">    <span class="c1"># btnr pour eviter les tirs multiples</span>
+</span><span id="__span-7-41">    <span class="k">if</span> <span class="n">pyxel</span><span class="o">.</span><span class="n">btnr</span><span class="p">(</span><span class="n">pyxel</span><span class="o">.</span><span class="n">KEY_SPACE</span><span class="p">):</span>
+</span><span id="__span-7-42">        <span class="n">tirs_liste</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">x</span><span class="o">+</span><span class="mi">4</span><span class="p">,</span> <span class="n">y</span><span class="o">-</span><span class="mi">4</span><span class="p">])</span>
+</span><span id="__span-7-43">    <span class="k">return</span> <span class="n">tirs_liste</span>
+</span><span id="__span-7-44">
+</span><span id="__span-7-45">
+</span><span id="__span-7-46"><span class="k">def</span><span class="w"> </span><span class="nf">tirs_deplacement</span><span class="p">(</span><span class="n">tirs_liste</span><span class="p">):</span>
+</span><span id="__span-7-47"><span class="w">    </span><span class="sd">&quot;&quot;&quot;déplacement des tirs vers le haut et suppression s&#39;ils sortent du cadre&quot;&quot;&quot;</span>
+</span><span id="__span-7-48">
+</span><span id="__span-7-49">    <span class="k">for</span> <span class="n">tir</span> <span class="ow">in</span> <span class="n">tirs_liste</span><span class="p">:</span>
+</span><span id="__span-7-50">        <span class="n">tir</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-=</span> <span class="mi">1</span>
+</span><span id="__span-7-51">        <span class="k">if</span>  <span class="n">tir</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">&lt;-</span><span class="mi">8</span><span class="p">:</span>
+</span><span id="__span-7-52">            <span class="n">tirs_liste</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">tir</span><span class="p">)</span>
+</span><span id="__span-7-53">    <span class="k">return</span> <span class="n">tirs_liste</span>
+</span><span id="__span-7-54"><span class="c1"># Gestion ds vaisseax ennemis</span>
+</span><span id="__span-7-55"><span class="k">def</span><span class="w"> </span><span class="nf">mechant_creation</span><span class="p">(</span><span class="n">mechants_liste</span><span class="p">):</span>
+</span><span id="__span-7-56"><span class="w">    </span><span class="sd">&quot;&quot;&quot;création d&#39;un vaisseau ennemis en haut de l&#39;écran&quot;&quot;&quot;</span>
+</span><span id="__span-7-57">
+</span><span id="__span-7-58">    <span class="c1"># btnr pour eviter les tirs multiples</span>
+</span><span id="__span-7-59">    <span class="k">if</span> <span class="p">(</span><span class="n">pyxel</span><span class="o">.</span><span class="n">frame_count</span> <span class="o">%</span> <span class="mi">30</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
+</span><span id="__span-7-60">        <span class="n">mechants_liste</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">120</span><span class="p">),</span> <span class="mi">0</span><span class="p">])</span>
+</span><span id="__span-7-61">    <span class="k">return</span> <span class="n">mechants_liste</span>
+</span><span id="__span-7-62">
+</span><span id="__span-7-63">
+</span><span id="__span-7-64"><span class="k">def</span><span class="w"> </span><span class="nf">mechant_deplacement</span><span class="p">(</span><span class="n">mechants_liste</span><span class="p">):</span>
+</span><span id="__span-7-65"><span class="w">    </span><span class="sd">&quot;&quot;&quot;déplacement des mechants vers le bas et suppression s&#39;ils sortent du cadre en bas&quot;&quot;&quot;</span>
+</span><span id="__span-7-66">
+</span><span id="__span-7-67">    <span class="k">for</span> <span class="n">mechant</span> <span class="ow">in</span> <span class="n">mechants_liste</span><span class="p">:</span>
+</span><span id="__span-7-68">       <span class="n">mechant</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+=</span><span class="mi">1</span>
+</span><span id="__span-7-69">       <span class="k">if</span> <span class="n">mechant</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">&gt;</span><span class="mi">128</span><span class="p">:</span>
+</span><span id="__span-7-70">           <span class="n">mechants_liste</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">mechant</span><span class="p">)</span>
+</span><span id="__span-7-71">    <span class="k">return</span> <span class="n">mechants_liste</span>
+</span><span id="__span-7-72">
+</span><span id="__span-7-73"><span class="k">def</span><span class="w"> </span><span class="nf">vaisseau_suppression</span><span class="p">(</span><span class="n">vies</span><span class="p">):</span>
+</span><span id="__span-7-74"><span class="w">    </span><span class="sd">&quot;&quot;&quot;disparition du vaisseau et d&#39;un ennemi si contact&quot;&quot;&quot;</span>
+</span><span id="__span-7-75">
+</span><span id="__span-7-76">    <span class="k">for</span> <span class="n">ennemi</span> <span class="ow">in</span> <span class="n">mechants_liste</span><span class="p">:</span>
+</span><span id="__span-7-77">        <span class="k">if</span> <span class="n">ennemi</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">vaisseau_x</span><span class="o">+</span><span class="mi">7</span> <span class="ow">and</span> <span class="n">ennemi</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">vaisseau_y</span><span class="o">+</span><span class="mi">7</span> <span class="ow">and</span> <span class="n">ennemi</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="mi">7</span> <span class="o">&gt;=</span> <span class="n">vaisseau_x</span> <span class="ow">and</span> <span class="n">ennemi</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="mi">7</span> <span class="o">&gt;=</span> <span class="n">vaisseau_y</span><span class="p">:</span>
+</span><span id="__span-7-78">            <span class="n">mechants_liste</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">ennemi</span><span class="p">)</span>
+</span><span id="__span-7-79">            <span class="n">vies</span> <span class="o">=</span> <span class="n">vies</span><span class="o">-</span><span class="mi">1</span>
+</span><span id="__span-7-80">    <span class="k">return</span> <span class="n">vies</span>
+</span><span id="__span-7-81">
+</span><span id="__span-7-82">
+</span><span id="__span-7-83"><span class="k">def</span><span class="w"> </span><span class="nf">ennemis_suppression</span><span class="p">():</span>
+</span><span id="__span-7-84"><span class="w">    </span><span class="sd">&quot;&quot;&quot;disparition d&#39;un ennemi et d&#39;un tir si contact&quot;&quot;&quot;</span>
+</span><span id="__span-7-85">
+</span><span id="__span-7-86">    <span class="k">for</span> <span class="n">ennemi</span> <span class="ow">in</span> <span class="n">mechants_liste</span><span class="p">:</span>
+</span><span id="__span-7-87">        <span class="k">for</span> <span class="n">tir</span> <span class="ow">in</span> <span class="n">tirs_liste</span><span class="p">:</span>
+</span><span id="__span-7-88">            <span class="k">if</span> <span class="n">ennemi</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">tir</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="mi">1</span> <span class="ow">and</span> <span class="n">ennemi</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="mi">7</span> <span class="o">&gt;=</span> <span class="n">tir</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">and</span> <span class="n">ennemi</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="mi">7</span> <span class="o">&gt;=</span> <span class="n">tir</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span>
+</span><span id="__span-7-89">                <span class="n">mechants_liste</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">ennemi</span><span class="p">)</span>
+</span><span id="__span-7-90">                <span class="n">tirs_liste</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">tir</span><span class="p">)</span>
+</span><span id="__span-7-91">
+</span><span id="__span-7-92"><span class="c1"># =========================================================</span>
+</span><span id="__span-7-93"><span class="c1"># == UPDATE</span>
+</span><span id="__span-7-94"><span class="c1"># =========================================================</span>
+</span><span id="__span-7-95"><span class="c1"># =========================================================</span>
+</span><span id="__span-7-96"><span class="c1"># == UPDATE</span>
+</span><span id="__span-7-97"><span class="c1"># =========================================================</span>
+</span><span id="__span-7-98"><span class="k">def</span><span class="w"> </span><span class="nf">update</span><span class="p">():</span>
+</span><span id="__span-7-99"><span class="w">    </span><span class="sd">&quot;&quot;&quot;mise à jour des variables (30 fois par seconde)&quot;&quot;&quot;</span>
+</span><span id="__span-7-100">
+</span><span id="__span-7-101">    <span class="k">global</span> <span class="n">vaisseau_x</span><span class="p">,</span> <span class="n">vaisseau_y</span><span class="p">,</span> <span class="n">tirs_liste</span><span class="p">,</span> <span class="n">mechants_liste</span><span class="p">,</span> <span class="n">vies</span>
+</span><span id="__span-7-102">
+</span><span id="__span-7-103">    <span class="c1"># mise à jour de la position du vaisseau</span>
+</span><span id="__span-7-104">    <span class="n">vaisseau_x</span><span class="p">,</span> <span class="n">vaisseau_y</span> <span class="o">=</span> <span class="n">vaisseau_deplacement</span><span class="p">(</span><span class="n">vaisseau_x</span><span class="p">,</span> <span class="n">vaisseau_y</span><span class="p">)</span>
+</span><span id="__span-7-105">
+</span><span id="__span-7-106">    <span class="c1"># creation des tirs en fonction de la position du vaisseau</span>
+</span><span id="__span-7-107">    <span class="n">tirs_liste</span> <span class="o">=</span> <span class="n">tirs_creation</span><span class="p">(</span><span class="n">vaisseau_x</span><span class="p">,</span> <span class="n">vaisseau_y</span><span class="p">,</span> <span class="n">tirs_liste</span><span class="p">)</span>
+</span><span id="__span-7-108">
+</span><span id="__span-7-109">    <span class="c1"># mise a jour des positions des tirs</span>
+</span><span id="__span-7-110">    <span class="n">tirs_liste</span> <span class="o">=</span> <span class="n">tirs_deplacement</span><span class="p">(</span><span class="n">tirs_liste</span><span class="p">)</span>
+</span><span id="__span-7-111">    <span class="c1"># creation des ennemis</span>
+</span><span id="__span-7-112">    <span class="n">mechants_liste</span><span class="o">=</span> <span class="n">mechant_creation</span><span class="p">(</span><span class="n">mechants_liste</span><span class="p">)</span>
+</span><span id="__span-7-113">
+</span><span id="__span-7-114">    <span class="c1"># mise a jour des positions des ennemis</span>
+</span><span id="__span-7-115">    <span class="n">mechants_liste</span> <span class="o">=</span> <span class="n">mechant_deplacement</span><span class="p">(</span><span class="n">mechants_liste</span><span class="p">)</span>
+</span><span id="__span-7-116"> <span class="c1"># suppression des ennemis et tirs si contact</span>
+</span><span id="__span-7-117">    <span class="n">ennemis_suppression</span><span class="p">()</span>
+</span><span id="__span-7-118">
+</span><span id="__span-7-119">    <span class="c1"># suppression du vaisseau et ennemi si contact</span>
+</span><span id="__span-7-120">    <span class="n">vies</span> <span class="o">=</span> <span class="n">vaisseau_suppression</span><span class="p">(</span><span class="n">vies</span><span class="p">)</span>
+</span><span id="__span-7-121"><span class="c1"># =========================================================</span>
+</span><span id="__span-7-122"><span class="c1"># == DRAW</span>
+</span><span id="__span-7-123"><span class="c1"># =========================================================</span>
+</span><span id="__span-7-124"><span class="k">def</span><span class="w"> </span><span class="nf">draw</span><span class="p">():</span>
+</span><span id="__span-7-125"><span class="w">    </span><span class="sd">&quot;&quot;&quot;création des objets (30 fois par seconde)&quot;&quot;&quot;</span>
+</span><span id="__span-7-126">
+</span><span id="__span-7-127">    <span class="c1"># vide la fenetre</span>
+</span><span id="__span-7-128">    <span class="n">pyxel</span><span class="o">.</span><span class="n">cls</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</span><span id="__span-7-129"> <span class="c1"># si le vaisseau possede des vies le jeu continue</span>
+</span><span id="__span-7-130">    <span class="k">if</span> <span class="n">vies</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>    
+</span><span id="__span-7-131">        <span class="c1"># vaisseau (carre 8x8)</span>
+</span><span id="__span-7-132">        <span class="n">pyxel</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">vaisseau_x</span><span class="p">,</span> <span class="n">vaisseau_y</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+</span><span id="__span-7-133">
+</span><span id="__span-7-134">        <span class="c1"># tirs</span>
+</span><span id="__span-7-135">        <span class="k">for</span> <span class="n">tir</span> <span class="ow">in</span> <span class="n">tirs_liste</span><span class="p">:</span>
+</span><span id="__span-7-136">            <span class="n">pyxel</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">tir</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">tir</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span>
+</span><span id="__span-7-137">
+</span><span id="__span-7-138">
+</span><span id="__span-7-139">        <span class="k">for</span> <span class="n">mechant</span> <span class="ow">in</span> <span class="n">mechants_liste</span> <span class="p">:</span>
+</span><span id="__span-7-140">             <span class="n">pyxel</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">mechant</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">mechant</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</span><span id="__span-7-141">
+</span><span id="__span-7-142">     <span class="c1"># sinon: GAME OVER</span>
+</span><span id="__span-7-143">    <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-7-144">
+</span><span id="__span-7-145">        <span class="n">pyxel</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span><span class="mi">64</span><span class="p">,</span> <span class="s1">&#39;GAME OVER&#39;</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
+</span><span id="__span-7-146"><span class="n">pyxel</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">update</span><span class="p">,</span> <span class="n">draw</span><span class="p">)</span>
+</span></code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../Architecture%20mat%C3%A9rielle/systemes_d_exploitation/" class="md-footer__link md-footer__link--prev" aria-label="Previous: -Système d&#39;exploitaion">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                -Système d'exploitaion
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../slicing/" class="md-footer__link md-footer__link--next" aria-label="Next: Slicing">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Slicing
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      B. Saint Pée , Lycée Rotrou , Dreux
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.footer", "navigation.tabs", "navigation.tabs.sticky", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
