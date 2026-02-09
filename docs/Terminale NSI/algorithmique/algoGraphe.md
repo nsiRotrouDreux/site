@@ -15,8 +15,7 @@ On va s'intéresser aux parcours de graphe. il existe dexu types de parcours pri
     2. On parcourt les voisins du sommet. S'ils n'ont pas été visités, on les insère dans la file puis on défile le premier élément de la file, on l'ajoute à la liste des visités  et on répète le point 2 tant que la file n'est pas vide 
 
 ??? Example  "Exemple"
-    ![alt text](../images/graphe.png)
-
+   ![Image](../../images/graphe.png)
 
     Le sommet de départ est a
   
