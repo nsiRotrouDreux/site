@@ -103,8 +103,3 @@ graphe = {
 
 ---
 
-## 8. À retenir pour le bac
-
-- Définitions
-- Représentations
-- Dictionnaire Python
