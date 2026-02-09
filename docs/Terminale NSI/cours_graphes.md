@@ -1,4 +1,4 @@
-# 📚 Les graphes – Terminale NSI
+#  Les graphes 
 
 ## 1. Définition d’un graphe
 

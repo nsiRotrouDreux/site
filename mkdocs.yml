@@ -41,6 +41,7 @@ nav:
              -Les Files : Terminale NSI/sda/files.md
              -Les Piles : Terminale NSI/sda/piles.md
              -Les listes chaînées : Terminale NSI/sda/listesChainees.md
+        - Les graphes : Terminale NSI/cours_graphes.md
         - Récursivité: Terminale NSI/recursivite.md
         - POO: Terminale NSI/poo.md
         - Routage: Terminale NSI/routage.md
