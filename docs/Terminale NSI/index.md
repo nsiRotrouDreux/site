@@ -20,7 +20,8 @@
 * [Files](<sda/files.md>)
 * [listes chaïnées](<sda/listesChainees.md>)
 * [Arbres](<algorithmique/algoArbre.md>)
-* [Graphes](<algorithmique/algoGraphe.md>)
+* [Algo Graphes](<algorithmique/algoGraphe.md>)
+* [Cours Graphes](<cours_graphes.md>)
 * Diviser pour regner
 * [Recherche textuelle](<rechercheTextuelle.md>) 
 * Base de données
