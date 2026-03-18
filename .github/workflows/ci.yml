@@ -4,9 +4,7 @@ on:
     branches:
       - master 
       - main
-env:
-  NODE_VERSION: 24.x
-  PYTHON_VERSION: 3.x
+
 
 permissions:
   contents: write
