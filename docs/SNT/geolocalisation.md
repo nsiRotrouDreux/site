@@ -61,3 +61,5 @@ Il ya la trilateration 2D et la trilateration 3D.
 
 * Pour la **trilateration 2D**, il faut trois satellites pour obtenir l'intersction de 3 cerclres , c'est à dire un point.
 * Pour la **trilateration 3D** , il faut 4 satellites pour obtenir l'intersection de 3 sphères . le 4 eme satellite est aussi nécessaire pour synchroniser les horloges afin de ne pas faire d'erreurs dans le calcul de la distance 
+![alt text](trilateration.png)
+![alt text](satellites.png)
