@@ -6,7 +6,7 @@
 
 - La **latitude** indique la position **Nord ou Sud** par rapport à l’équateur.
 - Elle se mesure en **degrés (°)** de 0° à 90°.
-- On ajoute :
+- On ajoute:
   - **N** (Nord)
   - **S** (Sud)
 
