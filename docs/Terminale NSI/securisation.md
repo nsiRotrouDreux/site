@@ -57,3 +57,22 @@ def decode(mot, decalage):
         nv_mot += chr(a)
     return nv_mot
 ```
+![clé symétrique](../images/clesym.png)
+
+### L'opérateur Xor 
+Le cryptage à l’aide de l’opéarteur Xor est aussi à classer dans la catégorie des chiffrements symétriques.
+
+La propriété importante du Xor est  :
+
+![Xor](../images/xor.png)
+
+On code A à l’aide de la clé B, on obtient C. 
+Pour décoder il suffit d’additionner, avec XOR,  le message crypté et la clé .
+
+Rappel des tables des opérateurs booléens
+![tables](../images/tableLogique.png)
+
+### Avantages et inconvénients du chiffrement symétrique 
+
+Les algorithmes de chiffrements symétriques possèdent l’avantage d’être pratiques et faciles à mettre en place. Mais ils sont peu sécurisés. En effet, les intervenants doivent échanger la clé : S’ils ne peuvent se rencontrer, ils sont amenés à utiliser un moyen de communication non sécurisé pour s’échanger la clé et donc sont amenés à se faire pirater.
+Il a donc fallu imaginer un système de cryptage où l’échange de clé se fait de façon sécurisé ou n’impacte pas la sécurité de la communication : C’est le chiffrement asymétrique , mis en place à partir des années 70.
