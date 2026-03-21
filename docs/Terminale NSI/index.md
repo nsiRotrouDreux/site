@@ -13,7 +13,7 @@
 * [Structures de données](<sda/files.md>)
 * Récursivité
 * [Routage](<routage.md>)
-* Sécurisation des communications
+* [Sécurisation des communications](securisation.md)
 * Processus
 * SOC
 * [Piles](<sda/piles.md>)
