@@ -16,8 +16,8 @@ Les données transmises sont découpées en paquets qui transitent de routeurs e
 
 On est donc amené à sécuriser les communications  avec plusieurs contraintes :
 
-	* S’assurer que le cclient se connecte au bon serveur
-	* S’assurer que le contenu d’une trame ne soit lisible que par la source et la destination
+	* S’assurer que le client se connecte au bon serveur
+	* S’assurer que le contenu d’une trame ne soit lisible que par la source et la destination.
     * Ne pas rendre la pocédure de chiffrage trop lourde afin de ne pas ralentir la communication.
 
 Deux techniques principales ont émergé :
@@ -25,3 +25,35 @@ Deux techniques principales ont émergé :
 	* Le chifrement symétrique 
 	* Le chiffrement asymétrique 
 
+## 2. Le chiffrement symétrique 
+Utiliser un chiffrement symétrique signifie coder et décoder avec une même clé .
+Cela signifie qu’aux deux bouts de la chaine , la clé de codage et de décodage est connue et a la même valeur . C’est le cas lors de cryptage simple comme le codage Cesar ou le code de Vigenere.
+
+**Exemple de codage en python du code Cesar :**
+``` py 
+ def code(mot, decalage):
+    mot= mot.upper()
+    decalage= decalage%26
+    nv_mot = ''
+    for lettre in mot :
+        a = ord(lettre) +decalage
+        if a>90       :
+            a= a-26
+            
+        nv_mot += chr(a)
+    return nv_mot
+```
+La fonction decodage va utiliser la même clé 
+``` py
+def decode(mot, decalage):
+    mot= mot.upper()
+    decalage= decalage%26
+    nv_mot = ''
+    for lettre in mot :
+        a = ord(lettre) - decalage
+        if a<65:
+            a= a+26
+            
+        nv_mot += chr(a)
+    return nv_mot
+```
