@@ -179,7 +179,7 @@ En résumé, HTTPS est essentiel pour sécuriser les échanges sur le web, parti
 ![https](../images/https.png)
 [Lien source : info-mounier](https://info-mounier.fr/terminale_nsi/archi_se_reseaux/securisation-communications-exercices)
 
-!!! info  Les étapes de HTTPS
+!!!info  Les étapes de HTTPS
 
      * Etape 1 : Le serveur crypte sa clé publique avec la clé privée de l'autorité de certification : On obtient le certificat de sécurité
      * Etape 2 : Le serveur envoie le certificat et sa clé publique 
