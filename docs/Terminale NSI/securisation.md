@@ -163,7 +163,7 @@ Maintenant que l’on est sur de l’identité des participants, on peut se mett
 Le protocole __HTTPS__ (Hypertext Transfer Protocol Secure) est une extension du protocole HTTP qui sécurise la communication entre un client (un  navigateur) et un serveur web. Son objectif principal est de garantir la confidentialité et l'intégrité des données échangées.
 C'est la combianison du protocole HTTp et d'un protocole assurant la sécurisant de la communication , par exemple TSL.
 
-Voici les points clés à retenir concernant HTTPS :
+!!! note Voici les points clés à retenir concernant HTTPS :
 
     Chiffrement des communications : HTTPS utilise le protocole SSL/TLS (Secure Sockets Layer / Transport Layer Security) pour chiffrer les données. Cela signifie que les informations que vous envoyez (par exemple, lors d'une connexion à un site bancaire) et celles que vous recevez sont rendues illisibles pour quiconque tenterait de les intercepter.
 
@@ -177,8 +177,9 @@ Voici les points clés à retenir concernant HTTPS :
 
 En résumé, HTTPS est essentiel pour sécuriser les échanges sur le web, particulièrement lorsqu'il s'agit de données personnelles, financières ou confidentielles.
 ![https](../images/https.png)
-https://info-mounier.fr/terminale_nsi/archi_se_reseaux/securisation-communications-exercices
+[ Lien source : info-mounier] (https://info-mounier.fr/terminale_nsi/archi_se_reseaux/securisation-communications-exercices)
   
+!!! note Les étapes de HTTPS
 
      * Etape 1 : Le serveur crypte sa clé publique avec la clé privée de l'autorité de certification : On obtient le certificat de sécurité
      * Etape 2 : Le serveur envoie le certificat et sa clé publique 
