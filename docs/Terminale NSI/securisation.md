@@ -76,3 +76,20 @@ Rappel des tables des opérateurs booléens
 
 Les algorithmes de chiffrements symétriques possèdent l’avantage d’être pratiques et faciles à mettre en place. Mais ils sont peu sécurisés. En effet, les intervenants doivent échanger la clé : S’ils ne peuvent se rencontrer, ils sont amenés à utiliser un moyen de communication non sécurisé pour s’échanger la clé et donc sont amenés à se faire pirater.
 Il a donc fallu imaginer un système de cryptage où l’échange de clé se fait de façon sécurisé ou n’impacte pas la sécurité de la communication : C’est le chiffrement asymétrique , mis en place à partir des années 70.
+
+## 3. Le chiffrement asymétrique 
+
+
+On va présenter ici la méthode de __Diffie Hellman__. 
+__Le chiffrement asymétrique__ est fondé sur la donnée de deux clés , une publique , une privée.
+Soit Alice et Bob de part et d’autre de la communication : Ils  se mettent d’accord sur une clé commune  qu’ils échangent. Appelons la x
+Ils ont chacun une clé privée. Ils associent la clé publique et leur clé privée ( a pour alice et b pour Bob) et s’échangent les résultats. 
+(ça peut ête la multiplication des deux clés, par exemple ). 
+Les propriétés des clés font que si quelqu’un intercepte ax , même connaissant x , il ne peut pas dans un temps décent retrouver a.
+Une fois reçu les résultats (Alice reçoit xb) et Bob (xa), Alice et Bob  multiplie le résultat par leur clé et les deux obtiennent le même résultat , abx…
+On notera que si quelqu’un intercepte ax et bx , il ne peut pas former abx, mais seulement abx²…
+Expliquons cela avec des pots de peinture …..
+
+
+
+![DH](../images/DH.png)
