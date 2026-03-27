@@ -81,6 +81,9 @@ Il a donc fallu imaginer un système de cryptage où l’échange de clé se fai
 
 
 On va présenter ici la méthode de __Diffie Hellman__. 
+
+### Diffie Hellman
+
 __Le chiffrement asymétrique__ est fondé sur la donnée de deux clés , une publique , une privée.
 Soit Alice et Bob de part et d’autre de la communication : Ils  se mettent d’accord sur une clé commune  qu’ils échangent. Appelons la x
 Ils ont chacun une clé privée. Ils associent la clé publique et leur clé privée ( a pour alice et b pour Bob) et s’échangent les résultats. 
@@ -93,3 +96,64 @@ Expliquons cela avec des pots de peinture …..
 
 
 ![DH](../images/DH.png)
+
+_Source_ : https://fr.wikipedia.org/wiki/%C3%89change_de_cl%C3%A9s_Diffie-Hellman
+
+
+### Le RSA
+
+
+Le système RSA est un système de chiffrement asymétrique fondé sur des paires de clés privées et publiques . Ce système repose sur les propriétés des nombres premiers. 
+
+ 
+
+Chaque intervenant possède une clé  privée et une clé publique . Soit Apriv et Apub les clés privés et publiques d’Alice. Soit m un message . Les clés ont cette propriété  Apriv(Apub(m)) = Apub(Apriv (m)). 
+
+De plus : 
+
+    Connaissant une de des deux clés , il est impossible de connaitre l’autre. 
+
+    Connaissant (Apriv (m) ou Apub(m) , il est impossible de retrouver m. 
+
+A partir de là, voici le déroulement du chiffrement et déchiffrement  d’un message . 
+
+Alice envoie sa clé publique à Bob (cette clé est visible par tout le monde) 
+
+Bob chiffre son message m à l’aide la clé publique d’ Alice et envoie le résultat Apub(m) 
+
+Alice , une fois le message reçu, n’a plus qu’à appliquer sa clé privée pour retrouver le message initial. 
+
+Le problème principal de ce système est son coût en terme de calculs . 
+
+Mais il peut servir à crypter une clé publique qui servira ensuite pour un chiffrement symétrique . 
+
+Cette technique de chiffrement a quand même un important défaut : Elle n'assure pas que les intervenants soient les bons . En gros , un des deux protagonistes peut avoir été remplacé par un usurpateur comme le montre le schéma ci dessous
+   ![Mitm](../images/mitm.png)
+
+
+Il faut donc trouver une autrre technique pour s'assurer de communiquer avec la bonne personne . 
+Voici un procédé souvent utilisé 
+
+## 4. Authentification des participants
+
+On a vu que ce type de chiffrement  n’évitait pas l’attaque du MITM , à l’aide d’une usurpation d’identité. 
+
+C’est le cas lors du fishing, où par exemple, on demande à un utilisateur de se connecter à  un site pour changer ses identifiants . Et bien entendu, une fois les nouveaux identifiants récupérés , se connecter au site voulu.  
+
+On va donc s’asurer de l’identité des correspondants. 
+
+Lorsque l’on veut prouver son identité sur internet, on présente un __certificat__ qui est délivré par une autre entité, appelée tiers de confiance.. 
+
+!!! danger Remarque
+    Vous avez peut être été en présence d'une page où l'on vous déconseille de poursuivre sur le site que vous voulez atteindre. Vous pouvez quand même le faire , à vos risques et périls . C'est surement que le site ne propose pas de certificats prouvant son authenticité
+!!!
+
+Voici le procédé : Communicant  A et B , tiers de confiiance T 
+
+__Etape 1__ :  B contacte T. Celui-ci vérifie qu’il s’agit bien de B. Et T utilise sa clé privée pour chiffrer la clé publique de B : On a  CprivT CpubB : On obtient un certificat  s 
+
+__Etape 2__ :  A veut se connecter à B , qui lui fournit sa clé publique , CpubB  , ainsi que le certificat s. 
+
+__Etape 3__ : A récupère la clé publique de T , CpubT. On a alors CpubT(CprivT(CpubB) = CpubB. A peut comparer avec la clé publique qu’elle a reçue à l’étape 2. 
+
+Maintenant que l’on est sur de l’identité des participants, on peut se mettre d’accord sur une clé de chiffrement, par exemple,  avec Diffie Hellman 
