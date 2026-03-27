@@ -146,7 +146,7 @@ Lorsque l’on veut prouver son identité sur internet, on présente un __certif
 
 !!! danger Remarque
     Vous avez peut être été en présence d'une page où l'on vous déconseille de poursuivre sur le site que vous voulez atteindre. Vous pouvez quand même le faire , à vos risques et périls . C'est surement que le site ne propose pas de certificats prouvant son authenticité
-!!!
+
 
 Voici le procédé : Communicant  A et B , tiers de confiiance T 
 
@@ -157,3 +157,30 @@ __Etape 2__ :  A veut se connecter à B , qui lui fournit sa clé publique , C
 __Etape 3__ : A récupère la clé publique de T , CpubT. On a alors CpubT(CprivT(CpubB) = CpubB. A peut comparer avec la clé publique qu’elle a reçue à l’étape 2. 
 
 Maintenant que l’on est sur de l’identité des participants, on peut se mettre d’accord sur une clé de chiffrement, par exemple,  avec Diffie Hellman 
+
+## 5. Le protocole HTTPS
+
+Le protocole __HTTPS__ (Hypertext Transfer Protocol Secure) est une extension du protocole HTTP qui sécurise la communication entre un client (un  navigateur) et un serveur web. Son objectif principal est de garantir la confidentialité et l'intégrité des données échangées.
+C'est la combianison du protocole HTTp et d'un protocole assurant la sécurisant de la communication , par exemple TSL.
+
+Voici les points clés à retenir concernant HTTPS :
+
+    Chiffrement des communications : HTTPS utilise le protocole SSL/TLS (Secure Sockets Layer / Transport Layer Security) pour chiffrer les données. Cela signifie que les informations que vous envoyez (par exemple, lors d'une connexion à un site bancaire) et celles que vous recevez sont rendues illisibles pour quiconque tenterait de les intercepter.
+
+    Authentification du serveur : Pour s'assurer que vous communiquez bien avec le site web légitime et non avec un imposteur, HTTPS utilise des certificats numériques. Ces certificats sont émis par des autorités de certification reconnues et permettent de vérifier l'identité du serveur.
+
+    Intégrité des données : En plus du chiffrement, HTTPS garantit que les données n'ont pas été modifiées pendant leur transmission.
+
+    Interaction client-serveur : Comme pour HTTP, la communication se fait entre un client et un serveur. Dans le cas de HTTPS, c'est le serveur qui propose un certificat pour établir la connexion sécurisée. Le client (votre navigateur) vérifie ce certificat, on a vu comment dans l'authentification des utilisateurs.
+
+    
+
+En résumé, HTTPS est essentiel pour sécuriser les échanges sur le web, particulièrement lorsqu'il s'agit de données personnelles, financières ou confidentielles.
+![https](../images/https.png)
+https://info-mounier.fr/terminale_nsi/archi_se_reseaux/securisation-communications-exercices
+  
+
+     * Etape 1 : Le serveur crypte sa clé publique avec la clé privée de l'autorité de certification : On obtient le certificat de sécurité
+     * Etape 2 : Le serveur envoie le certificat et sa clé publique 
+     * Etape 3 : L'autorité de certification fournit sa clé publique au client qui l'applique au certificat et retrouve ainsi la clé publique du serveur et peut la comparer à celle qu'il a reçue à l'étape 2.
+     * Etape 4 : les deux protagonistes peuvent choisir une clé pour la session. Cette clé peut par exemple être définie à l'aide de Diffie Hellman
