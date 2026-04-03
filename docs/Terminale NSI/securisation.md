@@ -91,7 +91,7 @@ Ils ont chacun une clé privée. Ils associent la clé publique et leur clé pri
 Les propriétés des clés font que si quelqu’un intercepte ax , même connaissant x , il ne peut pas dans un temps décent retrouver a.
 Une fois reçu les résultats (Alice reçoit xb) et Bob (xa), Alice et Bob  multiplie le résultat par leur clé et les deux obtiennent le même résultat , abx…
 On notera que si quelqu’un intercepte ax et bx , il ne peut pas former abx, mais seulement abx²…
-Expliquons cela avec des pots de peinture …..
+Expliquons cela avec des pots de peinture pour une meilleure compréhension …..
 
 
 
