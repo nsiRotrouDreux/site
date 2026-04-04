@@ -18,3 +18,4 @@ On va essayer ici non pas de répondre à toutes ces interrogations mais d'esqui
      *  Classification d'images 
  *  [IA et Ecologie](<impact_ecologie_IA.md>)
  * [Apprentissage supervisé](<Apprentissage_supervisé.md>)
+ * [Les LLM](<llm.md>)

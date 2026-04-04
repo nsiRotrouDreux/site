@@ -80,8 +80,10 @@ nav:
         - Accueil: IA/index.md
         - Historique et premiers problèmes : IA/introIa.md
         - Apprentissage par renforcement : IA/iaRenforcement.md
+        - Apprentissage supervisé : IA/Apprentissage_supervisé.md
         - QLearning : IA/QLearning.md
         - Ecologie : IA/impact_ecologie_IA.md
+        - LLM : IA/LLM.md
         
     - Liens : Liens/Liens.md
         
