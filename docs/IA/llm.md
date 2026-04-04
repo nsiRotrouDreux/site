@@ -8,14 +8,14 @@
 
   Avant de se pencher sur le fonctionnement des LLm , un petit tour par l'hsitorique 
 
-  ## Histoire des LLM
+## Histoire des LLM
 
   Plutôt que de parler d'histoire, on pourrait évoquer la préhistoire des LLM dès les années 50 avec l'apparition des n-grammes : A la données d'un mot , on associe un nombre (n ici) de mots . Par exemple , au mot CHAT , on peut associer le trigramme : NOIR, SOURIS, MANGE. Ce sont des mots que le modèle va mobiliser dès qu'on lui parle de CHAT.
   On se doute que le n doit être très grand pour qu'il y ait une efficacité quelconque mais que même dans ce cas, la fluidité de la conversation n'est pas assurée. Cette approche statistiques n'est pas viable pour "une conversation cohérente".
 
-  ### Les Transformers , le tournant
+### Les Transformers , le tournant
 
-  !!!notes "Définition : Token"
+!!! note "Définition : Token"
 
      __Token__ signifie jeton en anglais .Appliqué à l'IA ce mot signifie unité de données tratitée pour l'entrainement d'une IA
 
@@ -29,7 +29,7 @@
        *  L'accès aux données est devenue encore plus massive
        * La puissance de calculs a foirtement augmenté , notamment grace à l'esssor des GPU
 
- !!! notes " GPU"
+!!! note " GPU"
      Un gpu  est un processeur graphique dont le but premier est la création d'images et de videos.
      Mais sa forte puissance de calcul en fait un allié formidable pour les IA .
      Cette technologie a fait la fortune de la société [Nvidia](https://www.nvidia.com/fr-fr/)
