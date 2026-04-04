@@ -27,21 +27,24 @@
 
        * Le modèle transformer est devenue plus efficace
        * L'accès aux données est devenue encore plus massive
-       * La puissance de calculs a foirtement augmenté , notamment grace à l'esssor des GPU
-  
-  Le premier modèle de LLm accessible au grand publisc est le fameux Chat GPT (3). S'il est révolutionnaire , il n'empêche qu'il présente pas mal de failles dans ses réponses (voir cours sur les __biais__).
+       * La puissance de calculs a foirtement augmenté , notamment grâce à l'esssor des GPU
+!!! note " Définition : GPU"
+     Un GPU est un processeur graphique dont le but premier est la création d'images et de videos.
+     Mais sa forte puissance de calcul en fait un allié formidable pour les IA .
+     Cette technologie a fait la fortune de la société [Nvidia](https://www.nvidia.com/fr-fr/)
 
-  Aujourd'hui les enjeux des LLM sont multiples :
+
+  Le premier modèle de LLm accessible au grand public est le fameux Chat GPT (3). S'il est révolutionnaire , il n'empêche qu'il présente pas mal de failles dans ses réponses (voir cours sur les __biais__).
+
+  Aujourd'hui les enjeux et les axes d'amélioration des LLM sont multiples :
 
    * Amélioration des réponses
    * Modèles plus spécialisés
    * Aspect énergétique
    * Alignement éthique 
+   * Augmenter la part d'open source 
 
-!!! note " Définition : GPU"
-     Un GPU est un processeur graphique dont le but premier est la création d'images et de videos.
-     Mais sa forte puissance de calcul en fait un allié formidable pour les IA .
-     Cette technologie a fait la fortune de la société [Nvidia](https://www.nvidia.com/fr-fr/)
+
   
 
   ## Fonctionnement
