@@ -26,11 +26,20 @@
   Depuis 2017, la technologie est restée la même mais  a considérablement évolué en terme de capacités de calculs:
 
        * Le modèle transformer est devenue plus efficace
-       *  L'accès aux données est devenue encore plus massive
+       * L'accès aux données est devenue encore plus massive
        * La puissance de calculs a foirtement augmenté , notamment grace à l'esssor des GPU
+  
+  Le premier modèle de LLm accessible au grand publisc est le fameux Chat GPT (3). S'il est révolutionnaire , il n'empêche qu'il présente pas mal de failles dans ses réponses (voir cours sur les __biais__).
 
-!!! note " GPU"
-     Un gpu  est un processeur graphique dont le but premier est la création d'images et de videos.
+  Aujourd'hui les enjeux des LLM sont multiples :
+
+   * Amélioration des réponses
+   * Modèles plus spécialisés
+   * Aspect énergétique
+   * Alignement éthique 
+
+!!! note " Définition : GPU"
+     Un GPU est un processeur graphique dont le but premier est la création d'images et de videos.
      Mais sa forte puissance de calcul en fait un allié formidable pour les IA .
      Cette technologie a fait la fortune de la société [Nvidia](https://www.nvidia.com/fr-fr/)
   
