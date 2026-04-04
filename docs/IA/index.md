@@ -13,9 +13,7 @@ On va essayer ici non pas de répondre à toutes ces interrogations mais d'esqui
  * [Apprentissage par renforcement : Le jeu de Nim](<iaRenforcement.md>)
  * [Q learning](<QLearning.md>)
  
-     *  Apprentissage supervisé : le KNN
-     *  I A générative : LLM et Token
-     *  Classification d'images 
+    
  *  [IA et Ecologie](<impact_ecologie_IA.md>)
  * [Apprentissage supervisé](<Apprentissage_supervisé.md>)
  * [Les LLM](<llm.md>)
