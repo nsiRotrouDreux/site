@@ -156,4 +156,4 @@ Il existe quantité d'ouvrages sur l'IA, tous présentant le défaut d'être qua
 
 Enfin, en adepte de la récursivité , je me suis appuyé sur deux LLm  : [Chat GPT 4](https://chatgpt.com/)  et [Perplexity](https://www.perplexity.ai/), intégré au navigateur Comet.
 
-_Last but nos least_, ce bon vieux [wikipedia](https://fr.wikipedia.org/wiki/Intelligence_artificielle) n'est jamais bien loin .
+_Last but nos least_, ce bon vieux [wikipedia](https://fr.wikipedia.org/wiki/Intelligence_artificielle) n'est jamais bien loin.
