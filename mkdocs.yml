@@ -121,7 +121,7 @@ extra_javascript:
 
 plugins:
   - search
-  - mkdocs-video:
+  - mkdocs-video
   
 
 
