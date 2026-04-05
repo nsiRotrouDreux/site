@@ -23,7 +23,7 @@
 
   La technologie autour des transformers ( le T de transformers est le même que celui de GPT ;) apparu en 2017 a permis l'essor des LLM 
 
-  La plus value du __Transformer__ est énorme : Au lieu de traiter les mots un par un avec les techniques précédentes , on peut désormais considérer en sa totalité, facilitant la compréhension de l'ensemble et la cohérence de la sortie proposée.
+  La plus value du __Transformer__ est énorme : Au lieu de traiter les mots un par un avec les techniques précédentes , on peut désormais considérer le texte  en sa totalité, facilitant la compréhension de l'ensemble et la cohérence de la sortie proposée.
 
   Depuis 2017, la technologie est restée la même mais  a considérablement évolué en terme de capacités de calculs:
 
@@ -101,6 +101,11 @@ https://www.followtribes.io/performances-llm-puissance-gpu-parametres-dataset/
 Un excellent article développant les notions effleurées ci dessus
 
 https://www.ibm.com/fr-fr/think/topics/transformer-model
+
+
+Et une video récapitulative
+<iframe src="https://www.youtube.com/watch?v=wrZFyKfJN_Y" allowfullscreen></iframe>
+
 
 ## Taille des modèles 
 
