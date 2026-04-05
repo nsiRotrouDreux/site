@@ -103,8 +103,9 @@ Un excellent article développant les notions effleurées ci dessus
 [site IBM](https://www.ibm.com/fr-fr/think/topics/transformer-model)
 
 
-Et une video récapitulative
-<iframe src="https://www.youtube.com/watch?v=wrZFyKfJN_Y" allowfullscreen target ="_blank"></iframe>
+Et une video récapitulative:
+
+![type:video](https://www.youtube.com/watch?v=wrZFyKfJN_Y)
 
 
 ## Taille des modèles 
