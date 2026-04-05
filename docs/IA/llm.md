@@ -6,7 +6,7 @@
 
   Un LLM est un modèle qui a emmagasiné suffisament d'exemples pour être ensuite capable de reconnaitre une conversation et la poursuivre .
 
-  Avant de se pencher sur le fonctionnement des LLm , un petit tour par l'hsitorique 
+  Avant de se pencher sur le fonctionnement des LLm , un petit tour par l'hsitorique .
 
 ## Histoire des LLM
 
