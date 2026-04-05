@@ -23,7 +23,7 @@
 
   La technologie autour des transformers ( le T de transformers est le même que celui de GPT ;) apparu en 2017 a permis l'essor des LLM 
 
-  La plus value du __Transformer__ est énorme : Au lieu de traiter les mots un par un avec les techniques précédentes , on peut désormai considérer en sa totalité, facilitant la compréhension de l'ensemble et la cohérence de la sortie proposée.
+  La plus value du __Transformer__ est énorme : Au lieu de traiter les mots un par un avec les techniques précédentes , on peut désormais considérer en sa totalité, facilitant la compréhension de l'ensemble et la cohérence de la sortie proposée.
 
   Depuis 2017, la technologie est restée la même mais  a considérablement évolué en terme de capacités de calculs:
 
@@ -96,6 +96,12 @@ Est également utilisé le __RAG__ (Retrieval-Augmented Generation) , technique 
 ![alt text](../images/llm.png)
 https://www.followtribes.io/performances-llm-puissance-gpu-parametres-dataset/
 
+
+
+Un excellent article développant les notions effleurées ci dessus
+
+https://www.ibm.com/fr-fr/think/topics/transformer-model
+
 ## Taille des modèles 
 
 On imagine bien que pour être très performant, un modèle devra avoir ingurgité une quantité phénomènale de données .
@@ -142,5 +148,6 @@ Le site de [Stephane Robert](https://blog.stephane-robert.info/docs/developper/p
 
 Il existe quantité d'ouvrages sur l'IA, tous présentant le défaut d'être quasi obsolète avant de sortir . Pour autant, __L'intelligence artificielle pour les nuls__ a l'avantage de sprésenter des notions 'intemporelles' si l'on peut dire, de façon claire, concise et précise . C'est déjà beaucoup.
 
-Enfin, en adepte de la récursivité , je me suis appuyé sur deux LLm  : [Chat GPT 4](https://chatgpt.com/)  et [Perplexity](https://www.perplexity.ai/), intégré au navigateur Comet
+Enfin, en adepte de la récursivité , je me suis appuyé sur deux LLm  : [Chat GPT 4](https://chatgpt.com/)  et [Perplexity](https://www.perplexity.ai/), intégré au navigateur Comet.
+
 _Last but nos least_, ce bon vieux [wikipedia](https://fr.wikipedia.org/wiki/Intelligence_artificielle) n'est jamais bien loin .
