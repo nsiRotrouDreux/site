@@ -121,9 +121,7 @@ extra_javascript:
 
 
   
-plugins:
-  - search
-  - mkdocs-video
+
 
 copyright: B. Saint Pée , Lycée Rotrou , Dreux 
 
