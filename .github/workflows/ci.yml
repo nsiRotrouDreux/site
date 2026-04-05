@@ -32,5 +32,6 @@ jobs:
      
       - name: Install dependencies
         run: pip install -r requirements.txt
-      - run: mkdocs gh-deploy --force
-
+      - name: Deploy documentation
+        run: mkdocs gh-deploy --force
+     
