@@ -94,17 +94,17 @@ On parle de __RLHF__ (Reinforcement Learning from Human Feedback), technique ass
 Est également utilisé le __RAG__ (Retrieval-Augmented Generation) , technique qui permet de connecter le modèle à des bases de données actualisées: On peut ainsi enrichir le modèle sans pour autant le re-entrainer , diminuant ainsi coût et impact écologique .
 
 ![alt text](../images/llm.png)
-https://www.followtribes.io/performances-llm-puissance-gpu-parametres-dataset/
+[https://www.followtribes.io/performances-llm-puissance-gpu-parametres-dataset/](https://www.followtribes.io/performances-llm-puissance-gpu-parametres-dataset/)
 
 
 
 Un excellent article développant les notions effleurées ci dessus
 
-https://www.ibm.com/fr-fr/think/topics/transformer-model
+[site IBM](https://www.ibm.com/fr-fr/think/topics/transformer-model)
 
 
 Et une video récapitulative
-<iframe src="https://www.youtube.com/watch?v=wrZFyKfJN_Y" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/watch?v=wrZFyKfJN_Y" allowfullscreen target ="_blank"></iframe>
 
 
 ## Taille des modèles 
