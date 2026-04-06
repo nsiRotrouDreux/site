@@ -101,8 +101,8 @@ markdown_extensions:
    - pymdownx.arithmatex:
       generic: true
 
-   - pymdownx.emoji:
-        emoji_generator: pymdownx.emoji.to_svg
+   - pymdownx.emoji
+        
    - admonition
    - pymdownx.details
    - pymdownx.inlinehilite
