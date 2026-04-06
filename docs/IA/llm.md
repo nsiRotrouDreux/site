@@ -113,7 +113,7 @@ Et une video récapitulative:
   </iframe>
 </div>
 
-![type:video ](https://youtu.be/wrZFyKfJN_Y)
+
 
 
 ## Taille des modèles 
