@@ -105,7 +105,7 @@ Un excellent article développant les notions effleurées ci dessus
 
 Et une video récapitulative:
 
-![type:video ](https://www.youtube.com/watch?v=wrZFyKfJN_Y)
+![type:video ](https://youtu.be/wrZFyKfJN_Y)
 
 
 ## Taille des modèles 
