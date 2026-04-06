@@ -104,6 +104,14 @@ Un excellent article développant les notions effleurées ci dessus
 
 
 Et une video récapitulative:
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px;">
+  <iframe 
+    src="https://www.youtube.com/embed/wrZFyKfJN_Y"
+    title="Vidéo"
+    style="position: absolute; top:0; left:0; width:100%; height:100%; border:0;"
+    allowfullscreen>
+  </iframe>
+</div>
 
 ![type:video ](https://youtu.be/wrZFyKfJN_Y)
 
