@@ -28,67 +28,68 @@ theme:
 
   # Navigation
 nav:
-    - Accueil: index.md
-    - Terminale NSI: 
-        - Accueil: Terminale NSI/index.md
-        - Algorithmique: 
-             -Dichotomie : Terminale NSI/algorithmique/dichotomie.md
-             -Tri Selection : Terminale NSI/algorithmique/Les Tris/tri_selection.md
-             -Tri Insertion: Terminale NSI/algorithmique/Les Tris/tri_insertion.md
-             -Algorithmes sur les arbres: Terminale NSI/algorithmique/algoArbre.md
-             -Algorithmes sur les graphes: Terminale NSI/algorithmique/algoGraphe.md
-        - Structure de données :              
-             -Les Files : Terminale NSI/sda/files.md
-             -Les Piles : Terminale NSI/sda/piles.md
-             -Les listes chaînées : Terminale NSI/sda/listesChainees.md
-        - Les graphes : Terminale NSI/cours_graphes.md
-        - Récursivité: Terminale NSI/recursivite.md
-        - POO: Terminale NSI/poo.md
-        - Routage: Terminale NSI/routage.md
-        - Securisation des communications: Terminale NSI/securisation.md
-        - Recherche Textuelle: Terminale NSI/rechercheTextuelle.md
-        - Décidabilité: Terminale NSI/decidabilite.md
-        - Machine de Turing: Terminale NSI/Machine_de_Turing.md
-    - Première NSI: 
-        - Accueil: Premiere NSI/index.md
-        - Binaire: Premiere NSI/binaire.md
-        - Booléens: Premiere NSI/booleens.md
-        - Chaines de caractères: Premiere NSI/chaines.md
-        - Algorithmique et programmation: 
-             -Les Listes : Premiere NSI/algorithme et programmation/listes.md
-             -Les Dictionnaires : Premiere NSI/algorithme et programmation/dictionnaires.md
-             -Les Boucles : Premiere NSI/algorithme et programmation/boucles.md
-             -Les Fonctions : Premiere NSI/algorithme et programmation/fonctions.md
-             -Les Fichiers : Premiere NSI/algorithme et programmation/fichiers.md
-             -Les tuples/Liste de listes : Premiere NSI/algorithme et programmation/complements.md  
-        - Architecture matérielle :
-              -Adressage : Premiere NSI/Routage/adressage.md
-              -Lignes de commande : Premiere NSI/Architecture matérielle/lignes_de_commande.md
-              -Système d'exploitaion : Premiere NSI/Architecture matérielle/systemes_d_exploitation.md
-        - Projets: Premiere NSI/Projet/spaceInvader.md
-        - Slicing: Premiere NSI/slicing.md
-        - Formulaire: Premiere NSI/Formulaire/formulaire.md
-    - SNT: 
-        - Accueil: SNT/index.md
-        - Internet: SNT/internet.md
-        - Structures de données: SNT/structuresDeDonnees.md
-        - Reseaux sociaux: SNT/reseaux.md
-        - Html : SNT/html.md
-        - Css : SNT/css.md
-        - Geolocalisation : SNT/geolocalisation.md
-    - IA: 
-        - Accueil: IA/index.md
-        - Historique et premiers problèmes : IA/introIa.md
-        - Apprentissage par renforcement : IA/iaRenforcement.md
-        - Apprentissage supervisé : IA/Apprentissage_supervisé.md
-        - QLearning : IA/QLearning.md
-        - Ecologie : IA/impact_ecologie_IA.md
-        - LLM : IA/llm.md
-        
-    - Liens : Liens/Liens.md
-        
+  - Accueil: index.md
 
-        
+  - Terminale NSI:
+      - Accueil: Terminale NSI/index.md
+      - Algorithmique:
+          - Dichotomie: Terminale NSI/algorithmique/dichotomie.md
+          - Tri Selection: Terminale NSI/algorithmique/Les Tris/tri_selection.md
+          - Tri Insertion: Terminale NSI/algorithmique/Les Tris/tri_insertion.md
+          - Algorithmes sur les arbres: Terminale NSI/algorithmique/algoArbre.md
+          - Algorithmes sur les graphes: Terminale NSI/algorithmique/algoGraphe.md
+      - Structure de données:
+          - Les Files: Terminale NSI/sda/files.md
+          - Les Piles: Terminale NSI/sda/piles.md
+          - Les listes chaînées: Terminale NSI/sda/listesChainees.md
+      - Les graphes: Terminale NSI/cours_graphes.md
+      - Récursivité: Terminale NSI/recursivite.md
+      - POO: Terminale NSI/poo.md
+      - Routage: Terminale NSI/routage.md
+      - Securisation des communications: Terminale NSI/securisation.md
+      - Recherche Textuelle: Terminale NSI/rechercheTextuelle.md
+      - Décidabilité: Terminale NSI/decidabilite.md
+      - Machine de Turing: Terminale NSI/Machine_de_Turing.md
+
+  - Première NSI:
+      - Accueil: Premiere NSI/index.md
+      - Binaire: Premiere NSI/binaire.md
+      - Booléens: Premiere NSI/booleens.md
+      - Chaines de caractères: Premiere NSI/chaines.md
+      - Algorithmique et programmation:
+          - Les Listes: Premiere NSI/algorithme et programmation/listes.md
+          - Les Dictionnaires: Premiere NSI/algorithme et programmation/dictionnaires.md
+          - Les Boucles: Premiere NSI/algorithme et programmation/boucles.md
+          - Les Fonctions: Premiere NSI/algorithme et programmation/fonctions.md
+          - Les Fichiers: Premiere NSI/algorithme et programmation/fichiers.md
+          - Les tuples / Liste de listes: Premiere NSI/algorithme et programmation/complements.md
+      - Architecture matérielle:
+          - Adressage: Premiere NSI/Routage/adressage.md
+          - Lignes de commande: Premiere NSI/Architecture matérielle/lignes_de_commande.md
+          - Système d'exploitation: Premiere NSI/Architecture matérielle/systemes_d_exploitation.md
+      - Projets: Premiere NSI/Projet/spaceInvader.md
+      - Slicing: Premiere NSI/slicing.md
+      - Formulaire: Premiere NSI/Formulaire/formulaire.md
+
+  - SNT:
+      - Accueil: SNT/index.md
+      - Internet: SNT/internet.md
+      - Structures de données: SNT/structuresDeDonnees.md
+      - Reseaux sociaux: SNT/reseaux.md
+      - Html: SNT/html.md
+      - Css: SNT/css.md
+      - Geolocalisation: SNT/geolocalisation.md
+
+  - IA:
+      - Accueil: IA/index.md
+      - Historique et premiers problèmes: IA/introIa.md
+      - Apprentissage par renforcement: IA/iaRenforcement.md
+      - Apprentissage supervisé: IA/Apprentissage_supervisé.md
+      - QLearning: IA/QLearning.md
+      - Ecologie: IA/impact_ecologie_IA.md
+      - LLM: IA/llm.md
+
+  - Liens: Liens/Liens.md
    
     
 
