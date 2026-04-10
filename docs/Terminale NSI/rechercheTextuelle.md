@@ -21,8 +21,7 @@ Par exemple, nous voulons rechercher la chaine **ACG** dans la chaine CAAGCGCACA
 !!! note   "Un peu bourrin mais"
  
        Intuitivement, on va placer le motif (sous chaine) au début de la chaine. On compare les premières lettres . Si elles sont égales , on passe à la lettre suivante , sinon , on décale le motif en le plaçant sous la deuxième lettre et ainsi de suite; ça marche .
-    ![](exempleNaif.png)
-
+    ![naïf](../exempleNaif.png)
 
 #### L'algorithme naïf en python
 ``` python 
