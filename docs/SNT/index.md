@@ -6,6 +6,7 @@
 
 * [Internet](<internet.md>)
 * [Structure de données](<structuresDeDonnees.md>)
+* [Structure de données avancées](<structures_avancées.md>)
 * [Réseaux sociaux](<reseaux.md>)
  * Site web 
      * [html](<html.md>)
