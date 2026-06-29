@@ -1,6 +1,6 @@
-# Accueil
 
- Bienvenue sur ce site où vous pouvez retrouver les cours de première et terminale NSI , mais aussi quelques activités de SNT, des exlications sur l'IA , des liens généraux sur l'informatique ou encore pourquoi étudier l'informatique .
+  
+ __Bienvenue__ sur ce site où vous pouvez retrouver les cours de première et terminale NSI , mais aussi quelques activités de SNT, des exlications sur l'IA , des liens généraux sur l'informatique ou encore pourquoi étudier l'informatique.
 
 !!! abstract  " Menu"
 
