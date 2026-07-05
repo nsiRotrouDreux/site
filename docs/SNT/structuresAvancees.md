@@ -43,3 +43,63 @@ La recopie d'un onglet permet de copier une feuille de calcul entière.
 - Sélectionner l'emplacement du nouvel onglet puis valider.
 
 La copie conserve les données, la mise en forme et les formules de l'onglet d'origine.
+
+## 5. Utiliser des formules de calcul
+
+![Exemple](formuleExcel.png)
+
+**Calculer le CA global (on suppose la colonne CA remplie):**
+
+- Utiliser une formule de somme sur la colonne CA.
+- Exemple : `=SOMME(D2:D20)` (adapter la plage à vos données).
+- On peut cliquer sur _fx_ et choisir SOMME puis bien déterminer la plage où l'on veut faire le calcul.
+
+**Calculer la moyenne de CA réalisé par chaque vendeur :**
+
+- Pour une moyenne générale du CA : `=MOYENNE(D2:D7)`.
+- Ou à nouveau se servir de la touche _fx_ et sélectionner la bonne fonction et la bonne plage.
+
+**Calculer le CA par vendeur (on remplit la colonne CA)**
+- Sélectionner la première cellule de la colonne CA (par exemple D2).
+- Cliquer sur la barre de formule ou sur le bouton _fx_ pour entrer la formule.
+- Saisir la formule de calcul, par exemple `=B2*C2` si B contient la quantité et C le prix unitaire.
+- Valider par Entrée.
+- Recopier la formule vers le bas pour toutes les lignes de la colonne CA en faisant glisser la poignée de recopie.
+
+
+
+
+!!! success Utiliser une condition
+    Exemple de prime selon le CA : On accorde 500 euros de prime à tout vendeur dont le CA dépasse les 100000
+
+    ##### Méthode 1:
+
+
+    - Dans la cellule de la première ligne de données, saisir une formule conditionnelle.
+    - Exemple : `=SI(D2>100000; 500; 0)` pour accorder 500 quand le CA dépasse 100000.
+
+    ##### Méthode 2: 
+     - Cliquez sur _fx_
+     - Tapez logique puis rechercher 
+     - Choisir Si . Apparait cette fenêtre :
+    ![Si...](si.png)
+    - Dans test_logique , entrer la condition (D2>100000) puis 500 dans si vrai et 0 si faux
+
+
+## 6. Forcer les cellules avec validation
+
+La validation des données permet de forcer le contenu des cellules selon une règle.
+
+- Sélectionner les cellules à contrôler.
+- Aller dans l'onglet "Données" > "Validation des données".
+- Choisir un critère : entier, décimal, liste, date, texte, etc.
+- Définir la règle et le message d'erreur.
+- Cliquer sur OK.
+
+Exemple : forcer une cellule à n'accepter que des nombres entre 1 et 100.
+- Critère : "Entier".
+- Données : "compris entre".
+- Valeur minimale : 1.
+- Valeur maximale : 100.
+
+Quand un utilisateur saisit une valeur hors limite, Excel affiche un message d'erreur et empêche l'entrée.
