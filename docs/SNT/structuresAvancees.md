@@ -70,9 +70,9 @@ La copie conserve les données, la mise en forme et les formules de l'onglet d'o
 
 
 !!! success Utiliser une condition
-    Exemple de prime selon le CA : On accorde 500 euros de prime à tout vendeur dont le CA dépasse les 100000
+    Exemple de primes selon le CA : On accorde 500 euros de prime à tout vendeur dont le CA dépasse les 100000
 
-    ##### Méthode 01  :
+    ##### Méthode 1  :
 
 
     - Dans la cellule de la première ligne de données, saisir une formule conditionnelle.
