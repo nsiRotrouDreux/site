@@ -5,6 +5,7 @@ Le binaire
 
 #### Le système décimal 
 Il s’appuie sur 10 symboles :0,1,2,3,4,5,6,7,8,9
+
 Prenons par exemple le nombre 678.
 En fait, ce nombre a été construit de la manière suivante : 678= 6*10²+7*10+8
  6 est le chiffre de rang 2 (ou centaine), 7 celui de rang 1 (ou dizaine) et 8 celui de rang 0 ou unités.
@@ -117,6 +118,9 @@ De même pour obtenir un nombre en hexadécimal à partir d’un nombre en déci
     |  01101101| 109        |6D
     | 11110100|  244   |F4
     | 11001101 |205 | CD
+
+### S'entrainer 
+ [Convertisseur](../conversion.html)
 
 ### Représentation d'un entier relatif en binaire 
 
