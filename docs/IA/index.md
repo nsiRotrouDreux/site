@@ -10,6 +10,7 @@ On va essayer ici non pas de répondre à toutes ces interrogations mais d'esqui
 
 ### Le programme 
  * [Introduction : Petite histoire et premiers problèmes](introIa.md)
+ * [ Etat de l'IA en 2026 ](ia2026.md)
  * [Apprentissage par renforcement : Le jeu de Nim](<iaRenforcement.md>)
  * [Q learning](<QLearning.md>)
  

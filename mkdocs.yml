@@ -83,6 +83,7 @@ nav:
 
   - IA:
       - Accueil: IA/index.md
+      - IA en 2026: IA/ia2026.md
       - Historique et premiers problèmes: IA/introIa.md
       - Apprentissage par renforcement: IA/iaRenforcement.md
       - Apprentissage supervisé: IA/Apprentissage_supervisé.md
