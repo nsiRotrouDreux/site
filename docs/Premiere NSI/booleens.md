@@ -4,14 +4,14 @@ En informatique, une valeur booléenne est une valeur qui peut prendre deux éta
 
 On symbolise souvent ces deux états pour les valeur 1, Vrai  et 0, Faux.
 
- > En informatique , les booléens sont souvent utiliser dans des tests conditionnels 
+ > En informatique , les booléens sont souvent utilisés dans des tests conditionnels 
 ``` py
  nombre = int (input("ntrez un nombre :" ))
  if nombre > 10:  # nombre > 10 peut prendre deux valeurs : True ou False 
     print ....
 ```
 ### Les opérateurs booléens 
-On va établir les tables des principaux opérateurs booléens : **AND**, **OR**, **XOR**, **MOT**
+On va établir les tables des principaux opérateurs booléens : **AND**, **OR**, **XOR**, **NOT**
 
 !!! tip "AND"
 
@@ -43,7 +43,7 @@ On va établir les tables des principaux opérateurs booléens : **AND**, **OR**
     |1|0|1|
     |1|1|0|         
    
-    XOR est vrai si exctement une condition est vraie.
+    XOR est vrai si **exactement** une condition est vraie.
 
 !!! tip "NOT"
 
@@ -89,4 +89,4 @@ On peut établir une table où à partir de la valeur des bits, on peut détermi
 
 ### Exercices 
 
-[Lien capytale](https://capytale2.ac-paris.fr/p/basthon/n/?kernel=python3-legacy&mode=create&id=7204983#Exercice-3)
+[Lien capytale](https://capytale2.ac-paris.fr/p/basthon/n/?kernel=python3-legacy&mode=create&id=7204983)
