@@ -53,7 +53,7 @@
 
 !!! info "Définitions" 
         
-       0. **Octet** :C'est l'unité de base utilisée en informatique pour quantifier les grandeurs . Chaque octet est composé de 8 symboles, appelés bits et prenant la valeur 0 ou 1.
+       0. **Octet** :C'est l'unité de base utilisée en informatique pour quantifier les grandeurs . Chaque octet est composé de 8 symboles, appelés bits et prenant la valeur 0 ou 1. Le mot octet intervient dans les grandeurs des fichiers informatiques : kiloOctect (ko), MegaOctet , Gigaoctet, TeraOctect
        1. **Paquet** : C'est un ensemble de données qui transite sur le réseau. Un paquet a une taille très limitée(1500 octets maximum)
        2. **Routage** : C'est le mécanisme de transport d'un paquet de données d'une source à un destinataire .
        3. **Routeur**  : C'est l'équipement informatique qui assure l'acheminement des données de l'émetteur au destinaitaire . 
