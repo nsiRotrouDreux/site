@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu Convertisseur Décimal <-> Binaire</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        /* Style pour masquer et flouter le résultat à deviner */
+        .hidden-result {
+            filter: blur(6px);
+            background-color: #ddd;
+            pointer-events: none; /* Empêche de cliquer ou copier le texte caché */
+            user-select: none;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Devine la conversion</h1>
+    
+    <div class="form-group">
+        <label for="decimal">Décimal (Base 10)</label>
+        <input type="number" id="decimal" placeholder="Entrez un nombre décimal" min="0">
+    </div>
+
+    <div class="form-group">
+        <label for="binary">Binaire (Base 2)</label>
+        <input type="text" id="binary" placeholder="Entrez un nombre binaire">
+    </div>
+
+    <button id="reveal-btn">Vérifier ma réponse</button>
+</div>
+
+<script>
+    const decimalInput = document.getElementById('decimal');
+    const binaryInput = document.getElementById('binary');
+    const revealBtn = document.getElementById('reveal-btn');
+
+    // Mode actuel : 'decimal' si on écrit en décimal, 'binary' si on écrit en binaire, null si vide
+    let activeInput = null;
+
+    // Conversion Décimal -> Binaire
+    decimalInput.addEventListener('input', () => {
+        const decimalValue = decimalInput.value;
+        
+        if (decimalValue === '') {
+            resetFields();
+            return;
+        }
+
+        // Si c'est le premier caractère tapé, on verrouille le mode
+        if (!activeInput) {
+            activeInput = 'decimal';
+            binaryInput.classList.add('hidden-result'); // Masque le binaire
+        }
+
+        // Calcule la réponse en tâche de fond
+        binaryInput.value = parseInt(decimalValue, 10).toString(2);
+    });
+
+    // Conversion Binaire -> Décimal
+    binaryInput.addEventListener('input', () => {
+        let binaryValue = binaryInput.value;
+        binaryValue = binaryValue.replace(/[^01]/g, '');
+        binaryInput.value = binaryValue;
+
+        if (binaryValue === '') {
+            resetFields();
+            return;
+        }
+
+        if (!activeInput) {
+            activeInput = 'binary';
+            decimalInput.classList.add('hidden-result'); // Masque le décimal
+        }
+
+        // Calcule la réponse en tâche de fond
+        decimalInput.value = parseInt(binaryValue, 2);
+    });
+
+    // Bouton pour révéler le résultat caché
+    revealBtn.addEventListener('click', () => {
+        decimalInput.classList.remove('hidden-result');
+        binaryInput.classList.remove('hidden-result');
+    });
+
+    // Réinitialise l'affichage si l'utilisateur efface tout son texte
+    function resetFields() {
+        decimalInput.value = '';
+        binaryInput.value = '';
+        decimalInput.classList.remove('hidden-result');
+        binaryInput.classList.remove('hidden-result');
+        activeInput = null;
+    }
+</script>
+
+</body>
+</html>
