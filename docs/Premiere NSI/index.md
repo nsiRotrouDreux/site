@@ -26,6 +26,8 @@
 * Algorithme gloutons
 * k plus proches voisins
 * [Space Invaders](<Projet/spaceInvader.md>)
+* DM
+    * [l'Agent secret](DM/agentSecret.md)
 * [Le slicing](<slicing.md>)
 
 
