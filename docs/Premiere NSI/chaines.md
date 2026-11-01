@@ -13,7 +13,7 @@ mot = 'Python'
 
 ### a. Accès aux caractères
 
-On peut accéder à chaque caractère d'une chaîne grâce à son indice (le premier caractère a l'indice 0).
+On peut accéder à chaque caractère d'une chaîne grâce à son indice (le premier caractère a l'indice 0). Ce type de variables est appelé **séquence**
 
 ```python
 texte = "Python"
@@ -27,7 +27,7 @@ print(texte[2])  # t
 for lettre in texte:
     print(lettre)
 ```
-Autre façon de parcourir une chaine de caractères, si jamais on avaoit besoin de l'indice :
+Autre façon de parcourir une chaine de caractères, si jamais on avait besoin de l'indice :
 ```python
 for i in range(len(mot)):
     print(mot[i])
@@ -83,7 +83,7 @@ print(texte[9:])   # "NSI"
 
 ## 5. Immutabilité
 
-Les chaînes sont **immutables** : on ne peut pas modifier un caractère directement.
+Les chaînes sont **immutables** : on ne peut pas modifier un caractère directement. les chaïnes de caractères sont donc des **séquences non mutables**.
 
 ```python
 texte = "Python"
