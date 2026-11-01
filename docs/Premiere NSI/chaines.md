@@ -83,7 +83,7 @@ print(texte[9:])   # "NSI"
 
 ## 5. Immutabilité
 
-Les chaînes sont **immutables** : on ne peut pas modifier un caractère directement. Les chaïnes de caractères sont donc des **séquences non mutables**.
+Les chaînes sont **immutables** : on ne peut pas modifier un caractère directement. Les chaînes de caractères sont donc des **séquences non mutables**.
 
 ```python
 texte = "Python"
