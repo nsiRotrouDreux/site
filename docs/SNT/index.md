@@ -5,6 +5,7 @@
 ## Chapitres
 
 * [Internet](<internet.md>)
+* [TP Filius](<filius.md>)
 * [Structure de données](<structuresDeDonnees.md>)
 * [Structure de données avancées](<structuresAvancees.md>)
 * [Réseaux sociaux](<reseaux.md>)
