@@ -63,8 +63,11 @@ nav:
           - Les Fonctions: Premiere NSI/algorithme et programmation/fonctions.md
           - Les Fichiers: Premiere NSI/algorithme et programmation/fichiers.md
           - Les tuples / Liste de listes: Premiere NSI/algorithme et programmation/complements.md
-      - Architecture matérielle:
+      - Reseaux_Routage :
+          - Protocole de routage: Premiere NSI/Routage/tcp_ip.md
           - Adressage: Premiere NSI/Routage/adressage.md
+      - Architecture matérielle:
+          
           - Lignes de commande: Premiere NSI/Architecture matérielle/lignes_de_commande.md
           - Système d'exploitation: Premiere NSI/Architecture matérielle/systemes_d_exploitation.md
       - Projets: Premiere NSI/Projet/spaceInvader.md
